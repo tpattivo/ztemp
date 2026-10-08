@@ -14,34 +14,15 @@ Họ đã có/ muốn có 1 cái dashboard tổng quan, bên cạnh đó là 1 c
 Còn cỡ CEO thì họ không nhìn đâu, họ không dùng máy tính luôn, chỉ có dùng điện thoại, nhắn tin, gọi điện hỏi han...
 
 2. Để phục vụ đối tượng "Phòng Kế hoạch":
+
 Để "tiến hoá" từ mấy cái dashboard thì con AI của mình cần __sàng lọc số liệu liên tục + Đưa ra cảnh báo__.
 Vì CEO không muốn phải đến t2 họp hoặc t6 nhận báo cáo mới biết là có vấn đề. Họ thuê phòng KH không phải chỉ để cuối tuần tổng hợp báo cáo, CEO muốn cái phòng Kế hoạch phải raise vấn đề ngay khi thấy, để xử lý.
 
-Cái này thì mình không làm được, vì sẽ cần bộ agent skill của chính Khách hàng, mình phải hướng dẫn Khách train con AI của mình. AI sẽ học từ những lần sửa sai của Khách, rồi tự tạo skill.
+Để làm được mình sẽ hướng dẫn end-user dùng và chỉ dẫn con AI. AI sẽ học từ những lần sửa sai của Khách, rồi tự tạo skill. 
+(Nói cách khác học xong thì đuổi việc ông làm Kế hoạch, hí)
 
-(Nói cách khác có AI xong thì đuổi việc ông làm Kế hoạch, hí)
+3. Toàn bộ nội dung ở dưới do AI test, nó chỉ mang tính test chức năng thui. Còn về tầm nhìn vĩ mô, bài toán khó, thì chưa có :v 
 
-## MỤC LỤC TÀI LIỆU VÀ TỆP ĐÍNH KÈM (ATTACHMENTS INDEX)
-
-Hệ thống tệp đính kèm đi kèm báo cáo đã được lưu trữ cục bộ, đảm bảo tính độc lập và khả năng chia sẻ ngoại tuyến:
-
-* 📊 **Dữ liệu kiểm thử JSON gốc (Raw Test Datasets):**
-  * [attachments/data/round1_test_results.json](./attachments/data/round1_test_results.json): Toàn bộ kết quả kiểm thử 12 câu hỏi UI mẫu (API payloads, KPIs, SQL queries, độ trễ, cảnh báo).
-  * [attachments/data/round2_test_results.json](./attachments/data/round2_test_results.json): Toàn bộ kết quả kiểm thử 11 kịch bản CEO & BI chuyên sâu.
-* 🎥 **Video ghi lại toàn bộ phiên thao tác trình duyệt (Browser Session WebP Videos):**
-  * [attachments/videos/bi_chatbot_round1.webp](./attachments/videos/bi_chatbot_round1.webp): Video tương tác Vòng 1 (Click chip câu hỏi mẫu, kiểm tra role switcher, toggle bảng/biểu đồ, kiểm tra guardrail).
-  * [attachments/videos/bi_chatbot_round2.webp](./attachments/videos/bi_chatbot_round2.webp): Video tương tác Vòng 2 (Truy vấn doanh thu theo cơ sở, doanh thu bình quân mỗi lượt khám ARPV, kiểm thử câu hỏi khẩu ngữ/viết tắt).
-* 🖼️ **Hình ảnh chụp thực tế giao diện (High-res Screenshots):**
-  * [Hình 1: Giao diện ban đầu](./attachments/images/fig1_initial_ui.png)
-  * [Hình 2: Trả lời câu hỏi 1 & Nguồn gốc số liệu](./attachments/images/fig2_q1_details_lineage.png)
-  * [Hình 3: Dashboard tổng quan doanh thu Q2](./attachments/images/fig3_q2_revenue_overview.png)
-  * [Hình 4a: Chặn truy cập dữ liệu cá nhân bệnh nhân](./attachments/images/fig4_guardrail_access_control.png)
-  * [Hình 4b: Cảnh báo ranh giới lâm sàng](./attachments/images/fig4b_guardrail_clinical_advice.png)
-  * [Hình 5: Doanh thu theo cơ sở](./attachments/images/fig5_revenue_by_facility.png)
-  * [Hình 6: Doanh thu bình quân mỗi lượt khám](./attachments/images/fig6_avg_rev_per_visit.png)
-  * [Hình 7: Phản hồi từ chối câu hỏi khẩu ngữ](./attachments/images/fig7_slang_failure_response.png)
-
----
 
 ## 1. TỔNG QUAN ĐÁNH GIÁ & GÓC NHÌN ĐIỀU HÀNH (EXECUTIVE SUMMARY)
 
