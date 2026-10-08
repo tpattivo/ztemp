@@ -1,0 +1,5352 @@
+[
+  {
+    "index": 1,
+    "group": "Giá trị chỉ số",
+    "question": "Có bao nhiêu lượt khám ngoại trú trong tháng 5/2026?",
+    "status": 200,
+    "elapsed_s": 0.09,
+    "answer_preview": "Lượt khám ngoại trú tháng 5/2026: 57 lượt.",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.09,
+      "data": {
+        "request_id": "9f839e5b-5cff-4905-a7db-660b90bd199c",
+        "audit_id": "9f839e5b-5cff-4905-a7db-660b90bd199c",
+        "question": "Có bao nhiêu lượt khám ngoại trú trong tháng 5/2026?",
+        "interpretation": {
+          "plan_type": "single_metric",
+          "plan_label": "Giá trị chỉ số",
+          "metrics": [
+            "Lượt khám ngoại trú"
+          ],
+          "dimensions": [],
+          "filters": [],
+          "time": "tháng 5/2026",
+          "compare_to": null,
+          "grain": null,
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "source": "rules"
+        },
+        "status": "ok",
+        "answer": "Lượt khám ngoại trú tháng 5/2026: 57 lượt.",
+        "answer_source": "template",
+        "error": null,
+        "kpis": [
+          {
+            "metric": "outpatient_visits",
+            "label": "Lượt khám ngoại trú",
+            "unit": "lượt",
+            "format": "integer",
+            "value": 57.0,
+            "formatted": "57 lượt",
+            "compact": "57 lượt",
+            "period": "tháng 5/2026",
+            "certification": "draft",
+            "definition": "Số lượt khám ngoại trú (gồm gói ngoại trú), không tính lượt đã huỷ."
+          }
+        ],
+        "charts": [],
+        "table": null,
+        "dashboard": null,
+        "insights": [],
+        "warnings": [
+          "Chỉ số \"Lượt khám ngoại trú\" đang ở mức nháp, chưa được chứng nhận. Ngoại trú gồm các mã loại lượt khám SHSOPD và SHSOPK (config/reference.yml)."
+        ],
+        "data_period": {
+          "label": "tháng 5/2026",
+          "from": "2026-05-01",
+          "to": "2026-05-31",
+          "explicit": true
+        },
+        "data_freshness": [
+          {
+            "table": "fact_visit",
+            "label": "Lượt khám",
+            "loaded_at": "2026-10-07T09:48:34.914348+00:00",
+            "min_event_time": "2026-01-29 16:22:22",
+            "max_event_time": "2026-09-14 15:03:00",
+            "source": "data_evotek.xlsx",
+            "row_count": 600
+          }
+        ],
+        "confidence": {
+          "score": 0.85,
+          "level": "high",
+          "label": "Cao",
+          "components": {
+            "metric": 1.0,
+            "metadata": 1.0,
+            "relationship": 1.0,
+            "sql_validation": 1.0,
+            "result_validation": 1.0,
+            "historical_similarity": null
+          },
+          "draft_metric": true
+        },
+        "lineage": [
+          {
+            "metric": "outpatient_visits",
+            "label": "Lượt khám ngoại trú",
+            "definition": "Số lượt khám ngoại trú (gồm gói ngoại trú), không tính lượt đã huỷ.",
+            "owner": "hospital_operations",
+            "certification": "draft",
+            "table": "mart.fact_visit",
+            "columns": [
+              "mart.fact_visit.is_outpatient"
+            ],
+            "sources": [
+              "suy ra từ visit_category"
+            ],
+            "source_system": "HIS · patient_visit"
+          }
+        ],
+        "latency_ms": 66
+      }
+    }
+  },
+  {
+    "index": 2,
+    "group": "So sánh",
+    "question": "Số lượt khám tháng 5/2026 tăng hay giảm so với tháng 4/2026?",
+    "status": 200,
+    "elapsed_s": 0.1,
+    "answer_preview": "Tổng lượt khám tháng 5/2026: 211 lượt, giảm 46 lượt (-17,9%) so với tháng 4/2026 (257 lượt).",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.1,
+      "data": {
+        "request_id": "d3dde32b-f671-4d67-9d53-142f5f007d12",
+        "audit_id": "d3dde32b-f671-4d67-9d53-142f5f007d12",
+        "question": "Số lượt khám tháng 5/2026 tăng hay giảm so với tháng 4/2026?",
+        "interpretation": {
+          "plan_type": "comparison",
+          "plan_label": "So sánh hai kỳ",
+          "metrics": [
+            "Tổng lượt khám"
+          ],
+          "dimensions": [],
+          "filters": [],
+          "time": "tháng 5/2026",
+          "compare_to": "tháng 4/2026",
+          "grain": null,
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "source": "rules"
+        },
+        "status": "ok",
+        "answer": "Tổng lượt khám tháng 5/2026: 211 lượt, giảm 46 lượt (-17,9%) so với tháng 4/2026 (257 lượt).",
+        "answer_source": "template",
+        "error": null,
+        "kpis": [
+          {
+            "metric": "total_visits",
+            "label": "Tổng lượt khám",
+            "unit": "lượt",
+            "format": "integer",
+            "value": 211.0,
+            "formatted": "211 lượt",
+            "compact": "211 lượt",
+            "period": "tháng 5/2026",
+            "certification": "draft",
+            "definition": "Số lượt khám / đợt điều trị ở mọi loại hình, không tính lượt đã huỷ.",
+            "delta": -46.0,
+            "delta_formatted": "46 lượt",
+            "delta_pct": -17.898832684824903,
+            "delta_pct_formatted": "-17,9%",
+            "direction": "down",
+            "good": null,
+            "previous_value": 257.0,
+            "previous_formatted": "257 lượt",
+            "previous_period": "tháng 4/2026"
+          }
+        ],
+        "charts": [
+          {
+            "id": "compare_total_visits",
+            "type": "comparison",
+            "title": "Tổng lượt khám: tháng 5/2026 so với tháng 4/2026",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": 220,
+              "data": {
+                "values": [
+                  {
+                    "period": "tháng 4/2026",
+                    "v": 257.0,
+                    "value_text": "257 lượt"
+                  },
+                  {
+                    "period": "tháng 5/2026",
+                    "v": 211.0,
+                    "value_text": "211 lượt"
+                  }
+                ]
+              },
+              "encoding": {
+                "x": {
+                  "field": "period",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelAngle": 0
+                  }
+                },
+                "y": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "lượt",
+                  "axis": {
+                    "format": ",.0f"
+                  },
+                  "scale": {
+                    "zero": true
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "width": 24,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "period",
+                        "type": "nominal",
+                        "title": "Kỳ"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Tổng lượt khám"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "baseline": "bottom",
+                    "dy": -6
+                  },
+                  "encoding": {
+                    "text": {
+                      "field": "value_text",
+                      "type": "nominal"
+                    }
+                  }
+                }
+              ]
+            },
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "period",
+                  "label": "Kỳ"
+                },
+                {
+                  "key": "value",
+                  "label": "Tổng lượt khám"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "tháng 4/2026",
+                  "value": "257 lượt"
+                },
+                {
+                  "period": "tháng 5/2026",
+                  "value": "211 lượt"
+                }
+              ]
+            }
+          }
+        ],
+        "table": null,
+        "dashboard": null,
+        "insights": [],
+        "warnings": [
+          "Chỉ số \"Tổng lượt khám\" đang ở mức nháp, chưa được chứng nhận. Lượt khám bị huỷ = có thời điểm huỷ hoặc trạng thái ra viện là CAN."
+        ],
+        "data_period": {
+          "label": "tháng 5/2026",
+          "from": "2026-05-01",
+          "to": "2026-05-31",
+          "explicit": true,
+          "compare_to": {
+            "label": "tháng 4/2026",
+            "from": "2026-04-01",
+            "to": "2026-04-30"
+          }
+        },
+        "data_freshness": [
+          {
+            "table": "fact_visit",
+            "label": "Lượt khám",
+            "loaded_at": "2026-10-07T09:48:34.914348+00:00",
+            "min_event_time": "2026-01-29 16:22:22",
+            "max_event_time": "2026-09-14 15:03:00",
+            "source": "data_evotek.xlsx",
+            "row_count": 600
+          }
+        ],
+        "confidence": {
+          "score": 0.85,
+          "level": "high",
+          "label": "Cao",
+          "components": {
+            "metric": 1.0,
+            "metadata": 1.0,
+            "relationship": 1.0,
+            "sql_validation": 1.0,
+            "result_validation": 1.0,
+            "historical_similarity": null
+          },
+          "draft_metric": true
+        },
+        "lineage": [
+          {
+            "metric": "total_visits",
+            "label": "Tổng lượt khám",
+            "definition": "Số lượt khám / đợt điều trị ở mọi loại hình, không tính lượt đã huỷ.",
+            "owner": "hospital_operations",
+            "certification": "draft",
+            "table": "mart.fact_visit",
+            "columns": [
+              "mart.fact_visit.is_valid"
+            ],
+            "sources": [
+              "suy ra từ is_cancelled"
+            ],
+            "source_system": "HIS · patient_visit"
+          }
+        ],
+        "latency_ms": 73
+      }
+    }
+  },
+  {
+    "index": 3,
+    "group": "Xu hướng",
+    "question": "Doanh thu thuần theo tháng từ tháng 4 đến tháng 7 năm 2026",
+    "status": 200,
+    "elapsed_s": 0.1,
+    "answer_preview": "Doanh thu thuần tháng 4/2026 – tháng 7/2026: 6.368.779.273 đồng. Doanh thu thuần theo tháng trong tháng 4/2026 – tháng 7/2026: cao nhất 2.199.221.939 ",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.1,
+      "data": {
+        "request_id": "159efdab-95ba-4d37-bcd4-1501d98901af",
+        "audit_id": "159efdab-95ba-4d37-bcd4-1501d98901af",
+        "question": "Doanh thu thuần theo tháng từ tháng 4 đến tháng 7 năm 2026",
+        "interpretation": {
+          "plan_type": "trend",
+          "plan_label": "Xu hướng theo thời gian",
+          "metrics": [
+            "Doanh thu thuần"
+          ],
+          "dimensions": [],
+          "filters": [],
+          "time": "tháng 4/2026 – tháng 7/2026",
+          "compare_to": null,
+          "grain": "month",
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "source": "rules"
+        },
+        "status": "ok",
+        "answer": "Doanh thu thuần tháng 4/2026 – tháng 7/2026: 6.368.779.273 đồng. Doanh thu thuần theo tháng trong tháng 4/2026 – tháng 7/2026: cao nhất 2.199.221.939 đồng (06/2026), thấp nhất 1.068.928.424 đồng (04/2026), trung bình 1.592.194.818 đồng mỗi tháng trên 4 tháng có dữ liệu.",
+        "answer_source": "template",
+        "error": null,
+        "kpis": [
+          {
+            "metric": "net_revenue",
+            "label": "Doanh thu thuần",
+            "unit": "VND",
+            "format": "currency",
+            "value": 6368779273.0,
+            "formatted": "6.368.779.273 đồng",
+            "compact": "6,37 tỷ",
+            "period": "tháng 4/2026 – tháng 7/2026",
+            "certification": "draft",
+            "definition": "Tổng giá trị thuần phải thu của các hoá đơn hợp lệ (gộp + thuế - chiết khấu + làm tròn)."
+          }
+        ],
+        "charts": [
+          {
+            "id": "trend",
+            "type": "line",
+            "title": "Doanh thu thuần theo tháng",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": 260,
+              "data": {
+                "values": [
+                  {
+                    "t": "2026-04-01T00:00:00",
+                    "t_label": "04/2026",
+                    "v": 1.068928424,
+                    "value_text": "1.068.928.424 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-05-01T00:00:00",
+                    "t_label": "05/2026",
+                    "v": 1.361314097,
+                    "value_text": "1.361.314.097 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-06-01T00:00:00",
+                    "t_label": "06/2026",
+                    "v": 2.199221939,
+                    "value_text": "2.199.221.939 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-07-01T00:00:00",
+                    "t_label": "07/2026",
+                    "v": 1.739314813,
+                    "value_text": "1.739.314.813 đồng",
+                    "series": "Doanh thu thuần"
+                  }
+                ],
+                "format": {
+                  "parse": {
+                    "t": "date:'%Y-%m-%dT%H:%M:%S'"
+                  }
+                }
+              },
+              "encoding": {
+                "x": {
+                  "field": "t",
+                  "type": "temporal",
+                  "title": null,
+                  "axis": {
+                    "format": "%m/%Y",
+                    "labelAngle": 0,
+                    "tickCount": {
+                      "interval": "month",
+                      "step": 1
+                    }
+                  }
+                },
+                "y": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "tỷ đồng",
+                  "axis": {
+                    "format": ",.2~f"
+                  },
+                  "scale": {
+                    "zero": true
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "area",
+                    "opacity": 0.1
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "line",
+                    "strokeWidth": 2,
+                    "strokeCap": "round",
+                    "strokeJoin": "round"
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "point",
+                    "filled": true,
+                    "size": 64,
+                    "strokeWidth": 2,
+                    "opacity": 1
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "t_label",
+                        "type": "nominal",
+                        "title": "Thời gian"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Doanh thu thuần"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "widget": null,
+            "span": "full",
+            "table": {
+              "columns": [
+                {
+                  "key": "t_label",
+                  "label": "Thời gian"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Doanh thu thuần"
+                }
+              ],
+              "rows": [
+                {
+                  "t_label": "04/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "1.068.928.424 đồng"
+                },
+                {
+                  "t_label": "05/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "1.361.314.097 đồng"
+                },
+                {
+                  "t_label": "06/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "2.199.221.939 đồng"
+                },
+                {
+                  "t_label": "07/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "1.739.314.813 đồng"
+                }
+              ]
+            }
+          }
+        ],
+        "table": null,
+        "dashboard": null,
+        "insights": [
+          "Từ 04/2026 đến 07/2026, doanh thu thuần tăng 670.386.389 đồng (+62,7%)."
+        ],
+        "warnings": [
+          "Chỉ số \"Doanh thu thuần\" đang ở mức nháp, chưa được chứng nhận. Hoá đơn hợp lệ = trạng thái khác VOI và khác TEMP."
+        ],
+        "data_period": {
+          "label": "tháng 4/2026 – tháng 7/2026",
+          "from": "2026-04-01",
+          "to": "2026-07-31",
+          "explicit": true
+        },
+        "data_freshness": [
+          {
+            "table": "fact_invoice",
+            "label": "Hoá đơn",
+            "loaded_at": "2026-10-07T09:48:34.914348+00:00",
+            "min_event_time": "2026-04-06 09:42:57",
+            "max_event_time": "2026-07-21 17:14:41",
+            "source": "data_evotek.xlsx",
+            "row_count": 548
+          }
+        ],
+        "confidence": {
+          "score": 0.85,
+          "level": "high",
+          "label": "Cao",
+          "components": {
+            "metric": 1.0,
+            "metadata": 1.0,
+            "relationship": 1.0,
+            "sql_validation": 1.0,
+            "result_validation": 1.0,
+            "historical_similarity": null
+          },
+          "draft_metric": true
+        },
+        "lineage": [
+          {
+            "metric": "net_revenue",
+            "label": "Doanh thu thuần",
+            "definition": "Tổng giá trị thuần phải thu của các hoá đơn hợp lệ (gộp + thuế - chiết khấu + làm tròn).",
+            "owner": "finance",
+            "certification": "draft",
+            "table": "mart.fact_invoice",
+            "columns": [
+              "mart.fact_invoice.is_valid",
+              "mart.fact_invoice.net_amount"
+            ],
+            "sources": [
+              "ar_invoice.transaction_status_rcd",
+              "ar_invoice.net_amount"
+            ],
+            "source_system": "HIS · ar_invoice, swe_cashier_transaction_nl_view"
+          }
+        ],
+        "latency_ms": 80
+      }
+    }
+  },
+  {
+    "index": 4,
+    "group": "Xếp hạng",
+    "question": "Loại hình khám nào có doanh thu cao nhất trong quý 2 năm 2026?",
+    "status": 200,
+    "elapsed_s": 0.1,
+    "answer_preview": "Doanh thu thuần quý 2/2026: 4.629.464.460 đồng. Loại hình khám có doanh thu thuần cao nhất quý 2/2026: Nội trú với 4.011.396.524 đồng (86,6% tổng).",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.1,
+      "data": {
+        "request_id": "1229b8be-4ca3-43ae-8424-e05848c1e43e",
+        "audit_id": "1229b8be-4ca3-43ae-8424-e05848c1e43e",
+        "question": "Loại hình khám nào có doanh thu cao nhất trong quý 2 năm 2026?",
+        "interpretation": {
+          "plan_type": "ranking",
+          "plan_label": "Xếp hạng",
+          "metrics": [
+            "Doanh thu thuần"
+          ],
+          "dimensions": [
+            "Loại hình khám"
+          ],
+          "filters": [],
+          "time": "quý 2/2026",
+          "compare_to": null,
+          "grain": null,
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "source": "rules"
+        },
+        "status": "ok",
+        "answer": "Doanh thu thuần quý 2/2026: 4.629.464.460 đồng. Loại hình khám có doanh thu thuần cao nhất quý 2/2026: Nội trú với 4.011.396.524 đồng (86,6% tổng).",
+        "answer_source": "template",
+        "error": null,
+        "kpis": [
+          {
+            "metric": "net_revenue",
+            "label": "Doanh thu thuần",
+            "unit": "VND",
+            "format": "currency",
+            "value": 4629464460.0,
+            "formatted": "4.629.464.460 đồng",
+            "compact": "4,63 tỷ",
+            "period": "quý 2/2026",
+            "certification": "draft",
+            "definition": "Tổng giá trị thuần phải thu của các hoá đơn hợp lệ (gộp + thuế - chiết khấu + làm tròn)."
+          }
+        ],
+        "charts": [
+          {
+            "id": "ranking",
+            "type": "bar",
+            "title": "Doanh thu thuần theo loại hình khám",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Nội trú",
+                    "v": 4.011396524,
+                    "value_text": "4.011.396.524 đồng",
+                    "share_text": "86,6%"
+                  },
+                  {
+                    "label": "Cấp cứu",
+                    "v": 0.264578254,
+                    "value_text": "264.578.254 đồng",
+                    "share_text": "5,7%"
+                  },
+                  {
+                    "label": "Ngoại trú",
+                    "v": 0.230871688,
+                    "value_text": "230.871.688 đồng",
+                    "share_text": "5%"
+                  },
+                  {
+                    "label": "Điều trị trong ngày",
+                    "v": 0.122617994,
+                    "value_text": "122.617.994 đồng",
+                    "share_text": "2,6%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "tỷ đồng",
+                  "axis": {
+                    "format": ",.2~f"
+                  },
+                  "scale": {
+                    "domainMax": 5.2148154812000005
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Loại hình khám"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Doanh thu thuần"
+                      },
+                      {
+                        "field": "share_text",
+                        "type": "nominal",
+                        "title": "Tỷ trọng"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 6
+                  },
+                  "encoding": {
+                    "text": {
+                      "field": "value_text",
+                      "type": "nominal"
+                    }
+                  }
+                }
+              ]
+            },
+            "widget": null,
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Loại hình khám"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Doanh thu thuần"
+                },
+                {
+                  "key": "share_text",
+                  "label": "Tỷ trọng"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "Nội trú",
+                  "value_text": "4.011.396.524 đồng",
+                  "share_text": "86,6%"
+                },
+                {
+                  "label": "Cấp cứu",
+                  "value_text": "264.578.254 đồng",
+                  "share_text": "5,7%"
+                },
+                {
+                  "label": "Ngoại trú",
+                  "value_text": "230.871.688 đồng",
+                  "share_text": "5%"
+                },
+                {
+                  "label": "Điều trị trong ngày",
+                  "value_text": "122.617.994 đồng",
+                  "share_text": "2,6%"
+                }
+              ]
+            }
+          }
+        ],
+        "table": null,
+        "dashboard": null,
+        "insights": [
+          "Tiếp theo là Cấp cứu: 264.578.254 đồng; Ngoại trú: 230.871.688 đồng; Điều trị trong ngày: 122.617.994 đồng."
+        ],
+        "warnings": [
+          "Chỉ số \"Doanh thu thuần\" đang ở mức nháp, chưa được chứng nhận. Hoá đơn hợp lệ = trạng thái khác VOI và khác TEMP."
+        ],
+        "data_period": {
+          "label": "quý 2/2026",
+          "from": "2026-04-01",
+          "to": "2026-06-30",
+          "explicit": true
+        },
+        "data_freshness": [
+          {
+            "table": "fact_invoice",
+            "label": "Hoá đơn",
+            "loaded_at": "2026-10-07T09:48:34.914348+00:00",
+            "min_event_time": "2026-04-06 09:42:57",
+            "max_event_time": "2026-07-21 17:14:41",
+            "source": "data_evotek.xlsx",
+            "row_count": 548
+          }
+        ],
+        "confidence": {
+          "score": 0.85,
+          "level": "high",
+          "label": "Cao",
+          "components": {
+            "metric": 1.0,
+            "metadata": 1.0,
+            "relationship": 1.0,
+            "sql_validation": 1.0,
+            "result_validation": 1.0,
+            "historical_similarity": null
+          },
+          "draft_metric": true
+        },
+        "lineage": [
+          {
+            "metric": "net_revenue",
+            "label": "Doanh thu thuần",
+            "definition": "Tổng giá trị thuần phải thu của các hoá đơn hợp lệ (gộp + thuế - chiết khấu + làm tròn).",
+            "owner": "finance",
+            "certification": "draft",
+            "table": "mart.fact_invoice",
+            "columns": [
+              "mart.fact_invoice.is_valid",
+              "mart.fact_invoice.net_amount"
+            ],
+            "sources": [
+              "ar_invoice.transaction_status_rcd",
+              "ar_invoice.net_amount"
+            ],
+            "source_system": "HIS · ar_invoice, swe_cashier_transaction_nl_view"
+          }
+        ],
+        "latency_ms": 81
+      }
+    }
+  },
+  {
+    "index": 5,
+    "group": "Phân bố",
+    "question": "Lượt khám theo giờ trong ngày trong tháng 5/2026",
+    "status": 200,
+    "elapsed_s": 0.1,
+    "answer_preview": "Tổng lượt khám tháng 5/2026: 211 lượt. Giờ trong ngày có tổng lượt khám cao nhất tháng 5/2026: 13 với 28 lượt (13,3% tổng).",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.1,
+      "data": {
+        "request_id": "22ca9e18-944e-4926-96bb-3d20189aed41",
+        "audit_id": "22ca9e18-944e-4926-96bb-3d20189aed41",
+        "question": "Lượt khám theo giờ trong ngày trong tháng 5/2026",
+        "interpretation": {
+          "plan_type": "distribution",
+          "plan_label": "Phân bố theo chiều",
+          "metrics": [
+            "Tổng lượt khám"
+          ],
+          "dimensions": [
+            "Giờ trong ngày"
+          ],
+          "filters": [],
+          "time": "tháng 5/2026",
+          "compare_to": null,
+          "grain": null,
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "source": "rules"
+        },
+        "status": "ok",
+        "answer": "Tổng lượt khám tháng 5/2026: 211 lượt. Giờ trong ngày có tổng lượt khám cao nhất tháng 5/2026: 13 với 28 lượt (13,3% tổng).",
+        "answer_source": "template",
+        "error": null,
+        "kpis": [
+          {
+            "metric": "total_visits",
+            "label": "Tổng lượt khám",
+            "unit": "lượt",
+            "format": "integer",
+            "value": 211.0,
+            "formatted": "211 lượt",
+            "compact": "211 lượt",
+            "period": "tháng 5/2026",
+            "certification": "draft",
+            "definition": "Số lượt khám / đợt điều trị ở mọi loại hình, không tính lượt đã huỷ."
+          }
+        ],
+        "charts": [
+          {
+            "id": "breakdown",
+            "type": "bar",
+            "title": "Tổng lượt khám theo giờ trong ngày",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "0",
+                    "v": 3.0,
+                    "value_text": "3 lượt",
+                    "share_text": "1,4%"
+                  },
+                  {
+                    "label": "1",
+                    "v": 2.0,
+                    "value_text": "2 lượt",
+                    "share_text": "0,9%"
+                  },
+                  {
+                    "label": "2",
+                    "v": 4.0,
+                    "value_text": "4 lượt",
+                    "share_text": "1,9%"
+                  },
+                  {
+                    "label": "5",
+                    "v": 2.0,
+                    "value_text": "2 lượt",
+                    "share_text": "0,9%"
+                  },
+                  {
+                    "label": "6",
+                    "v": 1.0,
+                    "value_text": "1 lượt",
+                    "share_text": "0,5%"
+                  },
+                  {
+                    "label": "7",
+                    "v": 14.0,
+                    "value_text": "14 lượt",
+                    "share_text": "6,6%"
+                  },
+                  {
+                    "label": "8",
+                    "v": 16.0,
+                    "value_text": "16 lượt",
+                    "share_text": "7,6%"
+                  },
+                  {
+                    "label": "9",
+                    "v": 18.0,
+                    "value_text": "18 lượt",
+                    "share_text": "8,5%"
+                  },
+                  {
+                    "label": "10",
+                    "v": 16.0,
+                    "value_text": "16 lượt",
+                    "share_text": "7,6%"
+                  },
+                  {
+                    "label": "11",
+                    "v": 8.0,
+                    "value_text": "8 lượt",
+                    "share_text": "3,8%"
+                  },
+                  {
+                    "label": "12",
+                    "v": 4.0,
+                    "value_text": "4 lượt",
+                    "share_text": "1,9%"
+                  },
+                  {
+                    "label": "13",
+                    "v": 28.0,
+                    "value_text": "28 lượt",
+                    "share_text": "13,3%"
+                  },
+                  {
+                    "label": "14",
+                    "v": 24.0,
+                    "value_text": "24 lượt",
+                    "share_text": "11,4%"
+                  },
+                  {
+                    "label": "15",
+                    "v": 11.0,
+                    "value_text": "11 lượt",
+                    "share_text": "5,2%"
+                  },
+                  {
+                    "label": "16",
+                    "v": 16.0,
+                    "value_text": "16 lượt",
+                    "share_text": "7,6%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "lượt",
+                  "axis": {
+                    "format": ",.0f"
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Giờ trong ngày"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Tổng lượt khám"
+                      },
+                      {
+                        "field": "share_text",
+                        "type": "nominal",
+                        "title": "Tỷ trọng"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "widget": null,
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Giờ trong ngày"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Tổng lượt khám"
+                },
+                {
+                  "key": "share_text",
+                  "label": "Tỷ trọng"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "0",
+                  "value_text": "3 lượt",
+                  "share_text": "1,4%"
+                },
+                {
+                  "label": "1",
+                  "value_text": "2 lượt",
+                  "share_text": "0,9%"
+                },
+                {
+                  "label": "2",
+                  "value_text": "4 lượt",
+                  "share_text": "1,9%"
+                },
+                {
+                  "label": "5",
+                  "value_text": "2 lượt",
+                  "share_text": "0,9%"
+                },
+                {
+                  "label": "6",
+                  "value_text": "1 lượt",
+                  "share_text": "0,5%"
+                },
+                {
+                  "label": "7",
+                  "value_text": "14 lượt",
+                  "share_text": "6,6%"
+                },
+                {
+                  "label": "8",
+                  "value_text": "16 lượt",
+                  "share_text": "7,6%"
+                },
+                {
+                  "label": "9",
+                  "value_text": "18 lượt",
+                  "share_text": "8,5%"
+                },
+                {
+                  "label": "10",
+                  "value_text": "16 lượt",
+                  "share_text": "7,6%"
+                },
+                {
+                  "label": "11",
+                  "value_text": "8 lượt",
+                  "share_text": "3,8%"
+                },
+                {
+                  "label": "12",
+                  "value_text": "4 lượt",
+                  "share_text": "1,9%"
+                },
+                {
+                  "label": "13",
+                  "value_text": "28 lượt",
+                  "share_text": "13,3%"
+                },
+                {
+                  "label": "14",
+                  "value_text": "24 lượt",
+                  "share_text": "11,4%"
+                },
+                {
+                  "label": "15",
+                  "value_text": "11 lượt",
+                  "share_text": "5,2%"
+                },
+                {
+                  "label": "16",
+                  "value_text": "16 lượt",
+                  "share_text": "7,6%"
+                },
+                {
+                  "label": "17",
+                  "value_text": "8 lượt",
+                  "share_text": "3,8%"
+                },
+                {
+                  "label": "18",
+                  "value_text": "14 lượt",
+                  "share_text": "6,6%"
+                },
+                {
+                  "label": "19",
+                  "value_text": "8 lượt",
+                  "share_text": "3,8%"
+                },
+                {
+                  "label": "20",
+                  "value_text": "5 lượt",
+                  "share_text": "2,4%"
+                },
+                {
+                  "label": "21",
+                  "value_text": "3 lượt",
+                  "share_text": "1,4%"
+                },
+                {
+                  "label": "22",
+                  "value_text": "3 lượt",
+                  "share_text": "1,4%"
+                },
+                {
+                  "label": "23",
+                  "value_text": "3 lượt",
+                  "share_text": "1,4%"
+                }
+              ]
+            }
+          }
+        ],
+        "table": null,
+        "dashboard": null,
+        "insights": [
+          "Tiếp theo là 14: 24 lượt; 9: 18 lượt; 8: 16 lượt."
+        ],
+        "warnings": [
+          "Chỉ số \"Tổng lượt khám\" đang ở mức nháp, chưa được chứng nhận. Lượt khám bị huỷ = có thời điểm huỷ hoặc trạng thái ra viện là CAN."
+        ],
+        "data_period": {
+          "label": "tháng 5/2026",
+          "from": "2026-05-01",
+          "to": "2026-05-31",
+          "explicit": true
+        },
+        "data_freshness": [
+          {
+            "table": "fact_visit",
+            "label": "Lượt khám",
+            "loaded_at": "2026-10-07T09:48:34.914348+00:00",
+            "min_event_time": "2026-01-29 16:22:22",
+            "max_event_time": "2026-09-14 15:03:00",
+            "source": "data_evotek.xlsx",
+            "row_count": 600
+          }
+        ],
+        "confidence": {
+          "score": 0.85,
+          "level": "high",
+          "label": "Cao",
+          "components": {
+            "metric": 1.0,
+            "metadata": 1.0,
+            "relationship": 1.0,
+            "sql_validation": 1.0,
+            "result_validation": 1.0,
+            "historical_similarity": null
+          },
+          "draft_metric": true
+        },
+        "lineage": [
+          {
+            "metric": "total_visits",
+            "label": "Tổng lượt khám",
+            "definition": "Số lượt khám / đợt điều trị ở mọi loại hình, không tính lượt đã huỷ.",
+            "owner": "hospital_operations",
+            "certification": "draft",
+            "table": "mart.fact_visit",
+            "columns": [
+              "mart.fact_visit.is_valid"
+            ],
+            "sources": [
+              "suy ra từ is_cancelled"
+            ],
+            "source_system": "HIS · patient_visit"
+          }
+        ],
+        "latency_ms": 77
+      }
+    }
+  },
+  {
+    "index": 6,
+    "group": "Yếu tố đóng góp",
+    "question": "Doanh thu tháng 5/2026 thay đổi bao nhiêu so với tháng 4/2026 và yếu tố nào đóng góp chính?",
+    "status": 200,
+    "elapsed_s": 0.23,
+    "answer_preview": "Doanh thu thuần tháng 5/2026: 1.361.314.097 đồng, tăng 292.385.673 đồng (+27,4%) so với tháng 4/2026 (1.068.928.424 đồng). Theo loại hình khám, mức tă",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.23,
+      "data": {
+        "request_id": "7320b594-84c7-4bd7-849d-3e1aff367536",
+        "audit_id": "7320b594-84c7-4bd7-849d-3e1aff367536",
+        "question": "Doanh thu tháng 5/2026 thay đổi bao nhiêu so với tháng 4/2026 và yếu tố nào đóng góp chính?",
+        "interpretation": {
+          "plan_type": "root_cause",
+          "plan_label": "Điều tra yếu tố đóng góp",
+          "metrics": [
+            "Doanh thu thuần"
+          ],
+          "dimensions": [
+            "Cơ sở",
+            "Loại hình khám",
+            "Trạng thái thanh toán"
+          ],
+          "filters": [],
+          "time": "tháng 5/2026",
+          "compare_to": "tháng 4/2026",
+          "grain": null,
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "source": "rules"
+        },
+        "status": "ok",
+        "answer": "Doanh thu thuần tháng 5/2026: 1.361.314.097 đồng, tăng 292.385.673 đồng (+27,4%) so với tháng 4/2026 (1.068.928.424 đồng). Theo loại hình khám, mức tăng chung đến chủ yếu từ: Nội trú tăng 488.446.645 đồng (+73,8%), đóng góp 167,1%; Cấp cứu tăng 44.129.088 đồng (+40%), đóng góp 15,1%. Theo trạng thái thanh toán, mức tăng chung đến chủ yếu từ: Đã thanh toán tăng 487.466.903 đồng (+168,9%), đóng góp 166,7%; Thanh toán một phần tăng 6.100.000 đồng, đóng góp 2,1%. Theo cơ sở, mức tăng chung đến chủ yếu từ: Cơ sở SGH tăng 203.428.059 đồng (+21,2%), đóng góp 69,6%; Cơ sở PQH tăng 88.957.614 đồng (+82,9%), đóng góp 30,4%.",
+        "answer_source": "template",
+        "error": null,
+        "kpis": [
+          {
+            "metric": "net_revenue",
+            "label": "Doanh thu thuần",
+            "unit": "VND",
+            "format": "currency",
+            "value": 1361314097.0,
+            "formatted": "1.361.314.097 đồng",
+            "compact": "1,36 tỷ",
+            "period": "tháng 5/2026",
+            "certification": "draft",
+            "definition": "Tổng giá trị thuần phải thu của các hoá đơn hợp lệ (gộp + thuế - chiết khấu + làm tròn).",
+            "delta": 292385673.0,
+            "delta_formatted": "292.385.673 đồng",
+            "delta_pct": 27.353157277441802,
+            "delta_pct_formatted": "+27,4%",
+            "direction": "up",
+            "good": true,
+            "previous_value": 1068928424.0,
+            "previous_formatted": "1.068.928.424 đồng",
+            "previous_period": "tháng 4/2026"
+          }
+        ],
+        "charts": [
+          {
+            "id": "compare_net_revenue",
+            "type": "comparison",
+            "title": "Doanh thu thuần: tháng 5/2026 so với tháng 4/2026",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": 220,
+              "data": {
+                "values": [
+                  {
+                    "period": "tháng 4/2026",
+                    "v": 1.068928424,
+                    "value_text": "1.068.928.424 đồng"
+                  },
+                  {
+                    "period": "tháng 5/2026",
+                    "v": 1.361314097,
+                    "value_text": "1.361.314.097 đồng"
+                  }
+                ]
+              },
+              "encoding": {
+                "x": {
+                  "field": "period",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelAngle": 0
+                  }
+                },
+                "y": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "tỷ đồng",
+                  "axis": {
+                    "format": ",.2~f"
+                  },
+                  "scale": {
+                    "zero": true
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "width": 24,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "period",
+                        "type": "nominal",
+                        "title": "Kỳ"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Doanh thu thuần"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "baseline": "bottom",
+                    "dy": -6
+                  },
+                  "encoding": {
+                    "text": {
+                      "field": "value_text",
+                      "type": "nominal"
+                    }
+                  }
+                }
+              ]
+            },
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "period",
+                  "label": "Kỳ"
+                },
+                {
+                  "key": "value",
+                  "label": "Doanh thu thuần"
+                }
+              ],
+              "rows": [
+                {
+                  "period": "tháng 4/2026",
+                  "value": "1.068.928.424 đồng"
+                },
+                {
+                  "period": "tháng 5/2026",
+                  "value": "1.361.314.097 đồng"
+                }
+              ]
+            }
+          },
+          {
+            "id": "delta_visit_category",
+            "type": "contribution",
+            "title": "Thay đổi của doanh thu thuần theo loại hình khám",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Nội trú",
+                    "v": 488.446645,
+                    "delta_text": "+488.446.645 đồng",
+                    "current_text": "1.150.310.615 đồng",
+                    "previous_text": "661.863.970 đồng",
+                    "contribution_text": "167,1%"
+                  },
+                  {
+                    "label": "Cấp cứu",
+                    "v": 44.129088,
+                    "delta_text": "+44.129.088 đồng",
+                    "current_text": "154.353.671 đồng",
+                    "previous_text": "110.224.583 đồng",
+                    "contribution_text": "15,1%"
+                  },
+                  {
+                    "label": "Điều trị trong ngày",
+                    "v": -46.328394,
+                    "delta_text": "−46.328.394 đồng",
+                    "current_text": "38.144.800 đồng",
+                    "previous_text": "84.473.194 đồng",
+                    "contribution_text": "-15,8%"
+                  },
+                  {
+                    "label": "Ngoại trú",
+                    "v": -193.861666,
+                    "delta_text": "−193.861.666 đồng",
+                    "current_text": "18.505.011 đồng",
+                    "previous_text": "212.366.677 đồng",
+                    "contribution_text": "-66,3%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "Thay đổi (triệu đồng)",
+                  "axis": {
+                    "format": ",.1~f"
+                  },
+                  "scale": {
+                    "zero": true
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Loại hình khám"
+                      },
+                      {
+                        "field": "delta_text",
+                        "type": "nominal",
+                        "title": "Thay đổi"
+                      },
+                      {
+                        "field": "current_text",
+                        "type": "nominal",
+                        "title": "Kỳ hiện tại"
+                      },
+                      {
+                        "field": "previous_text",
+                        "type": "nominal",
+                        "title": "Kỳ so sánh"
+                      },
+                      {
+                        "field": "contribution_text",
+                        "type": "nominal",
+                        "title": "Đóng góp"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Loại hình khám"
+                },
+                {
+                  "key": "previous_text",
+                  "label": "tháng 4/2026"
+                },
+                {
+                  "key": "current_text",
+                  "label": "tháng 5/2026"
+                },
+                {
+                  "key": "change",
+                  "label": "Thay đổi"
+                },
+                {
+                  "key": "contribution_text",
+                  "label": "Đóng góp"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "Nội trú",
+                  "previous_text": "661.863.970 đồng",
+                  "current_text": "1.150.310.615 đồng",
+                  "change": "+488.446.645 đồng",
+                  "contribution_text": "167,1%"
+                },
+                {
+                  "label": "Cấp cứu",
+                  "previous_text": "110.224.583 đồng",
+                  "current_text": "154.353.671 đồng",
+                  "change": "+44.129.088 đồng",
+                  "contribution_text": "15,1%"
+                },
+                {
+                  "label": "Điều trị trong ngày",
+                  "previous_text": "84.473.194 đồng",
+                  "current_text": "38.144.800 đồng",
+                  "change": "−46.328.394 đồng",
+                  "contribution_text": "-15,8%"
+                },
+                {
+                  "label": "Ngoại trú",
+                  "previous_text": "212.366.677 đồng",
+                  "current_text": "18.505.011 đồng",
+                  "change": "−193.861.666 đồng",
+                  "contribution_text": "-66,3%"
+                }
+              ]
+            }
+          },
+          {
+            "id": "delta_payment_status",
+            "type": "contribution",
+            "title": "Thay đổi của doanh thu thuần theo trạng thái thanh toán",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Đã thanh toán",
+                    "v": 487.466903,
+                    "delta_text": "+487.466.903 đồng",
+                    "current_text": "776.139.633 đồng",
+                    "previous_text": "288.672.730 đồng",
+                    "contribution_text": "166,7%"
+                  },
+                  {
+                    "label": "Thanh toán một phần",
+                    "v": 6.1,
+                    "delta_text": "+6.100.000 đồng",
+                    "current_text": "6.100.000 đồng",
+                    "previous_text": "0 đồng",
+                    "contribution_text": "2,1%"
+                  },
+                  {
+                    "label": "Chưa thanh toán",
+                    "v": -201.18123,
+                    "delta_text": "−201.181.230 đồng",
+                    "current_text": "579.074.464 đồng",
+                    "previous_text": "780.255.694 đồng",
+                    "contribution_text": "-68,8%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "Thay đổi (triệu đồng)",
+                  "axis": {
+                    "format": ",.1~f"
+                  },
+                  "scale": {
+                    "zero": true
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Trạng thái thanh toán"
+                      },
+                      {
+                        "field": "delta_text",
+                        "type": "nominal",
+                        "title": "Thay đổi"
+                      },
+                      {
+                        "field": "current_text",
+                        "type": "nominal",
+                        "title": "Kỳ hiện tại"
+                      },
+                      {
+                        "field": "previous_text",
+                        "type": "nominal",
+                        "title": "Kỳ so sánh"
+                      },
+                      {
+                        "field": "contribution_text",
+                        "type": "nominal",
+                        "title": "Đóng góp"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Trạng thái thanh toán"
+                },
+                {
+                  "key": "previous_text",
+                  "label": "tháng 4/2026"
+                },
+                {
+                  "key": "current_text",
+                  "label": "tháng 5/2026"
+                },
+                {
+                  "key": "change",
+                  "label": "Thay đổi"
+                },
+                {
+                  "key": "contribution_text",
+                  "label": "Đóng góp"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "Đã thanh toán",
+                  "previous_text": "288.672.730 đồng",
+                  "current_text": "776.139.633 đồng",
+                  "change": "+487.466.903 đồng",
+                  "contribution_text": "166,7%"
+                },
+                {
+                  "label": "Thanh toán một phần",
+                  "previous_text": "0 đồng",
+                  "current_text": "6.100.000 đồng",
+                  "change": "+6.100.000 đồng",
+                  "contribution_text": "2,1%"
+                },
+                {
+                  "label": "Chưa thanh toán",
+                  "previous_text": "780.255.694 đồng",
+                  "current_text": "579.074.464 đồng",
+                  "change": "−201.181.230 đồng",
+                  "contribution_text": "-68,8%"
+                }
+              ]
+            }
+          },
+          {
+            "id": "delta_hospital",
+            "type": "contribution",
+            "title": "Thay đổi của doanh thu thuần theo cơ sở",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Cơ sở SGH",
+                    "v": 203.428059,
+                    "delta_text": "+203.428.059 đồng",
+                    "current_text": "1.165.041.340 đồng",
+                    "previous_text": "961.613.281 đồng",
+                    "contribution_text": "69,6%"
+                  },
+                  {
+                    "label": "Cơ sở PQH",
+                    "v": 88.957614,
+                    "delta_text": "+88.957.614 đồng",
+                    "current_text": "196.272.757 đồng",
+                    "previous_text": "107.315.143 đồng",
+                    "contribution_text": "30,4%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "Thay đổi (triệu đồng)",
+                  "axis": {
+                    "format": ",.1~f"
+                  },
+                  "scale": {
+                    "zero": true
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Cơ sở"
+                      },
+                      {
+                        "field": "delta_text",
+                        "type": "nominal",
+                        "title": "Thay đổi"
+                      },
+                      {
+                        "field": "current_text",
+                        "type": "nominal",
+                        "title": "Kỳ hiện tại"
+                      },
+                      {
+                        "field": "previous_text",
+                        "type": "nominal",
+                        "title": "Kỳ so sánh"
+                      },
+                      {
+                        "field": "contribution_text",
+                        "type": "nominal",
+                        "title": "Đóng góp"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Cơ sở"
+                },
+                {
+                  "key": "previous_text",
+                  "label": "tháng 4/2026"
+                },
+                {
+                  "key": "current_text",
+                  "label": "tháng 5/2026"
+                },
+                {
+                  "key": "change",
+                  "label": "Thay đổi"
+                },
+                {
+                  "key": "contribution_text",
+                  "label": "Đóng góp"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "Cơ sở SGH",
+                  "previous_text": "961.613.281 đồng",
+                  "current_text": "1.165.041.340 đồng",
+                  "change": "+203.428.059 đồng",
+                  "contribution_text": "69,6%"
+                },
+                {
+                  "label": "Cơ sở PQH",
+                  "previous_text": "107.315.143 đồng",
+                  "current_text": "196.272.757 đồng",
+                  "change": "+88.957.614 đồng",
+                  "contribution_text": "30,4%"
+                }
+              ]
+            }
+          }
+        ],
+        "table": null,
+        "dashboard": null,
+        "insights": [
+          "Ngược chiều chung, Điều trị trong ngày (loại hình khám) giảm 46.328.394 đồng (-54,8%).",
+          "Ngược chiều chung, Chưa thanh toán (trạng thái thanh toán) giảm 201.181.230 đồng (-25,8%)."
+        ],
+        "warnings": [
+          "Chỉ số \"Doanh thu thuần\" đang ở mức nháp, chưa được chứng nhận. Hoá đơn hợp lệ = trạng thái khác VOI và khác TEMP.",
+          "Đây là các yếu tố đóng góp quan sát được trong dữ liệu; chưa đủ căn cứ để kết luận quan hệ nhân quả."
+        ],
+        "data_period": {
+          "label": "tháng 5/2026",
+          "from": "2026-05-01",
+          "to": "2026-05-31",
+          "explicit": true,
+          "compare_to": {
+            "label": "tháng 4/2026",
+            "from": "2026-04-01",
+            "to": "2026-04-30"
+          }
+        },
+        "data_freshness": [
+          {
+            "table": "fact_invoice",
+            "label": "Hoá đơn",
+            "loaded_at": "2026-10-07T09:48:34.914348+00:00",
+            "min_event_time": "2026-04-06 09:42:57",
+            "max_event_time": "2026-07-21 17:14:41",
+            "source": "data_evotek.xlsx",
+            "row_count": 548
+          }
+        ],
+        "confidence": {
+          "score": 0.85,
+          "level": "high",
+          "label": "Cao",
+          "components": {
+            "metric": 1.0,
+            "metadata": 1.0,
+            "relationship": 1.0,
+            "sql_validation": 1.0,
+            "result_validation": 1.0,
+            "historical_similarity": null
+          },
+          "draft_metric": true
+        },
+        "lineage": [
+          {
+            "metric": "net_revenue",
+            "label": "Doanh thu thuần",
+            "definition": "Tổng giá trị thuần phải thu của các hoá đơn hợp lệ (gộp + thuế - chiết khấu + làm tròn).",
+            "owner": "finance",
+            "certification": "draft",
+            "table": "mart.fact_invoice",
+            "columns": [
+              "mart.fact_invoice.is_valid",
+              "mart.fact_invoice.net_amount"
+            ],
+            "sources": [
+              "ar_invoice.transaction_status_rcd",
+              "ar_invoice.net_amount"
+            ],
+            "source_system": "HIS · ar_invoice, swe_cashier_transaction_nl_view"
+          }
+        ],
+        "latency_ms": 203
+      }
+    }
+  },
+  {
+    "index": 7,
+    "group": "Dashboard",
+    "question": "Phân tích tình hình hoạt động cấp cứu trong quý 2 năm 2026",
+    "status": 200,
+    "elapsed_s": 0.28,
+    "answer_preview": "Tổng quan quý 2/2026:\n- Tổng lượt khám quý 2/2026: 193 lượt, tăng 190 lượt (+6.333,3%) so với quý 1/2026 (3 lượt).\n- Số người bệnh quý 2/2026: 179 ngư",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.28,
+      "data": {
+        "request_id": "ce2129ac-4659-4775-b5bb-d80fcf1eee28",
+        "audit_id": "ce2129ac-4659-4775-b5bb-d80fcf1eee28",
+        "question": "Phân tích tình hình hoạt động cấp cứu trong quý 2 năm 2026",
+        "interpretation": {
+          "plan_type": "dashboard",
+          "plan_label": "Dashboard tổng hợp",
+          "metrics": [
+            "Tổng lượt khám",
+            "Số người bệnh",
+            "Lượt khám bị huỷ",
+            "Tỷ lệ huỷ lượt khám"
+          ],
+          "dimensions": [],
+          "filters": [
+            "Loại hình khám = Cấp cứu"
+          ],
+          "time": "quý 2/2026",
+          "compare_to": "quý 1/2026",
+          "grain": null,
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "source": "rules"
+        },
+        "status": "ok",
+        "answer": "Tổng quan quý 2/2026:\n- Tổng lượt khám quý 2/2026: 193 lượt, tăng 190 lượt (+6.333,3%) so với quý 1/2026 (3 lượt).\n- Số người bệnh quý 2/2026: 179 người, tăng 176 người (+5.866,7%) so với quý 1/2026 (3 người).\n- Lượt khám bị huỷ quý 2/2026: 0 lượt, không đổi so với quý 1/2026 (0 lượt).\n- Tỷ lệ huỷ lượt khám quý 2/2026: 0%, không đổi so với quý 1/2026 (0%).\n- Tổng lượt khám theo tuần trong quý 2/2026: cao nhất 92 lượt (tuần từ 27/04/2026), thấp nhất 1 lượt (tuần từ 15/06/2026), trung bình 19,3 lượt mỗi tuần trên 10 tuần có dữ liệu.",
+        "answer_source": "template",
+        "error": null,
+        "kpis": [
+          {
+            "metric": "total_visits",
+            "label": "Tổng lượt khám",
+            "unit": "lượt",
+            "format": "integer",
+            "value": 193.0,
+            "formatted": "193 lượt",
+            "compact": "193 lượt",
+            "period": "quý 2/2026",
+            "certification": "draft",
+            "definition": "Số lượt khám / đợt điều trị ở mọi loại hình, không tính lượt đã huỷ.",
+            "delta": 190.0,
+            "delta_formatted": "190 lượt",
+            "delta_pct": 6333.333333333334,
+            "delta_pct_formatted": "+6.333,3%",
+            "direction": "up",
+            "good": null,
+            "previous_value": 3.0,
+            "previous_formatted": "3 lượt",
+            "previous_period": "quý 1/2026"
+          },
+          {
+            "metric": "unique_patients",
+            "label": "Số người bệnh",
+            "unit": "người",
+            "format": "integer",
+            "value": 179.0,
+            "formatted": "179 người",
+            "compact": "179 người",
+            "period": "quý 2/2026",
+            "certification": "certified",
+            "definition": "Số người bệnh khác nhau có ít nhất một lượt khám không bị huỷ trong phạm vi được hỏi.",
+            "delta": 176.0,
+            "delta_formatted": "176 người",
+            "delta_pct": 5866.666666666666,
+            "delta_pct_formatted": "+5.866,7%",
+            "direction": "up",
+            "good": null,
+            "previous_value": 3.0,
+            "previous_formatted": "3 người",
+            "previous_period": "quý 1/2026"
+          },
+          {
+            "metric": "cancelled_visits",
+            "label": "Lượt khám bị huỷ",
+            "unit": "lượt",
+            "format": "integer",
+            "value": 0.0,
+            "formatted": "0 lượt",
+            "compact": "0 lượt",
+            "period": "quý 2/2026",
+            "certification": "draft",
+            "definition": "Số lượt khám có thời điểm huỷ hoặc trạng thái ra viện là huỷ.",
+            "delta": 0.0,
+            "delta_formatted": "0 lượt",
+            "delta_pct": null,
+            "delta_pct_formatted": "không xác định",
+            "direction": "flat",
+            "good": null,
+            "previous_value": 0.0,
+            "previous_formatted": "0 lượt",
+            "previous_period": "quý 1/2026"
+          },
+          {
+            "metric": "visit_cancellation_rate",
+            "label": "Tỷ lệ huỷ lượt khám",
+            "unit": "%",
+            "format": "percent",
+            "value": 0.0,
+            "formatted": "0%",
+            "compact": "0%",
+            "period": "quý 2/2026",
+            "certification": "draft",
+            "definition": "Lượt khám bị huỷ chia cho lượt khám đã đăng ký, tính theo phần trăm.",
+            "delta": 0.0,
+            "delta_formatted": "0 điểm %",
+            "delta_pct": null,
+            "delta_pct_formatted": "không xác định",
+            "direction": "flat",
+            "good": null,
+            "previous_value": 0.0,
+            "previous_formatted": "0%",
+            "previous_period": "quý 1/2026"
+          }
+        ],
+        "charts": [
+          {
+            "id": "w4_trend",
+            "type": "line",
+            "title": "Lượt khám theo thời gian",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": 260,
+              "data": {
+                "values": [
+                  {
+                    "t": "2026-03-30T00:00:00",
+                    "t_label": "tuần từ 30/03/2026",
+                    "v": 2.0,
+                    "value_text": "2 lượt",
+                    "series": "Tổng lượt khám"
+                  },
+                  {
+                    "t": "2026-04-06T00:00:00",
+                    "t_label": "tuần từ 06/04/2026",
+                    "v": 9.0,
+                    "value_text": "9 lượt",
+                    "series": "Tổng lượt khám"
+                  },
+                  {
+                    "t": "2026-04-13T00:00:00",
+                    "t_label": "tuần từ 13/04/2026",
+                    "v": 7.0,
+                    "value_text": "7 lượt",
+                    "series": "Tổng lượt khám"
+                  },
+                  {
+                    "t": "2026-04-20T00:00:00",
+                    "t_label": "tuần từ 20/04/2026",
+                    "v": 26.0,
+                    "value_text": "26 lượt",
+                    "series": "Tổng lượt khám"
+                  },
+                  {
+                    "t": "2026-04-27T00:00:00",
+                    "t_label": "tuần từ 27/04/2026",
+                    "v": 92.0,
+                    "value_text": "92 lượt",
+                    "series": "Tổng lượt khám"
+                  },
+                  {
+                    "t": "2026-05-04T00:00:00",
+                    "t_label": "tuần từ 04/05/2026",
+                    "v": 19.0,
+                    "value_text": "19 lượt",
+                    "series": "Tổng lượt khám"
+                  },
+                  {
+                    "t": "2026-05-11T00:00:00",
+                    "t_label": "tuần từ 11/05/2026",
+                    "v": 32.0,
+                    "value_text": "32 lượt",
+                    "series": "Tổng lượt khám"
+                  },
+                  {
+                    "t": "2026-05-18T00:00:00",
+                    "t_label": "tuần từ 18/05/2026",
+                    "v": 2.0,
+                    "value_text": "2 lượt",
+                    "series": "Tổng lượt khám"
+                  },
+                  {
+                    "t": "2026-06-01T00:00:00",
+                    "t_label": "tuần từ 01/06/2026",
+                    "v": 3.0,
+                    "value_text": "3 lượt",
+                    "series": "Tổng lượt khám"
+                  },
+                  {
+                    "t": "2026-06-15T00:00:00",
+                    "t_label": "tuần từ 15/06/2026",
+                    "v": 1.0,
+                    "value_text": "1 lượt",
+                    "series": "Tổng lượt khám"
+                  }
+                ],
+                "format": {
+                  "parse": {
+                    "t": "date:'%Y-%m-%dT%H:%M:%S'"
+                  }
+                }
+              },
+              "encoding": {
+                "x": {
+                  "field": "t",
+                  "type": "temporal",
+                  "title": null,
+                  "axis": {
+                    "format": "%d/%m",
+                    "labelAngle": 0
+                  }
+                },
+                "y": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "lượt",
+                  "axis": {
+                    "format": ",.0f"
+                  },
+                  "scale": {
+                    "zero": true
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "area",
+                    "opacity": 0.1
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "line",
+                    "strokeWidth": 2,
+                    "strokeCap": "round",
+                    "strokeJoin": "round"
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "point",
+                    "filled": true,
+                    "size": 64,
+                    "strokeWidth": 2,
+                    "opacity": 1
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "t_label",
+                        "type": "nominal",
+                        "title": "Thời gian"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Tổng lượt khám"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "widget": "w4",
+            "span": "full",
+            "table": {
+              "columns": [
+                {
+                  "key": "t_label",
+                  "label": "Thời gian"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Tổng lượt khám"
+                }
+              ],
+              "rows": [
+                {
+                  "t_label": "tuần từ 30/03/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "t_label": "tuần từ 06/04/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "9 lượt"
+                },
+                {
+                  "t_label": "tuần từ 13/04/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "7 lượt"
+                },
+                {
+                  "t_label": "tuần từ 20/04/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "26 lượt"
+                },
+                {
+                  "t_label": "tuần từ 27/04/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "92 lượt"
+                },
+                {
+                  "t_label": "tuần từ 04/05/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "19 lượt"
+                },
+                {
+                  "t_label": "tuần từ 11/05/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "32 lượt"
+                },
+                {
+                  "t_label": "tuần từ 18/05/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "t_label": "tuần từ 01/06/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "t_label": "tuần từ 15/06/2026",
+                  "series": "Tổng lượt khám",
+                  "value_text": "1 lượt"
+                }
+              ]
+            }
+          },
+          {
+            "id": "w6_breakdown",
+            "type": "bar",
+            "title": "Lượt khám theo giờ trong ngày",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "0",
+                    "v": 8.0,
+                    "value_text": "8 lượt",
+                    "share_text": "4,1%"
+                  },
+                  {
+                    "label": "1",
+                    "v": 3.0,
+                    "value_text": "3 lượt",
+                    "share_text": "1,6%"
+                  },
+                  {
+                    "label": "2",
+                    "v": 7.0,
+                    "value_text": "7 lượt",
+                    "share_text": "3,6%"
+                  },
+                  {
+                    "label": "3",
+                    "v": 1.0,
+                    "value_text": "1 lượt",
+                    "share_text": "0,5%"
+                  },
+                  {
+                    "label": "5",
+                    "v": 2.0,
+                    "value_text": "2 lượt",
+                    "share_text": "1%"
+                  },
+                  {
+                    "label": "6",
+                    "v": 3.0,
+                    "value_text": "3 lượt",
+                    "share_text": "1,6%"
+                  },
+                  {
+                    "label": "7",
+                    "v": 4.0,
+                    "value_text": "4 lượt",
+                    "share_text": "2,1%"
+                  },
+                  {
+                    "label": "8",
+                    "v": 12.0,
+                    "value_text": "12 lượt",
+                    "share_text": "6,2%"
+                  },
+                  {
+                    "label": "9",
+                    "v": 7.0,
+                    "value_text": "7 lượt",
+                    "share_text": "3,6%"
+                  },
+                  {
+                    "label": "10",
+                    "v": 11.0,
+                    "value_text": "11 lượt",
+                    "share_text": "5,7%"
+                  },
+                  {
+                    "label": "11",
+                    "v": 6.0,
+                    "value_text": "6 lượt",
+                    "share_text": "3,1%"
+                  },
+                  {
+                    "label": "12",
+                    "v": 7.0,
+                    "value_text": "7 lượt",
+                    "share_text": "3,6%"
+                  },
+                  {
+                    "label": "13",
+                    "v": 10.0,
+                    "value_text": "10 lượt",
+                    "share_text": "5,2%"
+                  },
+                  {
+                    "label": "14",
+                    "v": 12.0,
+                    "value_text": "12 lượt",
+                    "share_text": "6,2%"
+                  },
+                  {
+                    "label": "15",
+                    "v": 10.0,
+                    "value_text": "10 lượt",
+                    "share_text": "5,2%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "lượt",
+                  "axis": {
+                    "format": ",.0f"
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Giờ trong ngày"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Tổng lượt khám"
+                      },
+                      {
+                        "field": "share_text",
+                        "type": "nominal",
+                        "title": "Tỷ trọng"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "widget": "w6",
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Giờ trong ngày"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Tổng lượt khám"
+                },
+                {
+                  "key": "share_text",
+                  "label": "Tỷ trọng"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "0",
+                  "value_text": "8 lượt",
+                  "share_text": "4,1%"
+                },
+                {
+                  "label": "1",
+                  "value_text": "3 lượt",
+                  "share_text": "1,6%"
+                },
+                {
+                  "label": "2",
+                  "value_text": "7 lượt",
+                  "share_text": "3,6%"
+                },
+                {
+                  "label": "3",
+                  "value_text": "1 lượt",
+                  "share_text": "0,5%"
+                },
+                {
+                  "label": "5",
+                  "value_text": "2 lượt",
+                  "share_text": "1%"
+                },
+                {
+                  "label": "6",
+                  "value_text": "3 lượt",
+                  "share_text": "1,6%"
+                },
+                {
+                  "label": "7",
+                  "value_text": "4 lượt",
+                  "share_text": "2,1%"
+                },
+                {
+                  "label": "8",
+                  "value_text": "12 lượt",
+                  "share_text": "6,2%"
+                },
+                {
+                  "label": "9",
+                  "value_text": "7 lượt",
+                  "share_text": "3,6%"
+                },
+                {
+                  "label": "10",
+                  "value_text": "11 lượt",
+                  "share_text": "5,7%"
+                },
+                {
+                  "label": "11",
+                  "value_text": "6 lượt",
+                  "share_text": "3,1%"
+                },
+                {
+                  "label": "12",
+                  "value_text": "7 lượt",
+                  "share_text": "3,6%"
+                },
+                {
+                  "label": "13",
+                  "value_text": "10 lượt",
+                  "share_text": "5,2%"
+                },
+                {
+                  "label": "14",
+                  "value_text": "12 lượt",
+                  "share_text": "6,2%"
+                },
+                {
+                  "label": "15",
+                  "value_text": "10 lượt",
+                  "share_text": "5,2%"
+                },
+                {
+                  "label": "16",
+                  "value_text": "10 lượt",
+                  "share_text": "5,2%"
+                },
+                {
+                  "label": "17",
+                  "value_text": "14 lượt",
+                  "share_text": "7,3%"
+                },
+                {
+                  "label": "18",
+                  "value_text": "11 lượt",
+                  "share_text": "5,7%"
+                },
+                {
+                  "label": "19",
+                  "value_text": "19 lượt",
+                  "share_text": "9,8%"
+                },
+                {
+                  "label": "20",
+                  "value_text": "13 lượt",
+                  "share_text": "6,7%"
+                },
+                {
+                  "label": "21",
+                  "value_text": "10 lượt",
+                  "share_text": "5,2%"
+                },
+                {
+                  "label": "22",
+                  "value_text": "7 lượt",
+                  "share_text": "3,6%"
+                },
+                {
+                  "label": "23",
+                  "value_text": "6 lượt",
+                  "share_text": "3,1%"
+                }
+              ]
+            }
+          },
+          {
+            "id": "w7_breakdown",
+            "type": "bar",
+            "title": "Lượt khám theo cơ sở",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Cơ sở PQH",
+                    "v": 159.0,
+                    "value_text": "159 lượt",
+                    "share_text": "82,4%"
+                  },
+                  {
+                    "label": "Cơ sở SGH",
+                    "v": 34.0,
+                    "value_text": "34 lượt",
+                    "share_text": "17,6%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "lượt",
+                  "axis": {
+                    "format": ",.0f"
+                  },
+                  "scale": {
+                    "domainMax": 206.70000000000002
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Cơ sở"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Tổng lượt khám"
+                      },
+                      {
+                        "field": "share_text",
+                        "type": "nominal",
+                        "title": "Tỷ trọng"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 6
+                  },
+                  "encoding": {
+                    "text": {
+                      "field": "value_text",
+                      "type": "nominal"
+                    }
+                  }
+                }
+              ]
+            },
+            "widget": "w7",
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Cơ sở"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Tổng lượt khám"
+                },
+                {
+                  "key": "share_text",
+                  "label": "Tỷ trọng"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "Cơ sở PQH",
+                  "value_text": "159 lượt",
+                  "share_text": "82,4%"
+                },
+                {
+                  "label": "Cơ sở SGH",
+                  "value_text": "34 lượt",
+                  "share_text": "17,6%"
+                }
+              ]
+            }
+          },
+          {
+            "id": "w5_heatmap",
+            "type": "heatmap",
+            "title": "Lượt khám theo thứ và giờ",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "x": "0",
+                    "x_sort": 0,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "2",
+                    "x_sort": 2,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 4.0,
+                    "value_text": "4 lượt"
+                  },
+                  {
+                    "x": "5",
+                    "x_sort": 5,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "7",
+                    "x_sort": 7,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "8",
+                    "x_sort": 8,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "9",
+                    "x_sort": 9,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "10",
+                    "x_sort": 10,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "13",
+                    "x_sort": 13,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "14",
+                    "x_sort": 14,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "15",
+                    "x_sort": 15,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "17",
+                    "x_sort": 17,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 5.0,
+                    "value_text": "5 lượt"
+                  },
+                  {
+                    "x": "18",
+                    "x_sort": 18,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "19",
+                    "x_sort": 19,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 5.0,
+                    "value_text": "5 lượt"
+                  },
+                  {
+                    "x": "20",
+                    "x_sort": 20,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "21",
+                    "x_sort": 21,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "22",
+                    "x_sort": 22,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "23",
+                    "x_sort": 23,
+                    "y": "Thứ 2",
+                    "y_sort": 1,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "0",
+                    "x_sort": 0,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "2",
+                    "x_sort": 2,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "5",
+                    "x_sort": 5,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "6",
+                    "x_sort": 6,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "7",
+                    "x_sort": 7,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "8",
+                    "x_sort": 8,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 5.0,
+                    "value_text": "5 lượt"
+                  },
+                  {
+                    "x": "9",
+                    "x_sort": 9,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "10",
+                    "x_sort": 10,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "11",
+                    "x_sort": 11,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "12",
+                    "x_sort": 12,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "14",
+                    "x_sort": 14,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "15",
+                    "x_sort": 15,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "16",
+                    "x_sort": 16,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "17",
+                    "x_sort": 17,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 5.0,
+                    "value_text": "5 lượt"
+                  },
+                  {
+                    "x": "18",
+                    "x_sort": 18,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "19",
+                    "x_sort": 19,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 4.0,
+                    "value_text": "4 lượt"
+                  },
+                  {
+                    "x": "20",
+                    "x_sort": 20,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "21",
+                    "x_sort": 21,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "22",
+                    "x_sort": 22,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "23",
+                    "x_sort": 23,
+                    "y": "Thứ 3",
+                    "y_sort": 2,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "1",
+                    "x_sort": 1,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "3",
+                    "x_sort": 3,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "8",
+                    "x_sort": 8,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "9",
+                    "x_sort": 9,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "11",
+                    "x_sort": 11,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "12",
+                    "x_sort": 12,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "13",
+                    "x_sort": 13,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "14",
+                    "x_sort": 14,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "15",
+                    "x_sort": 15,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "16",
+                    "x_sort": 16,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "17",
+                    "x_sort": 17,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "18",
+                    "x_sort": 18,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "19",
+                    "x_sort": 19,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "20",
+                    "x_sort": 20,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "21",
+                    "x_sort": 21,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "22",
+                    "x_sort": 22,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "23",
+                    "x_sort": 23,
+                    "y": "Thứ 4",
+                    "y_sort": 3,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "0",
+                    "x_sort": 0,
+                    "y": "Thứ 5",
+                    "y_sort": 4,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "2",
+                    "x_sort": 2,
+                    "y": "Thứ 5",
+                    "y_sort": 4,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "10",
+                    "x_sort": 10,
+                    "y": "Thứ 5",
+                    "y_sort": 4,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "15",
+                    "x_sort": 15,
+                    "y": "Thứ 5",
+                    "y_sort": 4,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "19",
+                    "x_sort": 19,
+                    "y": "Thứ 5",
+                    "y_sort": 4,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "20",
+                    "x_sort": 20,
+                    "y": "Thứ 5",
+                    "y_sort": 4,
+                    "value": 5.0,
+                    "value_text": "5 lượt"
+                  },
+                  {
+                    "x": "21",
+                    "x_sort": 21,
+                    "y": "Thứ 5",
+                    "y_sort": 4,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "7",
+                    "x_sort": 7,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "8",
+                    "x_sort": 8,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "9",
+                    "x_sort": 9,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "10",
+                    "x_sort": 10,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "11",
+                    "x_sort": 11,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "12",
+                    "x_sort": 12,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "13",
+                    "x_sort": 13,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "14",
+                    "x_sort": 14,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "16",
+                    "x_sort": 16,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 6.0,
+                    "value_text": "6 lượt"
+                  },
+                  {
+                    "x": "17",
+                    "x_sort": 17,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "18",
+                    "x_sort": 18,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "19",
+                    "x_sort": 19,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "20",
+                    "x_sort": 20,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "22",
+                    "x_sort": 22,
+                    "y": "Thứ 6",
+                    "y_sort": 5,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "0",
+                    "x_sort": 0,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "1",
+                    "x_sort": 1,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "6",
+                    "x_sort": 6,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "8",
+                    "x_sort": 8,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "10",
+                    "x_sort": 10,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "12",
+                    "x_sort": 12,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 4.0,
+                    "value_text": "4 lượt"
+                  },
+                  {
+                    "x": "13",
+                    "x_sort": 13,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 6.0,
+                    "value_text": "6 lượt"
+                  },
+                  {
+                    "x": "14",
+                    "x_sort": 14,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 5.0,
+                    "value_text": "5 lượt"
+                  },
+                  {
+                    "x": "15",
+                    "x_sort": 15,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 3.0,
+                    "value_text": "3 lượt"
+                  },
+                  {
+                    "x": "16",
+                    "x_sort": 16,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "18",
+                    "x_sort": 18,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "20",
+                    "x_sort": 20,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "21",
+                    "x_sort": 21,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "22",
+                    "x_sort": 22,
+                    "y": "Thứ 7",
+                    "y_sort": 6,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "1",
+                    "x_sort": 1,
+                    "y": "Chủ nhật",
+                    "y_sort": 7,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "9",
+                    "x_sort": 9,
+                    "y": "Chủ nhật",
+                    "y_sort": 7,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "13",
+                    "x_sort": 13,
+                    "y": "Chủ nhật",
+                    "y_sort": 7,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "14",
+                    "x_sort": 14,
+                    "y": "Chủ nhật",
+                    "y_sort": 7,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "15",
+                    "x_sort": 15,
+                    "y": "Chủ nhật",
+                    "y_sort": 7,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "17",
+                    "x_sort": 17,
+                    "y": "Chủ nhật",
+                    "y_sort": 7,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "18",
+                    "x_sort": 18,
+                    "y": "Chủ nhật",
+                    "y_sort": 7,
+                    "value": 2.0,
+                    "value_text": "2 lượt"
+                  },
+                  {
+                    "x": "19",
+                    "x_sort": 19,
+                    "y": "Chủ nhật",
+                    "y_sort": 7,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  },
+                  {
+                    "x": "23",
+                    "x_sort": 23,
+                    "y": "Chủ nhật",
+                    "y_sort": 7,
+                    "value": 1.0,
+                    "value_text": "1 lượt"
+                  }
+                ]
+              },
+              "mark": {
+                "type": "rect",
+                "cornerRadius": 2
+              },
+              "encoding": {
+                "x": {
+                  "field": "x",
+                  "type": "ordinal",
+                  "sort": {
+                    "field": "x_sort",
+                    "op": "min",
+                    "order": "ascending"
+                  },
+                  "title": "Giờ trong ngày",
+                  "axis": {
+                    "labelAngle": 0
+                  }
+                },
+                "y": {
+                  "field": "y",
+                  "type": "ordinal",
+                  "sort": {
+                    "field": "y_sort",
+                    "op": "min",
+                    "order": "ascending"
+                  },
+                  "title": null
+                },
+                "color": {
+                  "field": "value",
+                  "type": "quantitative",
+                  "title": "Tổng lượt khám (lượt)",
+                  "legend": {
+                    "gradientLength": 120
+                  }
+                },
+                "tooltip": [
+                  {
+                    "field": "y",
+                    "type": "nominal",
+                    "title": "Thứ trong tuần"
+                  },
+                  {
+                    "field": "x",
+                    "type": "nominal",
+                    "title": "Giờ trong ngày"
+                  },
+                  {
+                    "field": "value_text",
+                    "type": "nominal",
+                    "title": "Tổng lượt khám"
+                  }
+                ]
+              }
+            },
+            "widget": "w5",
+            "span": "full",
+            "table": {
+              "columns": [
+                {
+                  "key": "y",
+                  "label": "Thứ trong tuần"
+                },
+                {
+                  "key": "x",
+                  "label": "Giờ trong ngày"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Tổng lượt khám"
+                }
+              ],
+              "rows": [
+                {
+                  "y": "Thứ 2",
+                  "x": "0",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "2",
+                  "value_text": "4 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "5",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "7",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "8",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "9",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "10",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "13",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "14",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "15",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "17",
+                  "value_text": "5 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "18",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "19",
+                  "value_text": "5 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "20",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "21",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "22",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 2",
+                  "x": "23",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "0",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "2",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "5",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "6",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "7",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "8",
+                  "value_text": "5 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "9",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "10",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "11",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "12",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "14",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "15",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "16",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "17",
+                  "value_text": "5 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "18",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "19",
+                  "value_text": "4 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "20",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "21",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "22",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 3",
+                  "x": "23",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "1",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "3",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "8",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "9",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "11",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "12",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "13",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "14",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "15",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "16",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "17",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "18",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "19",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "20",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "21",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "22",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 4",
+                  "x": "23",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 5",
+                  "x": "0",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 5",
+                  "x": "2",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 5",
+                  "x": "10",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 5",
+                  "x": "15",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 5",
+                  "x": "19",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 5",
+                  "x": "20",
+                  "value_text": "5 lượt"
+                },
+                {
+                  "y": "Thứ 5",
+                  "x": "21",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "7",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "8",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "9",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "10",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "11",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "12",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "13",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "14",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "16",
+                  "value_text": "6 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "17",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "18",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "19",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "20",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 6",
+                  "x": "22",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "0",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "1",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "6",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "8",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "10",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "12",
+                  "value_text": "4 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "13",
+                  "value_text": "6 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "14",
+                  "value_text": "5 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "15",
+                  "value_text": "3 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "16",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "18",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "20",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "21",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Thứ 7",
+                  "x": "22",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Chủ nhật",
+                  "x": "1",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Chủ nhật",
+                  "x": "9",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Chủ nhật",
+                  "x": "13",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Chủ nhật",
+                  "x": "14",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Chủ nhật",
+                  "x": "15",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Chủ nhật",
+                  "x": "17",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Chủ nhật",
+                  "x": "18",
+                  "value_text": "2 lượt"
+                },
+                {
+                  "y": "Chủ nhật",
+                  "x": "19",
+                  "value_text": "1 lượt"
+                },
+                {
+                  "y": "Chủ nhật",
+                  "x": "23",
+                  "value_text": "1 lượt"
+                }
+              ]
+            }
+          }
+        ],
+        "table": null,
+        "dashboard": {
+          "title": "Tình hình hoạt động — Loại hình khám = Cấp cứu",
+          "period": "quý 2/2026",
+          "compare_to": "quý 1/2026",
+          "filters": [
+            "date_range",
+            "Loại hình khám = Cấp cứu"
+          ],
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "widgets": [
+            {
+              "id": "kpi_total_visits",
+              "type": "kpi",
+              "metric": "total_visits",
+              "title": "Tổng lượt khám"
+            },
+            {
+              "id": "kpi_unique_patients",
+              "type": "kpi",
+              "metric": "unique_patients",
+              "title": "Số người bệnh"
+            },
+            {
+              "id": "kpi_cancelled_visits",
+              "type": "kpi",
+              "metric": "cancelled_visits",
+              "title": "Lượt khám bị huỷ"
+            },
+            {
+              "id": "kpi_visit_cancellation_rate",
+              "type": "kpi",
+              "metric": "visit_cancellation_rate",
+              "title": "Tỷ lệ huỷ lượt khám"
+            },
+            {
+              "id": "w4_trend",
+              "type": "line",
+              "title": "Lượt khám theo thời gian",
+              "chart": "w4_trend",
+              "span": "full",
+              "metric": "total_visits"
+            },
+            {
+              "id": "w6_breakdown",
+              "type": "bar",
+              "title": "Lượt khám theo giờ trong ngày",
+              "chart": "w6_breakdown",
+              "span": "half",
+              "metric": "total_visits",
+              "dimension": "hour_of_day"
+            },
+            {
+              "id": "w7_breakdown",
+              "type": "bar",
+              "title": "Lượt khám theo cơ sở",
+              "chart": "w7_breakdown",
+              "span": "half",
+              "metric": "total_visits",
+              "dimension": "hospital"
+            },
+            {
+              "id": "w5_heatmap",
+              "type": "heatmap",
+              "title": "Lượt khám theo thứ và giờ",
+              "chart": "w5_heatmap",
+              "span": "full",
+              "metric": "total_visits",
+              "dimensions": [
+                "day_of_week",
+                "hour_of_day"
+              ]
+            },
+            {
+              "id": "insights",
+              "type": "insights",
+              "title": "Điểm đáng chú ý"
+            }
+          ]
+        },
+        "insights": [
+          "Từ tuần từ 30/03/2026 đến tuần từ 15/06/2026, tổng lượt khám giảm 1 lượt (-50%).",
+          "Cao điểm của tổng lượt khám: thứ trong tuần Thứ 6, giờ trong ngày 16 (6 lượt).",
+          "Tổng lượt khám theo giờ trong ngày: cao nhất là 19 (19 lượt, chiếm 9,8%).",
+          "Tổng lượt khám theo cơ sở: cao nhất là Cơ sở PQH (159 lượt, chiếm 82,4%)."
+        ],
+        "warnings": [],
+        "data_period": {
+          "label": "quý 2/2026",
+          "from": "2026-04-01",
+          "to": "2026-06-30",
+          "explicit": true,
+          "compare_to": {
+            "label": "quý 1/2026",
+            "from": "2026-01-01",
+            "to": "2026-03-31"
+          }
+        },
+        "data_freshness": [
+          {
+            "table": "fact_visit",
+            "label": "Lượt khám",
+            "loaded_at": "2026-10-07T09:48:34.914348+00:00",
+            "min_event_time": "2026-01-29 16:22:22",
+            "max_event_time": "2026-09-14 15:03:00",
+            "source": "data_evotek.xlsx",
+            "row_count": 600
+          }
+        ],
+        "confidence": {
+          "score": 0.85,
+          "level": "high",
+          "label": "Cao",
+          "components": {
+            "metric": 1.0,
+            "metadata": 1.0,
+            "relationship": 1.0,
+            "sql_validation": 1.0,
+            "result_validation": 1.0,
+            "historical_similarity": null
+          },
+          "draft_metric": true
+        },
+        "lineage": [
+          {
+            "metric": "total_visits",
+            "label": "Tổng lượt khám",
+            "definition": "Số lượt khám / đợt điều trị ở mọi loại hình, không tính lượt đã huỷ.",
+            "owner": "hospital_operations",
+            "certification": "draft",
+            "table": "mart.fact_visit",
+            "columns": [
+              "mart.fact_visit.is_valid"
+            ],
+            "sources": [
+              "suy ra từ is_cancelled"
+            ],
+            "source_system": "HIS · patient_visit"
+          },
+          {
+            "metric": "unique_patients",
+            "label": "Số người bệnh",
+            "definition": "Số người bệnh khác nhau có ít nhất một lượt khám không bị huỷ trong phạm vi được hỏi.",
+            "owner": "hospital_operations",
+            "certification": "certified",
+            "table": "mart.fact_visit",
+            "columns": [
+              "mart.fact_visit.is_valid",
+              "mart.fact_visit.patient_id"
+            ],
+            "sources": [
+              "suy ra từ is_cancelled",
+              "patient_visit.patient_id"
+            ],
+            "source_system": "HIS · patient_visit"
+          },
+          {
+            "metric": "cancelled_visits",
+            "label": "Lượt khám bị huỷ",
+            "definition": "Số lượt khám có thời điểm huỷ hoặc trạng thái ra viện là huỷ.",
+            "owner": "hospital_operations",
+            "certification": "draft",
+            "table": "mart.fact_visit",
+            "columns": [
+              "mart.fact_visit.is_cancelled"
+            ],
+            "sources": [
+              "patient_visit.cancelled_date_time, discharge_status_rcd"
+            ],
+            "source_system": "HIS · patient_visit"
+          },
+          {
+            "metric": "visit_cancellation_rate",
+            "label": "Tỷ lệ huỷ lượt khám",
+            "definition": "Lượt khám bị huỷ chia cho lượt khám đã đăng ký, tính theo phần trăm.",
+            "owner": "hospital_operations",
+            "certification": "draft",
+            "table": "mart.fact_visit",
+            "columns": [
+              "mart.fact_visit.is_cancelled"
+            ],
+            "sources": [
+              "patient_visit.cancelled_date_time, discharge_status_rcd"
+            ],
+            "source_system": "HIS · patient_visit"
+          }
+        ],
+        "latency_ms": 253
+      }
+    }
+  },
+  {
+    "index": 8,
+    "group": "Dashboard",
+    "question": "Tổng quan doanh thu quý 2 năm 2026",
+    "status": 200,
+    "elapsed_s": 0.21,
+    "answer_preview": "Tổng quan quý 2/2026:\n- Doanh thu thuần quý 2/2026: 4.629.464.460 đồng. Không có dữ liệu quý 1/2026 để so sánh.\n- Số tiền đã thu quý 2/2026: 1.073.267",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.21,
+      "data": {
+        "request_id": "62e9a1c3-9f99-455e-a74c-ea0198dd7800",
+        "audit_id": "62e9a1c3-9f99-455e-a74c-ea0198dd7800",
+        "question": "Tổng quan doanh thu quý 2 năm 2026",
+        "interpretation": {
+          "plan_type": "dashboard",
+          "plan_label": "Dashboard tổng hợp",
+          "metrics": [
+            "Doanh thu thuần",
+            "Số tiền đã thu",
+            "Công nợ phải thu",
+            "Doanh thu bình quân mỗi lượt khám"
+          ],
+          "dimensions": [],
+          "filters": [],
+          "time": "quý 2/2026",
+          "compare_to": "quý 1/2026",
+          "grain": null,
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "source": "rules"
+        },
+        "status": "ok",
+        "answer": "Tổng quan quý 2/2026:\n- Doanh thu thuần quý 2/2026: 4.629.464.460 đồng. Không có dữ liệu quý 1/2026 để so sánh.\n- Số tiền đã thu quý 2/2026: 1.073.267.263 đồng. Không có dữ liệu quý 1/2026 để so sánh.\n- Công nợ phải thu quý 2/2026: 3.556.197.197 đồng. Không có dữ liệu quý 1/2026 để so sánh.\n- Doanh thu bình quân mỗi lượt khám quý 2/2026: 16.533.802 đồng. Không có dữ liệu quý 1/2026 để so sánh.\n- Doanh thu thuần theo tuần trong quý 2/2026: cao nhất 1.715.714.521 đồng (tuần từ 08/06/2026), thấp nhất 2.000.000 đồng (tuần từ 22/06/2026), trung bình 385.788.705 đồng mỗi tuần trên 12 tuần có dữ liệu.",
+        "answer_source": "template",
+        "error": null,
+        "kpis": [
+          {
+            "metric": "net_revenue",
+            "label": "Doanh thu thuần",
+            "unit": "VND",
+            "format": "currency",
+            "value": 4629464460.0,
+            "formatted": "4.629.464.460 đồng",
+            "compact": "4,63 tỷ",
+            "period": "quý 2/2026",
+            "certification": "draft",
+            "definition": "Tổng giá trị thuần phải thu của các hoá đơn hợp lệ (gộp + thuế - chiết khấu + làm tròn).",
+            "delta": null,
+            "delta_pct": null,
+            "direction": "unknown",
+            "good": null,
+            "previous_value": null,
+            "previous_formatted": "không có dữ liệu",
+            "previous_period": "quý 1/2026"
+          },
+          {
+            "metric": "collected_amount",
+            "label": "Số tiền đã thu",
+            "unit": "VND",
+            "format": "currency",
+            "value": 1073267263.0,
+            "formatted": "1.073.267.263 đồng",
+            "compact": "1,07 tỷ",
+            "period": "quý 2/2026",
+            "certification": "draft",
+            "definition": "Tổng số tiền đã thu trên các hoá đơn hợp lệ, tính bằng giá trị thuần trừ số còn phải thu.",
+            "delta": null,
+            "delta_pct": null,
+            "direction": "unknown",
+            "good": null,
+            "previous_value": null,
+            "previous_formatted": "không có dữ liệu",
+            "previous_period": "quý 1/2026"
+          },
+          {
+            "metric": "outstanding_amount",
+            "label": "Công nợ phải thu",
+            "unit": "VND",
+            "format": "currency",
+            "value": 3556197197.0,
+            "formatted": "3.556.197.197 đồng",
+            "compact": "3,56 tỷ",
+            "period": "quý 2/2026",
+            "certification": "draft",
+            "definition": "Tổng số tiền còn phải thu trên các hoá đơn hợp lệ.",
+            "delta": null,
+            "delta_pct": null,
+            "direction": "unknown",
+            "good": null,
+            "previous_value": null,
+            "previous_formatted": "không có dữ liệu",
+            "previous_period": "quý 1/2026"
+          },
+          {
+            "metric": "average_revenue_per_visit",
+            "label": "Doanh thu bình quân mỗi lượt khám",
+            "unit": "VND",
+            "format": "currency",
+            "value": 16533801.642857144,
+            "formatted": "16.533.802 đồng",
+            "compact": "16,5 triệu",
+            "period": "quý 2/2026",
+            "certification": "draft",
+            "definition": "Doanh thu thuần chia cho số lượt khám có hoá đơn hợp lệ.",
+            "delta": null,
+            "delta_pct": null,
+            "direction": "unknown",
+            "good": null,
+            "previous_value": null,
+            "previous_formatted": "không có dữ liệu",
+            "previous_period": "quý 1/2026"
+          }
+        ],
+        "charts": [
+          {
+            "id": "w4_trend",
+            "type": "line",
+            "title": "Doanh thu thuần theo thời gian",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": 260,
+              "data": {
+                "values": [
+                  {
+                    "t": "2026-04-06T00:00:00",
+                    "t_label": "tuần từ 06/04/2026",
+                    "v": 0.103701677,
+                    "value_text": "103.701.677 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-04-13T00:00:00",
+                    "t_label": "tuần từ 13/04/2026",
+                    "v": 0.061875,
+                    "value_text": "61.875.000 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-04-20T00:00:00",
+                    "t_label": "tuần từ 20/04/2026",
+                    "v": 0.730128163,
+                    "value_text": "730.128.163 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-04-27T00:00:00",
+                    "t_label": "tuần từ 27/04/2026",
+                    "v": 0.366317495,
+                    "value_text": "366.317.495 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-05-04T00:00:00",
+                    "t_label": "tuần từ 04/05/2026",
+                    "v": 0.672311725,
+                    "value_text": "672.311.725 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-05-11T00:00:00",
+                    "t_label": "tuần từ 11/05/2026",
+                    "v": 0.431938821,
+                    "value_text": "431.938.821 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-05-25T00:00:00",
+                    "t_label": "tuần từ 25/05/2026",
+                    "v": 0.06396964,
+                    "value_text": "63.969.640 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-06-01T00:00:00",
+                    "t_label": "tuần từ 01/06/2026",
+                    "v": 0.114826318,
+                    "value_text": "114.826.318 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-06-08T00:00:00",
+                    "t_label": "tuần từ 08/06/2026",
+                    "v": 1.715714521,
+                    "value_text": "1.715.714.521 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-06-15T00:00:00",
+                    "t_label": "tuần từ 15/06/2026",
+                    "v": 0.236096831,
+                    "value_text": "236.096.831 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-06-22T00:00:00",
+                    "t_label": "tuần từ 22/06/2026",
+                    "v": 0.002,
+                    "value_text": "2.000.000 đồng",
+                    "series": "Doanh thu thuần"
+                  },
+                  {
+                    "t": "2026-06-29T00:00:00",
+                    "t_label": "tuần từ 29/06/2026",
+                    "v": 0.130584269,
+                    "value_text": "130.584.269 đồng",
+                    "series": "Doanh thu thuần"
+                  }
+                ],
+                "format": {
+                  "parse": {
+                    "t": "date:'%Y-%m-%dT%H:%M:%S'"
+                  }
+                }
+              },
+              "encoding": {
+                "x": {
+                  "field": "t",
+                  "type": "temporal",
+                  "title": null,
+                  "axis": {
+                    "format": "%d/%m",
+                    "labelAngle": 0
+                  }
+                },
+                "y": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "tỷ đồng",
+                  "axis": {
+                    "format": ",.2~f"
+                  },
+                  "scale": {
+                    "zero": true
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "area",
+                    "opacity": 0.1
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "line",
+                    "strokeWidth": 2,
+                    "strokeCap": "round",
+                    "strokeJoin": "round"
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "point",
+                    "filled": true,
+                    "size": 64,
+                    "strokeWidth": 2,
+                    "opacity": 1
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "t_label",
+                        "type": "nominal",
+                        "title": "Thời gian"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Doanh thu thuần"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "widget": "w4",
+            "span": "full",
+            "table": {
+              "columns": [
+                {
+                  "key": "t_label",
+                  "label": "Thời gian"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Doanh thu thuần"
+                }
+              ],
+              "rows": [
+                {
+                  "t_label": "tuần từ 06/04/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "103.701.677 đồng"
+                },
+                {
+                  "t_label": "tuần từ 13/04/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "61.875.000 đồng"
+                },
+                {
+                  "t_label": "tuần từ 20/04/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "730.128.163 đồng"
+                },
+                {
+                  "t_label": "tuần từ 27/04/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "366.317.495 đồng"
+                },
+                {
+                  "t_label": "tuần từ 04/05/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "672.311.725 đồng"
+                },
+                {
+                  "t_label": "tuần từ 11/05/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "431.938.821 đồng"
+                },
+                {
+                  "t_label": "tuần từ 25/05/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "63.969.640 đồng"
+                },
+                {
+                  "t_label": "tuần từ 01/06/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "114.826.318 đồng"
+                },
+                {
+                  "t_label": "tuần từ 08/06/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "1.715.714.521 đồng"
+                },
+                {
+                  "t_label": "tuần từ 15/06/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "236.096.831 đồng"
+                },
+                {
+                  "t_label": "tuần từ 22/06/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "2.000.000 đồng"
+                },
+                {
+                  "t_label": "tuần từ 29/06/2026",
+                  "series": "Doanh thu thuần",
+                  "value_text": "130.584.269 đồng"
+                }
+              ]
+            }
+          },
+          {
+            "id": "w5_breakdown",
+            "type": "bar",
+            "title": "Doanh thu thuần theo loại hình",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Nội trú",
+                    "v": 4.011396524,
+                    "value_text": "4.011.396.524 đồng",
+                    "share_text": "86,6%"
+                  },
+                  {
+                    "label": "Cấp cứu",
+                    "v": 0.264578254,
+                    "value_text": "264.578.254 đồng",
+                    "share_text": "5,7%"
+                  },
+                  {
+                    "label": "Ngoại trú",
+                    "v": 0.230871688,
+                    "value_text": "230.871.688 đồng",
+                    "share_text": "5%"
+                  },
+                  {
+                    "label": "Điều trị trong ngày",
+                    "v": 0.122617994,
+                    "value_text": "122.617.994 đồng",
+                    "share_text": "2,6%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "tỷ đồng",
+                  "axis": {
+                    "format": ",.2~f"
+                  },
+                  "scale": {
+                    "domainMax": 5.2148154812000005
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Loại hình khám"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Doanh thu thuần"
+                      },
+                      {
+                        "field": "share_text",
+                        "type": "nominal",
+                        "title": "Tỷ trọng"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 6
+                  },
+                  "encoding": {
+                    "text": {
+                      "field": "value_text",
+                      "type": "nominal"
+                    }
+                  }
+                }
+              ]
+            },
+            "widget": "w5",
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Loại hình khám"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Doanh thu thuần"
+                },
+                {
+                  "key": "share_text",
+                  "label": "Tỷ trọng"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "Nội trú",
+                  "value_text": "4.011.396.524 đồng",
+                  "share_text": "86,6%"
+                },
+                {
+                  "label": "Cấp cứu",
+                  "value_text": "264.578.254 đồng",
+                  "share_text": "5,7%"
+                },
+                {
+                  "label": "Ngoại trú",
+                  "value_text": "230.871.688 đồng",
+                  "share_text": "5%"
+                },
+                {
+                  "label": "Điều trị trong ngày",
+                  "value_text": "122.617.994 đồng",
+                  "share_text": "2,6%"
+                }
+              ]
+            }
+          },
+          {
+            "id": "w6_breakdown",
+            "type": "bar",
+            "title": "Doanh thu thuần theo cơ sở",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Cơ sở SGH",
+                    "v": 4.32587656,
+                    "value_text": "4.325.876.560 đồng",
+                    "share_text": "93,4%"
+                  },
+                  {
+                    "label": "Cơ sở PQH",
+                    "v": 0.3035879,
+                    "value_text": "303.587.900 đồng",
+                    "share_text": "6,6%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "tỷ đồng",
+                  "axis": {
+                    "format": ",.2~f"
+                  },
+                  "scale": {
+                    "domainMax": 5.623639528000001
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Cơ sở"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Doanh thu thuần"
+                      },
+                      {
+                        "field": "share_text",
+                        "type": "nominal",
+                        "title": "Tỷ trọng"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 6
+                  },
+                  "encoding": {
+                    "text": {
+                      "field": "value_text",
+                      "type": "nominal"
+                    }
+                  }
+                }
+              ]
+            },
+            "widget": "w6",
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Cơ sở"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Doanh thu thuần"
+                },
+                {
+                  "key": "share_text",
+                  "label": "Tỷ trọng"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "Cơ sở SGH",
+                  "value_text": "4.325.876.560 đồng",
+                  "share_text": "93,4%"
+                },
+                {
+                  "label": "Cơ sở PQH",
+                  "value_text": "303.587.900 đồng",
+                  "share_text": "6,6%"
+                }
+              ]
+            }
+          },
+          {
+            "id": "w7_breakdown",
+            "type": "bar",
+            "title": "Công nợ theo trạng thái thanh toán",
+            "spec": {
+              "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+              "width": "container",
+              "height": {
+                "step": 28
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Chưa thanh toán",
+                    "v": 3.554647197,
+                    "value_text": "3.554.647.197 đồng",
+                    "share_text": "100%"
+                  },
+                  {
+                    "label": "Thanh toán một phần",
+                    "v": 0.00155,
+                    "value_text": "1.550.000 đồng",
+                    "share_text": "0%"
+                  },
+                  {
+                    "label": "Đã thanh toán",
+                    "v": 0.0,
+                    "value_text": "0 đồng",
+                    "share_text": "0%"
+                  }
+                ]
+              },
+              "encoding": {
+                "y": {
+                  "field": "label",
+                  "type": "nominal",
+                  "sort": null,
+                  "title": null,
+                  "axis": {
+                    "labelLimit": 220
+                  }
+                },
+                "x": {
+                  "field": "v",
+                  "type": "quantitative",
+                  "title": "tỷ đồng",
+                  "axis": {
+                    "format": ",.2~f"
+                  },
+                  "scale": {
+                    "domainMax": 4.6210413561
+                  }
+                }
+              },
+              "layer": [
+                {
+                  "mark": {
+                    "type": "bar",
+                    "height": 18,
+                    "cornerRadiusEnd": 4
+                  },
+                  "encoding": {
+                    "tooltip": [
+                      {
+                        "field": "label",
+                        "type": "nominal",
+                        "title": "Trạng thái thanh toán"
+                      },
+                      {
+                        "field": "value_text",
+                        "type": "nominal",
+                        "title": "Công nợ phải thu"
+                      },
+                      {
+                        "field": "share_text",
+                        "type": "nominal",
+                        "title": "Tỷ trọng"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "mark": {
+                    "type": "text",
+                    "align": "left",
+                    "baseline": "middle",
+                    "dx": 6
+                  },
+                  "encoding": {
+                    "text": {
+                      "field": "value_text",
+                      "type": "nominal"
+                    }
+                  }
+                }
+              ]
+            },
+            "widget": "w7",
+            "span": "half",
+            "table": {
+              "columns": [
+                {
+                  "key": "label",
+                  "label": "Trạng thái thanh toán"
+                },
+                {
+                  "key": "value_text",
+                  "label": "Công nợ phải thu"
+                },
+                {
+                  "key": "share_text",
+                  "label": "Tỷ trọng"
+                }
+              ],
+              "rows": [
+                {
+                  "label": "Chưa thanh toán",
+                  "value_text": "3.554.647.197 đồng",
+                  "share_text": "100%"
+                },
+                {
+                  "label": "Thanh toán một phần",
+                  "value_text": "1.550.000 đồng",
+                  "share_text": "0%"
+                },
+                {
+                  "label": "Đã thanh toán",
+                  "value_text": "0 đồng",
+                  "share_text": "0%"
+                }
+              ]
+            }
+          }
+        ],
+        "table": null,
+        "dashboard": {
+          "title": "Tổng quan doanh thu",
+          "period": "quý 2/2026",
+          "compare_to": "quý 1/2026",
+          "filters": [
+            "date_range"
+          ],
+          "hospitals": [
+            "PQH",
+            "SGH"
+          ],
+          "widgets": [
+            {
+              "id": "kpi_net_revenue",
+              "type": "kpi",
+              "metric": "net_revenue",
+              "title": "Doanh thu thuần"
+            },
+            {
+              "id": "kpi_collected_amount",
+              "type": "kpi",
+              "metric": "collected_amount",
+              "title": "Số tiền đã thu"
+            },
+            {
+              "id": "kpi_outstanding_amount",
+              "type": "kpi",
+              "metric": "outstanding_amount",
+              "title": "Công nợ phải thu"
+            },
+            {
+              "id": "kpi_average_revenue_per_visit",
+              "type": "kpi",
+              "metric": "average_revenue_per_visit",
+              "title": "Doanh thu bình quân mỗi lượt khám"
+            },
+            {
+              "id": "w4_trend",
+              "type": "line",
+              "title": "Doanh thu thuần theo thời gian",
+              "chart": "w4_trend",
+              "span": "full",
+              "metric": "net_revenue"
+            },
+            {
+              "id": "w5_breakdown",
+              "type": "bar",
+              "title": "Doanh thu thuần theo loại hình",
+              "chart": "w5_breakdown",
+              "span": "half",
+              "metric": "net_revenue",
+              "dimension": "visit_category"
+            },
+            {
+              "id": "w6_breakdown",
+              "type": "bar",
+              "title": "Doanh thu thuần theo cơ sở",
+              "chart": "w6_breakdown",
+              "span": "half",
+              "metric": "net_revenue",
+              "dimension": "hospital"
+            },
+            {
+              "id": "w7_breakdown",
+              "type": "bar",
+              "title": "Công nợ theo trạng thái thanh toán",
+              "chart": "w7_breakdown",
+              "span": "half",
+              "metric": "outstanding_amount",
+              "dimension": "payment_status"
+            },
+            {
+              "id": "insights",
+              "type": "insights",
+              "title": "Điểm đáng chú ý"
+            }
+          ]
+        },
+        "insights": [
+          "Từ tuần từ 06/04/2026 đến tuần từ 29/06/2026, doanh thu thuần tăng 26.882.592 đồng (+25,9%).",
+          "Doanh thu thuần theo loại hình khám: cao nhất là Nội trú (4.011.396.524 đồng, chiếm 86,6%).",
+          "Doanh thu thuần theo cơ sở: cao nhất là Cơ sở SGH (4.325.876.560 đồng, chiếm 93,4%).",
+          "Công nợ phải thu theo trạng thái thanh toán: cao nhất là Chưa thanh toán (3.554.647.197 đồng, chiếm 100%)."
+        ],
+        "warnings": [
+          "Chỉ số \"Doanh thu thuần\" đang ở mức nháp, chưa được chứng nhận. Hoá đơn hợp lệ = trạng thái khác VOI và khác TEMP.",
+          "Không có dữ liệu trong quý 1/2026 với phạm vi và bộ lọc hiện tại."
+        ],
+        "data_period": {
+          "label": "quý 2/2026",
+          "from": "2026-04-01",
+          "to": "2026-06-30",
+          "explicit": true,
+          "compare_to": {
+            "label": "quý 1/2026",
+            "from": "2026-01-01",
+            "to": "2026-03-31"
+          }
+        },
+        "data_freshness": [
+          {
+            "table": "fact_invoice",
+            "label": "Hoá đơn",
+            "loaded_at": "2026-10-07T09:48:34.914348+00:00",
+            "min_event_time": "2026-04-06 09:42:57",
+            "max_event_time": "2026-07-21 17:14:41",
+            "source": "data_evotek.xlsx",
+            "row_count": 548
+          }
+        ],
+        "confidence": {
+          "score": 0.85,
+          "level": "high",
+          "label": "Cao",
+          "components": {
+            "metric": 1.0,
+            "metadata": 1.0,
+            "relationship": 1.0,
+            "sql_validation": 1.0,
+            "result_validation": 0.975,
+            "historical_similarity": null
+          },
+          "draft_metric": true
+        },
+        "lineage": [
+          {
+            "metric": "net_revenue",
+            "label": "Doanh thu thuần",
+            "definition": "Tổng giá trị thuần phải thu của các hoá đơn hợp lệ (gộp + thuế - chiết khấu + làm tròn).",
+            "owner": "finance",
+            "certification": "draft",
+            "table": "mart.fact_invoice",
+            "columns": [
+              "mart.fact_invoice.is_valid",
+              "mart.fact_invoice.net_amount"
+            ],
+            "sources": [
+              "ar_invoice.transaction_status_rcd",
+              "ar_invoice.net_amount"
+            ],
+            "source_system": "HIS · ar_invoice, swe_cashier_transaction_nl_view"
+          },
+          {
+            "metric": "collected_amount",
+            "label": "Số tiền đã thu",
+            "definition": "Tổng số tiền đã thu trên các hoá đơn hợp lệ, tính bằng giá trị thuần trừ số còn phải thu.",
+            "owner": "finance",
+            "certification": "draft",
+            "table": "mart.fact_invoice",
+            "columns": [
+              "mart.fact_invoice.is_valid",
+              "mart.fact_invoice.paid_amount"
+            ],
+            "sources": [
+              "ar_invoice.transaction_status_rcd",
+              "ar_invoice.net_amount - ar_invoice.owing_amount"
+            ],
+            "source_system": "HIS · ar_invoice, swe_cashier_transaction_nl_view"
+          },
+          {
+            "metric": "outstanding_amount",
+            "label": "Công nợ phải thu",
+            "definition": "Tổng số tiền còn phải thu trên các hoá đơn hợp lệ.",
+            "owner": "finance",
+            "certification": "draft",
+            "table": "mart.fact_invoice",
+            "columns": [
+              "mart.fact_invoice.is_valid",
+              "mart.fact_invoice.owing_amount"
+            ],
+            "sources": [
+              "ar_invoice.transaction_status_rcd",
+              "ar_invoice.owing_amount"
+            ],
+            "source_system": "HIS · ar_invoice, swe_cashier_transaction_nl_view"
+          },
+          {
+            "metric": "average_revenue_per_visit",
+            "label": "Doanh thu bình quân mỗi lượt khám",
+            "definition": "Doanh thu thuần chia cho số lượt khám có hoá đơn hợp lệ.",
+            "owner": "finance",
+            "certification": "draft",
+            "table": "mart.fact_invoice",
+            "columns": [
+              "mart.fact_invoice.is_valid",
+              "mart.fact_invoice.net_amount",
+              "mart.fact_invoice.visit_id"
+            ],
+            "sources": [
+              "ar_invoice.transaction_status_rcd",
+              "ar_invoice.net_amount",
+              "swe_cashier_transaction_nl_view.patient_visit_id"
+            ],
+            "source_system": "HIS · ar_invoice, swe_cashier_transaction_nl_view"
+          }
+        ],
+        "latency_ms": 184
+      }
+    }
+  },
+  {
+    "index": 9,
+    "group": "Chưa có dữ liệu",
+    "question": "Tỷ lệ sử dụng giường bệnh trong 6 tháng gần nhất như thế nào?",
+    "status": 200,
+    "elapsed_s": 0.03,
+    "answer_preview": "Chưa có dữ liệu để tính chỉ số này. Tỷ lệ sử dụng giường bệnh: Dữ liệu hiện có không có bảng giường bệnh và lịch sử xếp giường. Chỉ số liên quan hiện ",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.03,
+      "data": {
+        "request_id": "e0c2be08-54c3-4308-aa83-1f5007993eac",
+        "audit_id": "e0c2be08-54c3-4308-aa83-1f5007993eac",
+        "question": "Tỷ lệ sử dụng giường bệnh trong 6 tháng gần nhất như thế nào?",
+        "interpretation": null,
+        "status": "error",
+        "answer": "Chưa có dữ liệu để tính chỉ số này. Tỷ lệ sử dụng giường bệnh: Dữ liệu hiện có không có bảng giường bệnh và lịch sử xếp giường. Chỉ số liên quan hiện có: Thời gian nằm viện trung bình.",
+        "error": {
+          "code": "INSUFFICIENT_DATA",
+          "message": "Chưa có dữ liệu để tính chỉ số này. Tỷ lệ sử dụng giường bệnh: Dữ liệu hiện có không có bảng giường bệnh và lịch sử xếp giường. Chỉ số liên quan hiện có: Thời gian nằm viện trung bình.",
+          "suggestions": [
+            "Thời gian nằm viện trung bình"
+          ]
+        },
+        "kpis": [],
+        "charts": [],
+        "table": null,
+        "dashboard": null,
+        "insights": [],
+        "warnings": [],
+        "data_period": null,
+        "data_freshness": [],
+        "confidence": null,
+        "latency_ms": 16
+      }
+    }
+  },
+  {
+    "index": 10,
+    "group": "Chưa có dữ liệu",
+    "question": "Khoa nào có số lượt khám cao nhất trong quý 2 năm 2026?",
+    "status": 200,
+    "elapsed_s": 0.05,
+    "answer_preview": "Chưa phân tích được theo \"Khoa\". Dữ liệu hiện có không có danh mục khoa; chỉ có mã khu vực tiếp nhận không kèm tên. Bạn có thể phân tích theo: Loại hì",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.05,
+      "data": {
+        "request_id": "f00766df-bd30-48b2-bb9f-a6ebe3db3c12",
+        "audit_id": "f00766df-bd30-48b2-bb9f-a6ebe3db3c12",
+        "question": "Khoa nào có số lượt khám cao nhất trong quý 2 năm 2026?",
+        "interpretation": null,
+        "status": "error",
+        "answer": "Chưa phân tích được theo \"Khoa\". Dữ liệu hiện có không có danh mục khoa; chỉ có mã khu vực tiếp nhận không kèm tên. Bạn có thể phân tích theo: Loại hình khám, Cơ sở, Khu vực tiếp nhận (mã).",
+        "error": {
+          "code": "INSUFFICIENT_DATA",
+          "message": "Chưa phân tích được theo \"Khoa\". Dữ liệu hiện có không có danh mục khoa; chỉ có mã khu vực tiếp nhận không kèm tên. Bạn có thể phân tích theo: Loại hình khám, Cơ sở, Khu vực tiếp nhận (mã).",
+          "suggestions": [
+            "Loại hình khám",
+            "Cơ sở",
+            "Khu vực tiếp nhận (mã)"
+          ]
+        },
+        "kpis": [],
+        "charts": [],
+        "table": null,
+        "dashboard": null,
+        "insights": [],
+        "warnings": [
+          "Chỉ số \"Tổng lượt khám\" đang ở mức nháp, chưa được chứng nhận. Lượt khám bị huỷ = có thời điểm huỷ hoặc trạng thái ra viện là CAN."
+        ],
+        "data_period": null,
+        "data_freshness": [],
+        "confidence": null,
+        "latency_ms": 18
+      }
+    }
+  },
+  {
+    "index": 11,
+    "group": "Kiểm soát truy cập",
+    "question": "Cho tôi danh sách bệnh nhân cấp cứu trong tháng 5/2026",
+    "status": 200,
+    "elapsed_s": 0.04,
+    "answer_preview": "Bạn không có quyền xem dữ liệu ở mức người bệnh. Hệ thống chỉ cung cấp số liệu tổng hợp.",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.04,
+      "data": {
+        "request_id": "a543e291-77ef-4024-b1c1-ff3f669ef891",
+        "audit_id": "a543e291-77ef-4024-b1c1-ff3f669ef891",
+        "question": "Cho tôi danh sách bệnh nhân cấp cứu trong tháng 5/2026",
+        "interpretation": null,
+        "status": "error",
+        "answer": "Bạn không có quyền xem dữ liệu ở mức người bệnh. Hệ thống chỉ cung cấp số liệu tổng hợp.",
+        "error": {
+          "code": "PATIENT_DATA_ACCESS_DENIED",
+          "message": "Bạn không có quyền xem dữ liệu ở mức người bệnh. Hệ thống chỉ cung cấp số liệu tổng hợp."
+        },
+        "kpis": [],
+        "charts": [],
+        "table": null,
+        "dashboard": null,
+        "insights": [],
+        "warnings": [],
+        "data_period": null,
+        "data_freshness": [],
+        "confidence": null,
+        "latency_ms": 16
+      }
+    }
+  },
+  {
+    "index": 12,
+    "group": "Ranh giới lâm sàng",
+    "question": "Bệnh nhân này nên điều trị thế nào?",
+    "status": 200,
+    "elapsed_s": 0.03,
+    "answer_preview": "Đây là hệ thống BI phục vụ quản trị bệnh viện, không hỗ trợ chẩn đoán hay quyết định điều trị. Vui lòng dùng hệ thống hỗ trợ lâm sàng chuyên dụng.",
+    "full_response": {
+      "status": 200,
+      "elapsed_s": 0.03,
+      "data": {
+        "request_id": "4a6a01fd-7d8d-40f4-ae75-5ea93f6ca838",
+        "audit_id": "4a6a01fd-7d8d-40f4-ae75-5ea93f6ca838",
+        "question": "Bệnh nhân này nên điều trị thế nào?",
+        "interpretation": null,
+        "status": "refused",
+        "answer": "Đây là hệ thống BI phục vụ quản trị bệnh viện, không hỗ trợ chẩn đoán hay quyết định điều trị. Vui lòng dùng hệ thống hỗ trợ lâm sàng chuyên dụng.",
+        "error": {
+          "code": "CLINICAL_SCOPE_REFUSED",
+          "message": "Đây là hệ thống BI phục vụ quản trị bệnh viện, không hỗ trợ chẩn đoán hay quyết định điều trị. Vui lòng dùng hệ thống hỗ trợ lâm sàng chuyên dụng."
+        },
+        "kpis": [],
+        "charts": [],
+        "table": null,
+        "dashboard": null,
+        "insights": [],
+        "warnings": [],
+        "data_period": null,
+        "data_freshness": [],
+        "confidence": null,
+        "latency_ms": 14
+      }
+    }
+  }
+]

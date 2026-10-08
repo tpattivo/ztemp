@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<w:comments xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du wp14">
+  <w:comment w:id="0" w:author="Guest User" w:date="2026-09-28T11:32:00Z" w:initials="GU">
+    <w:p w14:paraId="4C613782" w14:textId="51204BBC" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="29272DD7">
+        <w:t>Chỗ này không có checkin bằng mã QR, không có in thẻ đại biểu tự động mà chỉ có gen ra file giấy tờ và user click để in nếu có kết nối với máy in</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="1" w:author="Guest User" w:date="2026-09-28T11:33:00Z" w:initials="GU">
+    <w:p w14:paraId="3D105026" w14:textId="244EBD0C" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="1FE91E67">
+        <w:t>tích hợp OCR thì phụ thuộc khách hàng, hệ thống chỉ mở sẵn kết nối chứ ko cung cấp OCR</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="2" w:author="Guest User" w:date="2026-09-28T11:34:00Z" w:initials="GU">
+    <w:p w14:paraId="0AD6F861" w14:textId="69F41DF1" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="56908D3C">
+        <w:t>Không có quét QR check in, không có kiểm phiếu bằng mã vạch</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="3" w:author="Guest User" w:date="2026-09-28T11:40:00Z" w:initials="GU">
+    <w:p w14:paraId="52BF25E5" w14:textId="231AA997" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="6BD84814">
+        <w:t>tương tự mã QR bỏ đi</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="4" w:author="Guest User" w:date="2026-09-28T11:49:00Z" w:initials="GU">
+    <w:p w14:paraId="693F92A3" w14:textId="76F020EE" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="2AD72F8F">
+        <w:t>Chưa có thông tin mã định danh và QR cho phiếu gửi qua bưu điện, chỉ fill thông tin cổ đông vào mẫu đã upload</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="5" w:author="Guest User" w:date="2026-09-28T11:50:00Z" w:initials="GU">
+    <w:p w14:paraId="49E1E1FB" w14:textId="76277285" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="3EB6C0F0">
+        <w:t>Không có tính năng này, chỉ là mở sẵn kết nối tới hệ thống OCR, nếu khách hàng sử dụng thì sẽ mất thêm phí</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="6" w:author="Guest User" w:date="2026-09-28T11:50:00Z" w:initials="GU">
+    <w:p w14:paraId="63F38E93" w14:textId="6709D2A1" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="0B1835B2">
+        <w:t>Không hỗ trợ máy quét tài liệu mà chỉ mở kết nối tới hệ thống OCR</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="7" w:author="Guest User" w:date="2026-09-28T13:15:00Z" w:initials="GU">
+    <w:p w14:paraId="3414C968" w14:textId="72C69A5E" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="20652E19">
+        <w:t>Không có mã QR, hệ thống tự fill thông tin vào các file template khi có điền thông tin biến trong file đẩy lên</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="8" w:author="Guest User" w:date="2026-09-28T13:16:00Z" w:initials="GU">
+    <w:p w14:paraId="0CC91A28" w14:textId="254ECE28" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="17F77332">
+        <w:t>Hỗ trợ gen file theo template tải lên, phục vụ cho công tác in sau đó</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="9" w:author="Guest User" w:date="2026-09-28T13:17:00Z" w:initials="GU">
+    <w:p w14:paraId="079ACEB6" w14:textId="4C2EE7FB" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="5BA25EBA">
+        <w:t>chưa có check in off kiểu quét mã QR hoặc quét CCCD, chỉ kiểm tra giấy tờ bằng mắt và thực hiện tick checkin bằng tay trên hệ thống</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="10" w:author="Guest User" w:date="2026-09-28T13:19:00Z" w:initials="GU">
+    <w:p w14:paraId="0121D06E" w14:textId="289177E2" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="14A3CBE4">
+        <w:t>Cho phép cổ đông nội bộ có quyền biểu quyết/ bầu cử hay không dựa vào việc tick chọn cấu hình tại phiếu biểu quyết/bầu cử. Với cổ đông có ủy quyền, hệ thống sẽ tính toán đúng số lượng  CP còn được phép biểu quyết/bầu cử. Trường hợp cổ đông tham dự sau khi phiếu bầu cử/biểu quyết đã được gửi thì sẽ không được tham dự biểu quyết/bầu cử</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="11" w:author="Guest User" w:date="2026-09-28T13:20:00Z" w:initials="GU">
+    <w:p w14:paraId="2BC689F7" w14:textId="36969098" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="29B44DAE">
+        <w:t>xác nhận lại thời gian</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="12" w:author="Guest User" w:date="2026-09-28T13:21:00Z" w:initials="GU">
+    <w:p w14:paraId="260C5C13" w14:textId="03C93C56" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="214E4492">
+        <w:t xml:space="preserve">mã hóa gì bạn nhỉ? </w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="13" w:author="Guest User" w:date="2026-09-28T13:22:00Z" w:initials="GU">
+    <w:p w14:paraId="1AA5FD32" w14:textId="68F7B2C5" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="13F3593E">
+        <w:t>Check lại</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="14" w:author="Guest User" w:date="2026-09-28T13:23:00Z" w:initials="GU">
+    <w:p w14:paraId="14496BF0" w14:textId="4A3787A0" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="0E8E7071">
+        <w:t>Check lại</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="15" w:author="Guest User" w:date="2026-09-28T13:24:00Z" w:initials="GU">
+    <w:p w14:paraId="6FB31AE5" w14:textId="7309E491" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="2201AC37">
+        <w:t>Không có ký xác nhận điện tử</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="16" w:author="Guest User" w:date="2026-09-28T13:25:00Z" w:initials="GU">
+    <w:p w14:paraId="67F447E2" w14:textId="36B0668C" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="4AD8F8A6">
+        <w:t>phản hồi nếu là trả lời qua livestream thì công khai, còn nếu phản hồi từ hệ thống thì chỉ riêng tư qua mail cổ đông</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="17" w:author="Người dùng Khách" w:date="2026-10-01T09:43:00Z" w:initials="NK">
+    <w:p w14:paraId="37BC17A6" w14:textId="628097FC" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="1ECDA4A7">
+        <w:t>xóa đi, bảo phụ thuộc phần cứng</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="18" w:author="Người dùng Khách" w:date="2026-09-28T11:39:00Z" w:initials="NK">
+    <w:p w14:paraId="2B55E16A" w14:textId="2103A325" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="5E97905A">
+        <w:t>Cân nhắc việc này</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="19" w:author="Người dùng Khách" w:date="2026-09-28T11:39:00Z" w:initials="NK">
+    <w:p w14:paraId="12645498" w14:textId="2BAF08CB" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="0FCAA30C">
+        <w:t>Cân nhắc việc này</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="20" w:author="Người dùng Khách" w:date="2026-09-28T11:37:00Z" w:initials="NK">
+    <w:p w14:paraId="0B774B35" w14:textId="5AB5C08F" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="6C43DC87">
+        <w:t>bỏ</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="21" w:author="Người dùng Khách" w:date="2026-09-28T11:37:00Z" w:initials="NK">
+    <w:p w14:paraId="37FBB74D" w14:textId="03F1CB9D" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="30D81F20">
+        <w:t>6 tháng</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+  <w:comment w:id="22" w:author="Người dùng Khách" w:date="2026-09-28T11:36:00Z" w:initials="NK">
+    <w:p w14:paraId="2A3D562D" w14:textId="30FD0E0E" w:rsidR="00194F96" w:rsidRDefault="00194F96">
+      <w:r>
+        <w:annotationRef/>
+      </w:r>
+      <w:r w:rsidRPr="6419F8E7">
+        <w:t>Không có cái này</w:t>
+      </w:r>
+    </w:p>
+  </w:comment>
+</w:comments>

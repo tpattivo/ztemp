@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EVOTEK thiết kế và phát triển AI Agent cho doanh nghiệp: hiểu dữ liệu, sử dụng công cụ, thực hiện quy trình và luôn nằm trong tầm kiểm soát của con người.">
+  <title>AI Agent Development | EVOTEK</title>
+  <style>
+    :root {
+      --black: #101114;
+      --ink: #1b1d23;
+      --muted: #737782;
+      --line: #dfdfdf;
+      --paper: #f5f5f3;
+      --white: #fff;
+      --lime: #d8ff46;
+      --violet: #7c63ff;
+      --blue: #4e86ff;
+      --red: #ff604f;
+      --max: 1240px;
+      --shadow: 0 24px 70px rgba(16,17,20,.12);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--white); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; }
+    .container { width: min(calc(100% - 48px), var(--max)); margin: 0 auto; }
+    .eyebrow { color: var(--muted); font-size: .72rem; font-weight: 850; letter-spacing: .15em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { letter-spacing: -.06em; line-height: .98; }
+    h1 { max-width: 920px; margin-bottom: 28px; font-size: clamp(3.8rem, 9vw, 9rem); font-weight: 800; }
+    h2 { max-width: 790px; margin-bottom: 24px; font-size: clamp(2.7rem, 6vw, 6.3rem); font-weight: 800; }
+    h3 { margin-bottom: 12px; font-size: 1.4rem; }
+    .intro { max-width: 670px; color: var(--muted); font-size: clamp(1.05rem, 1.7vw, 1.32rem); line-height: 1.65; }
+    .section { padding: 140px 0; }
+    .section-gray { background: var(--paper); }
+    .section-black { color: var(--white); background: var(--black); }
+    .section-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 70px; }
+    .section-header .intro { max-width: 480px; margin-bottom: 4px; font-size: 1rem; }
+    .arrow-link { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: .84rem; font-weight: 850; }
+    .arrow-link::after { content: "↗"; display: grid; place-items: center; width: 27px; height: 27px; border: 1px solid currentColor; border-radius: 50%; transition: transform .2s ease; }
+    .arrow-link:hover::after { transform: rotate(45deg); }
+    .white-link { color: var(--white); }
+    .lime-link { color: var(--lime); }
+
+    .announcement { color: var(--black); background: var(--lime); font-size: .76rem; font-weight: 800; }
+    .announcement-inner { display: flex; align-items: center; justify-content: center; gap: 13px; padding: 9px 0; }
+    .announcement span { opacity: .65; }
+
+    header { position: sticky; top: 0; z-index: 20; color: var(--white); background: rgba(16,17,20,.96); border-bottom: 1px solid rgba(255,255,255,.12); backdrop-filter: blur(15px); }
+    .nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+    .brand { display: inline-flex; align-items: center; gap: 9px; font-size: 1.2rem; font-weight: 900; letter-spacing: -.05em; }
+    .brand-mark { position: relative; width: 28px; height: 25px; display: inline-block; }
+    .brand-mark::before, .brand-mark::after { content: ""; position: absolute; width: 11px; height: 24px; border-radius: 8px; transform: skewX(-27deg); }
+    .brand-mark::before { left: 2px; background: var(--lime); }
+    .brand-mark::after { left: 15px; background: var(--red); }
+    .nav-links { display: flex; align-items: center; gap: 26px; color: #bcbec5; font-size: .83rem; font-weight: 700; }
+    .nav-links a { transition: color .2s ease; }
+    .nav-links a:hover { color: var(--lime); }
+    .nav-actions { display: flex; align-items: center; gap: 12px; }
+    .language { color: #bcbec5; font-size: .78rem; font-weight: 800; }
+    .nav-toggle { display: none; border: 0; color: var(--white); background: transparent; font-size: 1.5rem; cursor: pointer; }
+
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 11px; min-height: 50px; padding: 0 21px; border: 1px solid transparent; border-radius: 999px; font-size: .83rem; font-weight: 850; cursor: pointer; transition: transform .2s ease, background .2s ease, color .2s ease; }
+    .button:hover { transform: translateY(-2px); }
+    .button-lime { color: var(--black); background: var(--lime); }
+    .button-lime:hover { background: #c4ed30; }
+    .button-outline { color: var(--white); border-color: rgba(255,255,255,.32); background: transparent; }
+    .button-outline:hover { color: var(--black); background: var(--white); }
+    .button-dark { color: var(--white); background: var(--black); }
+    .button-light { color: var(--black); background: var(--white); }
+
+    .hero { position: relative; overflow: hidden; padding: 110px 0 105px; color: var(--white); background: var(--black); }
+    .hero::before { content: ""; position: absolute; top: -420px; right: -220px; width: 850px; height: 850px; border: 1px solid rgba(216,255,70,.28); border-radius: 50%; box-shadow: 0 0 0 75px rgba(216,255,70,.035), 0 0 0 150px rgba(216,255,70,.025); }
+    .hero::after { content: "AI"; position: absolute; right: -20px; bottom: -150px; color: rgba(255,255,255,.035); font-size: 35rem; font-weight: 900; letter-spacing: -.16em; line-height: 1; }
+    .hero-inner { position: relative; z-index: 1; }
+    .hero .eyebrow { color: var(--lime); }
+    .hero h1 { max-width: 1000px; }
+    .hero h1 em { color: var(--lime); font-style: normal; }
+    .hero-bottom { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-top: 40px; }
+    .hero-bottom .intro { color: #c4c5cb; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+    .hero-note { max-width: 190px; color: #92949d; font-size: .78rem; line-height: 1.5; }
+
+    .definition { padding: 100px 0 110px; background: var(--lime); }
+    .definition-grid { display: grid; grid-template-columns: .85fr 1.15fr; align-items: start; gap: 90px; }
+    .definition h2 { max-width: 520px; font-size: clamp(2.6rem, 5vw, 5.3rem); }
+    .definition-copy { max-width: 630px; }
+    .definition-copy p { margin-bottom: 24px; font-size: clamp(1.45rem, 3vw, 2.9rem); letter-spacing: -.055em; line-height: 1.08; }
+    .definition-copy small { display: block; max-width: 510px; color: #4c5624; font-size: .94rem; line-height: 1.7; }
+
+    .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .compare-card { min-height: 400px; padding: 34px; border: 1px solid var(--line); border-radius: 2px; }
+    .compare-card:first-child { background: var(--paper); }
+    .compare-card:last-child { color: var(--white); border-color: var(--black); background: var(--black); }
+    .compare-label { display: flex; align-items: center; justify-content: space-between; margin-bottom: 80px; font-size: .73rem; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+    .compare-card:first-child .compare-label { color: var(--muted); }
+    .compare-card:last-child .compare-label { color: var(--lime); }
+    .compare-label span:last-child { font-size: 1.25rem; letter-spacing: 0; }
+    .compare-card h3 { max-width: 360px; font-size: clamp(1.9rem, 3.3vw, 3.5rem); }
+    .compare-card p { max-width: 390px; color: var(--muted); font-size: .96rem; }
+    .compare-card:last-child p { color: #bfc1c7; }
+    .compare-list { display: grid; gap: 10px; margin: 25px 0 0; padding: 0; list-style: none; font-size: .88rem; }
+    .compare-list li { display: flex; align-items: flex-start; gap: 9px; }
+    .compare-list li::before { content: "×"; color: var(--red); font-size: 1.15rem; line-height: 1; }
+    .compare-card:last-child .compare-list li::before { content: "✓"; color: var(--lime); }
+
+    .use-case-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+    .use-case { min-height: 330px; padding: 28px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: color .2s ease, background .2s ease; }
+    .use-case:hover { color: var(--white); background: var(--black); }
+    .use-case-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 85px; color: var(--muted); font-size: 1.2rem; }
+    .use-case:hover .use-case-top { color: var(--lime); }
+    .use-case h3 { font-size: 1.75rem; }
+    .use-case p { max-width: 320px; margin-bottom: 0; color: var(--muted); font-size: .9rem; }
+    .use-case:hover p { color: #bfc1c7; }
+    .use-case .micro { display: inline-block; margin-top: 24px; color: var(--violet); font-size: .71rem; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+    .use-case:hover .micro { color: var(--lime); }
+
+    .architecture { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; align-items: center; }
+    .architecture-intro h2 { font-size: clamp(2.7rem, 5vw, 5.7rem); }
+    .architecture-intro .intro { font-size: 1rem; }
+    .architecture-diagram { position: relative; min-height: 525px; padding: 28px; border: 1px solid rgba(255,255,255,.2); background: #181a20; }
+    .diagram-label { display: flex; justify-content: space-between; margin-bottom: 26px; color: #92949d; font-size: .7rem; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+    .diagram-flow { display: grid; gap: 10px; }
+    .diagram-row { display: grid; grid-template-columns: 155px 1fr 110px; align-items: stretch; gap: 10px; }
+    .diagram-block { min-height: 61px; display: flex; align-items: center; padding: 14px; border: 1px solid rgba(255,255,255,.14); color: #d5d6da; background: #202329; font-size: .79rem; font-weight: 750; }
+    .diagram-block.highlight { color: var(--black); border-color: var(--lime); background: var(--lime); }
+    .diagram-block.action { color: var(--black); border-color: var(--violet); background: #a89bff; }
+    .diagram-arrow { display: grid; place-items: center; color: #6f727c; font-size: 1.1rem; }
+    .diagram-footer { position: absolute; right: 28px; bottom: 27px; left: 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.14); color: #92949d; font-size: .77rem; }
+    .diagram-footer strong { color: var(--lime); }
+
+    .control-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+    .control-card { min-height: 240px; padding: 25px; border: 1px solid rgba(255,255,255,.18); }
+    .control-icon { width: 40px; height: 40px; display: grid; place-items: center; margin-bottom: 46px; color: var(--black); background: var(--lime); font-size: 1.2rem; font-weight: 900; }
+    .control-card h3 { font-size: 1.2rem; }
+    .control-card p { margin-bottom: 0; color: #a5a7ae; font-size: .86rem; }
+
+    .delivery { display: grid; grid-template-columns: 1fr 1.4fr; gap: 90px; }
+    .delivery h2 { font-size: clamp(2.8rem, 5vw, 5.8rem); }
+    .delivery-list { border-top: 1px solid var(--line); }
+    .delivery-item { display: grid; grid-template-columns: 48px 1fr 22px; gap: 18px; align-items: start; padding: 24px 0; border-bottom: 1px solid var(--line); }
+    .delivery-number { color: var(--violet); font-size: .77rem; font-weight: 850; }
+    .delivery-item h3 { margin-bottom: 8px; font-size: 1.16rem; letter-spacing: -.035em; }
+    .delivery-item p { max-width: 550px; margin-bottom: 0; color: var(--muted); font-size: .88rem; }
+    .delivery-arrow { color: var(--muted); font-size: 1.1rem; }
+
+    .proof { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .proof-card { min-height: 240px; padding: 28px; background: var(--lime); }
+    .proof-card:nth-child(2) { background: var(--violet); }
+    .proof-card:nth-child(3) { color: var(--white); background: var(--black); }
+    .proof-card strong { display: block; margin-bottom: 60px; font-size: clamp(2.5rem, 5vw, 5rem); letter-spacing: -.08em; line-height: .8; }
+    .proof-card p { max-width: 220px; margin-bottom: 0; font-size: .89rem; font-weight: 750; }
+    .proof-card:nth-child(2) p { color: #201761; }
+    .proof-card:nth-child(3) p { color: #c2c4c9; }
+
+    .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; }
+    .faq-list { border-top: 1px solid var(--line); }
+    details { border-bottom: 1px solid var(--line); }
+    summary { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 22px 0; cursor: pointer; list-style: none; font-size: 1.05rem; font-weight: 800; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--violet); font-size: 1.5rem; font-weight: 400; }
+    details[open] summary::after { content: "−"; }
+    details p { max-width: 620px; padding: 0 30px 23px 0; margin-bottom: 0; color: var(--muted); font-size: .9rem; }
+
+    .cta { padding: 120px 0; color: var(--white); background: var(--violet); }
+    .cta-grid { display: grid; grid-template-columns: 1.1fr .9fr; align-items: end; gap: 80px; }
+    .cta h2 { max-width: 840px; }
+    .cta .intro { color: #e6e2ff; }
+    .cta-form { padding: 27px; color: var(--ink); background: var(--white); }
+    .field { display: grid; gap: 7px; margin-bottom: 14px; }
+    .field label { font-size: .76rem; font-weight: 850; }
+    .field input, .field select, .field textarea { width: 100%; padding: 12px 13px; border: 1px solid var(--line); border-radius: 0; outline: 0; color: var(--ink); background: #fbfbfb; }
+    .field textarea { min-height: 96px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: var(--violet); box-shadow: 0 0 0 3px rgba(124,99,255,.14); }
+    .form-bottom { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: 19px; }
+    .form-note { max-width: 230px; color: var(--muted); font-size: .7rem; }
+    .form-message { display: none; margin: 14px 0 0; color: #3e7a0b; font-size: .82rem; font-weight: 800; }
+
+    footer { color: #95979f; background: var(--black); }
+    .footer-main { display: grid; grid-template-columns: 1.3fr 1fr 1fr 1fr; gap: 45px; padding: 72px 0 60px; }
+    footer .brand { color: var(--white); }
+    .footer-copy { max-width: 260px; margin: 25px 0; font-size: .85rem; line-height: 1.7; }
+    .footer-contact { display: block; margin: 9px 0; color: var(--white); font-size: .84rem; }
+    .footer-col h3 { margin-bottom: 20px; color: var(--white); font-size: .82rem; letter-spacing: 0; }
+    .footer-col a { display: block; margin: 11px 0; font-size: .82rem; }
+    .footer-col a:hover { color: var(--lime); }
+    .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 23px 0; border-top: 1px solid rgba(255,255,255,.12); font-size: .71rem; }
+    .socials { display: flex; gap: 9px; }
+    .socials a { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid rgba(255,255,255,.23); border-radius: 50%; color: var(--white); font-size: .68rem; }
+
+    @media (max-width: 1000px) {
+      .nav-links { display: none; position: absolute; top: 76px; right: 24px; left: 24px; padding: 22px; border: 1px solid rgba(255,255,255,.16); background: var(--black); box-shadow: var(--shadow); }
+      .nav-links.open { display: grid; gap: 17px; }
+      .nav-toggle { display: block; }
+      .definition-grid, .architecture, .delivery, .faq-grid, .cta-grid { grid-template-columns: 1fr; gap: 50px; }
+      .control-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-main { grid-template-columns: 1.4fr 1fr 1fr; }
+      .footer-col:last-child { grid-column: 2 / 4; }
+    }
+    @media (max-width: 680px) {
+      .container { width: min(calc(100% - 32px), var(--max)); }
+      .section { padding: 88px 0; }
+      .section-header { display: block; margin-bottom: 42px; }
+      .section-header .intro { margin-top: 22px; }
+      h1 { font-size: clamp(3.35rem, 17vw, 5.8rem); }
+      h2 { font-size: clamp(2.7rem, 13vw, 4.7rem); }
+      .hero { padding: 76px 0 85px; }
+      .hero-bottom { display: block; }
+      .hero-actions { margin-top: 28px; }
+      .hero-note { max-width: 280px; margin-top: 25px; }
+      .definition { padding: 78px 0; }
+      .definition-grid { gap: 25px; }
+      .compare-grid, .use-case-grid, .proof, .control-grid { grid-template-columns: 1fr; }
+      .compare-card { min-height: 350px; }
+      .compare-label, .use-case-top { margin-bottom: 55px; }
+      .architecture-diagram { min-height: 545px; padding: 18px; }
+      .diagram-row { grid-template-columns: 1fr; gap: 4px; }
+      .diagram-arrow { display: none; }
+      .diagram-footer { right: 18px; bottom: 18px; left: 18px; }
+      .control-card { min-height: 200px; }
+      .control-icon { margin-bottom: 34px; }
+      .cta { padding: 85px 0; }
+      .form-bottom { align-items: flex-start; flex-direction: column-reverse; }
+      .footer-main { grid-template-columns: 1fr; gap: 35px; padding: 55px 0 40px; }
+      .footer-col:last-child { grid-column: auto; }
+      .footer-bottom { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement"><div class="container announcement-inner"><span>NEW SERVICE</span><strong>AI Agent Development — từ ý tưởng đến hệ thống vận hành thực tế</strong><span>→</span></div></div>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="EVOTEK trang chủ"><span class="brand-mark" aria-hidden="true"></span>EVOTEK</a>
+      <nav class="nav-links" id="main-nav" aria-label="Điều hướng chính">
+        <a href="#definition">AI Agent là gì?</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#architecture">Kiến trúc</a>
+        <a href="#delivery">Cách triển khai</a>
+        <a href="#contact">Liên hệ</a>
+      </nav>
+      <div class="nav-actions"><span class="language">VI</span><a class="button button-lime" href="#contact">Nói chuyện với EVOTEK</a><button class="nav-toggle" type="button" aria-label="Mở menu" aria-controls="main-nav" aria-expanded="false">☰</button></div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="eyebrow">EVOTEK / AI AGENT DEVELOPMENT</span>
+        <h1>Không chỉ trả lời.<br><em>AI Agent thực hiện.</em></h1>
+        <div class="hero-bottom">
+          <p class="intro">EVOTEK xây dựng những AI Agent hiểu bối cảnh doanh nghiệp, truy cập đúng dữ liệu, sử dụng đúng công cụ và hoàn thành các quy trình mà đội ngũ của bạn đang phải làm thủ công mỗi ngày.</p>
+          <div class="hero-actions"><a class="button button-lime" href="#contact">Tìm cơ hội tự động hóa</a><a class="button button-outline" href="#use-cases">Xem use case <span>↗</span></a></div>
+          <p class="hero-note">Custom-built for your business.<br>Grounded in your data.<br>Always under your control.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="definition" id="definition">
+      <div class="container definition-grid">
+        <div><span class="eyebrow">THE SHIFT</span><h2>Từ chatbot trả lời câu hỏi đến AI biết cách hoàn thành công việc.</h2></div>
+        <div class="definition-copy"><p>Chatbot nói chuyện với người dùng. AI Agent <strong>nhận mục tiêu, suy luận các bước, gọi công cụ và tạo ra kết quả.</strong></p><small>Đó có thể là tiếp nhận một yêu cầu hỗ trợ, kiểm tra thông tin trong nhiều hệ thống, đề xuất phương án, cập nhật dữ liệu và chuyển những trường hợp cần phán đoán cho đúng người. Giá trị nằm ở quy trình được hoàn tất — không chỉ ở câu trả lời nghe có vẻ thông minh.</small></div>
+      </div>
+    </section>
+
+    <section class="section" id="difference">
+      <div class="container">
+        <div class="section-header"><div><span class="eyebrow">A DIFFERENT KIND OF AI</span><h2>Điều gì khiến một Agent đáng để doanh nghiệp đầu tư?</h2></div><p class="intro">Các nền tảng AI tiên tiến đang dịch chuyển từ “hỏi và đáp” sang “hiểu, quyết định và hành động”. Chúng tôi xây dựng lớp hành động đó cho từng doanh nghiệp.</p></div>
+        <div class="compare-grid">
+          <article class="compare-card"><div class="compare-label"><span>Basic chatbot</span><span>01</span></div><h3>Biết nhiều, nhưng làm được ít.</h3><p>Phù hợp với những câu hỏi có kịch bản và phạm vi trả lời cố định.</p><ul class="compare-list"><li>Trả lời dựa trên nội dung có sẵn</li><li>Thường hoạt động trong một kênh riêng</li><li>Không có quyền truy cập hệ thống</li><li>Chuyển việc cho con người khá sớm</li></ul></article>
+          <article class="compare-card"><div class="compare-label"><span>Business AI Agent</span><span>02</span></div><h3>Hiểu mục tiêu, rồi đưa công việc đi đến cùng.</h3><p>Được thiết kế quanh quy trình thực tế, dữ liệu thật và những công cụ doanh nghiệp đang sử dụng.</p><ul class="compare-list"><li>Hiểu ngữ cảnh và phân rã mục tiêu</li><li>Truy xuất dữ liệu được cấp quyền</li><li>Gọi API, cập nhật hệ thống, tạo đầu ra</li><li>Biết khi nào cần hỏi hoặc chuyển cho người</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gray" id="use-cases">
+      <div class="container">
+        <div class="section-header"><div><span class="eyebrow">BUILT AROUND WORK</span><h2>Những việc Agent có thể bắt đầu làm cùng đội ngũ của bạn.</h2></div><p class="intro">Không bắt đầu bằng một danh sách tính năng. Chúng tôi bắt đầu bằng một quy trình đang tốn thời gian, chậm trễ hoặc phụ thuộc quá nhiều vào thao tác thủ công.</p></div>
+        <div class="use-case-grid">
+          <article class="use-case"><div class="use-case-top"><span>01</span><span>↗</span></div><h3>Customer service</h3><p>Tiếp nhận yêu cầu, tra cứu lịch sử, đề xuất giải pháp, xử lý tác vụ và chuyển ca có rủi ro cho nhân viên.</p><span class="micro">resolve · route · follow up</span></article>
+          <article class="use-case"><div class="use-case-top"><span>02</span><span>↗</span></div><h3>Sales & growth</h3><p>Đọc tín hiệu từ CRM, phân loại lead, chuẩn bị brief cho sales, cá nhân hóa nội dung và nhắc việc đúng thời điểm.</p><span class="micro">qualify · recommend · activate</span></article>
+          <article class="use-case"><div class="use-case-top"><span>03</span><span>↗</span></div><h3>Internal knowledge</h3><p>Biến tài liệu rời rạc thành một trợ lý nội bộ có thể tìm đúng thông tin, trích nguồn và hướng dẫn theo chính sách công ty.</p><span class="micro">retrieve · explain · cite</span></article>
+          <article class="use-case"><div class="use-case-top"><span>04</span><span>↗</span></div><h3>Document operations</h3><p>Đọc, đối chiếu, trích xuất và chuyển dữ liệu từ hợp đồng, hồ sơ, hóa đơn hoặc báo cáo vào đúng quy trình.</p><span class="micro">read · compare · extract</span></article>
+          <article class="use-case"><div class="use-case-top"><span>05</span><span>↗</span></div><h3>Operations copilot</h3><p>Tổng hợp dữ liệu từ nhiều nguồn, theo dõi chỉ số, phát hiện bất thường và đề xuất bước xử lý tiếp theo.</p><span class="micro">monitor · analyse · act</span></article>
+          <article class="use-case"><div class="use-case-top"><span>06</span><span>↗</span></div><h3>Voice & omnichannel</h3><p>Mở rộng Agent đến web, mobile, chat nội bộ, hotline hoặc các kênh doanh nghiệp mà khách hàng đã quen dùng.</p><span class="micro">listen · respond · handoff</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-black" id="architecture">
+      <div class="container architecture">
+        <div class="architecture-intro"><span class="eyebrow" style="color:var(--lime)">THE AGENT STACK</span><h2>Không phải một model. Là cả một hệ thống phối hợp.</h2><p class="intro">Một Agent đáng tin cần nhiều hơn prompt. EVOTEK kết nối model, dữ liệu, công cụ, quy tắc và con người thành một luồng vận hành có thể quan sát và cải tiến.</p><a class="arrow-link white-link" href="#contact">Trao đổi về kiến trúc phù hợp</a></div>
+        <div class="architecture-diagram" aria-label="Sơ đồ kiến trúc AI Agent"><div class="diagram-label"><span>EVOTEK AGENT ARCHITECTURE</span><span>v1.0 / CONTROLLED</span></div><div class="diagram-flow"><div class="diagram-row"><div class="diagram-block highlight">Mục tiêu của người dùng</div><div class="diagram-arrow">→</div><div class="diagram-block">Intent</div></div><div class="diagram-row"><div class="diagram-block">Business context</div><div class="diagram-arrow">→</div><div class="diagram-block highlight">Reasoning</div></div><div class="diagram-row"><div class="diagram-block">Knowledge base</div><div class="diagram-arrow">→</div><div class="diagram-block">Retrieval</div></div><div class="diagram-row"><div class="diagram-block">CRM · ERP · API · Tools</div><div class="diagram-arrow">→</div><div class="diagram-block action">Action</div></div><div class="diagram-row"><div class="diagram-block">Human approval</div><div class="diagram-arrow">→</div><div class="diagram-block">Outcome</div></div></div><div class="diagram-footer"><span>Every action is permission-aware and observable.</span><strong>→ HUMAN CONTROL</strong></div></div>
+      </div>
+    </section>
+
+    <section class="section section-black" style="padding-top:0" id="control">
+      <div class="container"><div class="control-grid"><article class="control-card"><div class="control-icon">⌁</div><h3>Grounded in data</h3><p>Agent trả lời dựa trên nguồn dữ liệu được doanh nghiệp phê duyệt, thay vì tự suy đoán khi thiếu thông tin.</p></article><article class="control-card"><div class="control-icon">⌘</div><h3>Permission-aware</h3><p>Mỗi vai trò chỉ được nhìn thấy và thực hiện đúng những gì được cấp quyền trong hệ thống.</p></article><article class="control-card"><div class="control-icon">↗</div><h3>Human escalation</h3><p>Những trường hợp nhạy cảm, chưa rõ hoặc vượt ngưỡng rủi ro sẽ được chuyển tới con người.</p></article><article class="control-card"><div class="control-icon">◌</div><h3>Measured over time</h3><p>Theo dõi chất lượng, chi phí, độ chính xác và mức độ sử dụng để liên tục tối ưu Agent.</p></article></div></div>
+    </section>
+
+    <section class="section" id="delivery">
+      <div class="container delivery"><div><span class="eyebrow">FROM IDEA TO PRODUCTION</span><h2>Bắt đầu nhỏ. Tạo giá trị thật. Mở rộng có chủ đích.</h2><p class="intro">Thay vì hứa hẹn một “siêu Agent” làm mọi thứ, chúng tôi giúp doanh nghiệp chọn đúng điểm bắt đầu và xây nền tảng để phát triển tiếp.</p></div><div class="delivery-list"><article class="delivery-item"><span class="delivery-number">01</span><div><h3>Map the work</h3><p>Phân tích quy trình, người dùng, dữ liệu, hệ thống và điểm nghẽn để tìm ra cơ hội tự động hóa có tác động rõ ràng.</p></div><span class="delivery-arrow">↗</span></article><article class="delivery-item"><span class="delivery-number">02</span><div><h3>Shape the agent</h3><p>Xác định vai trò, mục tiêu, công cụ, nguồn tri thức, ngưỡng phê duyệt và cách Agent phối hợp với con người.</p></div><span class="delivery-arrow">↗</span></article><article class="delivery-item"><span class="delivery-number">03</span><div><h3>Build & connect</h3><p>Phát triển trải nghiệm, tích hợp API và dữ liệu, kiểm thử trên các tình huống thật trước khi đưa vào vận hành.</p></div><span class="delivery-arrow">↗</span></article><article class="delivery-item"><span class="delivery-number">04</span><div><h3>Launch with guardrails</h3><p>Triển khai có kiểm soát, đào tạo đội ngũ, thiết lập giám sát và giữ quyền quyết định ở những điểm quan trọng.</p></div><span class="delivery-arrow">↗</span></article><article class="delivery-item"><span class="delivery-number">05</span><div><h3>Learn & scale</h3><p>Đo lường kết quả, cải thiện chất lượng và mở rộng sang các phòng ban hoặc quy trình liên quan.</p></div><span class="delivery-arrow">↗</span></article></div></div>
+    </section>
+
+    <section class="section section-gray" id="proof"><div class="container"><div class="section-header"><div><span class="eyebrow">WHY EVOTEK</span><h2>Đội ngũ đủ gần với bài toán, đủ sâu về công nghệ.</h2></div><p class="intro">AI Agent cần được đặt trong bối cảnh sản phẩm, phần mềm, dữ liệu và vận hành. Đó là nơi EVOTEK có nhiều năm kinh nghiệm đồng hành cùng doanh nghiệp.</p></div><div class="proof"><article class="proof-card"><strong>100+</strong><p>Doanh nghiệp đã đồng hành cùng EVOTEK trong các bài toán công nghệ.</p></article><article class="proof-card"><strong>7+</strong><p>Năm xây dựng sản phẩm và hệ thống phần mềm cho nhiều ngành khác nhau.</p></article><article class="proof-card"><strong>CMMI 3</strong><p>Năng lực phát triển phần mềm được xây dựng trên quy trình và tiêu chuẩn rõ ràng.</p></article></div></div></section>
+
+    <section class="section" id="faq"><div class="container faq-grid"><div><span class="eyebrow">QUESTIONS WORTH ASKING</span><h2>Trước khi bắt đầu, hãy hỏi đúng câu hỏi.</h2><p class="intro">Một AI Agent tốt không bắt đầu từ việc chọn model. Nó bắt đầu từ việc hiểu tổ chức đang muốn thay đổi điều gì.</p></div><div class="faq-list"><details open><summary>AI Agent khác gì so với chatbot?</summary><p>Chatbot chủ yếu phản hồi theo nội dung và kịch bản có sẵn. AI Agent có thể hiểu mục tiêu, lập kế hoạch, truy xuất dữ liệu, sử dụng công cụ và thực hiện nhiều bước trong một quy trình — với giới hạn và quyền truy cập được thiết kế trước.</p></details><details><summary>Doanh nghiệp nên bắt đầu từ use case nào?</summary><p>Nên bắt đầu từ một quy trình có tần suất cao, dữ liệu tương đối rõ, nhiều thao tác lặp lại và kết quả có thể đo lường. Ví dụ: phân loại yêu cầu hỗ trợ, tra cứu tri thức nội bộ hoặc tổng hợp báo cáo vận hành.</p></details><details><summary>Agent có thể kết nối với hệ thống hiện tại không?</summary><p>Có thể, tùy theo hệ thống và quyền truy cập. Agent thường được kết nối với CRM, ERP, help desk, cơ sở dữ liệu, kho tài liệu và các API nội bộ thông qua lớp tích hợp được kiểm soát.</p></details><details><summary>Làm thế nào để kiểm soát rủi ro?</summary><p>Thiết kế quyền hạn theo vai trò, grounding theo nguồn dữ liệu được duyệt, kiểm thử trước triển khai, human approval cho tác vụ nhạy cảm, log hoạt động và cơ chế đánh giá sau khi vận hành.</p></details></div></div></section>
+
+    <section class="cta" id="contact"><div class="container cta-grid"><div><span class="eyebrow" style="color:var(--lime)">FIND YOUR FIRST AGENT</span><h2>Bạn đang có quy trình nào nên được tự động hóa?</h2><p class="intro">Hãy kể cho EVOTEK nghe về công việc đang tốn thời gian nhất. Chúng tôi sẽ cùng bạn xác định liệu AI Agent có thể tạo ra giá trị — và nên bắt đầu từ đâu.</p></div><div class="cta-form"><form id="contact-form"><div class="field"><label for="name">Tên của bạn *</label><input id="name" type="text" placeholder="Nguyễn Văn A" required></div><div class="field"><label for="email">Email công việc *</label><input id="email" type="email" placeholder="you@company.com" required></div><div class="field"><label for="need">Bạn muốn trao đổi về</label><select id="need"><option>Tìm use case phù hợp</option><option>Phát triển một AI Agent cụ thể</option><option>Tích hợp Agent với hệ thống hiện tại</option><option>Xây dựng chiến lược AI cho doanh nghiệp</option></select></div><div class="field"><label for="message">Mô tả ngắn bài toán</label><textarea id="message" placeholder="Quy trình, hệ thống hoặc vấn đề bạn muốn AI hỗ trợ..."></textarea></div><div class="form-bottom"><span class="form-note">Thông tin chỉ được sử dụng để liên hệ tư vấn và được bảo mật.</span><button class="button button-dark" type="submit">Gửi yêu cầu →</button></div><p class="form-message" id="form-message" role="status">Cảm ơn bạn. EVOTEK sẽ liên hệ để trao đổi bước tiếp theo.</p></form></div></div></section>
+  </main>
+
+  <footer><div class="container footer-main"><div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span>EVOTEK</a><p class="footer-copy">IT solutions that EVOLVE YOUR BUSINESS. Công nghệ giúp doanh nghiệp tiến về phía trước.</p><a class="footer-contact" href="mailto:contact@evotek.vn">contact@evotek.vn</a><a class="footer-contact" href="tel:+84833663688">(+84) 833 663 688</a></div><div class="footer-col"><h3>EXPLORE</h3><a href="#definition">AI Agent là gì?</a><a href="#use-cases">Use cases</a><a href="#architecture">Kiến trúc Agent</a><a href="#delivery">Cách triển khai</a></div><div class="footer-col"><h3>EVOTEK</h3><a href="https://evotek.vn/">Về EVOTEK</a><a href="#proof">Năng lực</a><a href="https://evotek.vn/category/du-an/">Dự án</a><a href="#contact">Liên hệ</a></div><div class="footer-col"><h3>OFFICES</h3><a href="#contact">Hà Nội: Tầng 7, Tòa nhà Kim Hoàn, Ngõ 19 Duy Tân, Q. Cầu Giấy.</a><a href="#contact">Hàn Quốc: Mapo-gu, Seoul, Republic of Korea.</a></div></div><div class="container footer-bottom"><span>© 2026 EVOTEK JSC. All rights reserved.</span><div class="socials"><a href="https://www.facebook.com/evotekvn/" aria-label="Facebook">f</a><a href="https://linkedin.com/company/evotekvn" aria-label="LinkedIn">in</a><a href="mailto:contact@evotek.vn" aria-label="Email">@</a></div></div></footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav-links');
+    toggle?.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.textContent = open ? '×' : '☰';
+    });
+    nav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      toggle?.setAttribute('aria-expanded', 'false');
+      if (toggle) toggle.textContent = '☰';
+    }));
+    document.querySelector('#contact-form')?.addEventListener('submit', (event) => {
+      event.preventDefault();
+      document.querySelector('#form-message').style.display = 'block';
+      event.currentTarget.reset();
+    });
+  </script>
+</body>
+</html>

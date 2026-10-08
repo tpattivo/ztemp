@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<w:settings xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:sl="http://schemas.openxmlformats.org/schemaLibrary/2006/main" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du">
+  <w:zoom w:percent="80"/>
+  <w:proofState w:spelling="clean" w:grammar="clean"/>
+  <w:trackRevisions/>
+  <w:defaultTabStop w:val="720"/>
+  <w:characterSpacingControl w:val="doNotCompress"/>
+  <w:footnotePr>
+    <w:footnote w:id="-1"/>
+    <w:footnote w:id="0"/>
+  </w:footnotePr>
+  <w:endnotePr>
+    <w:endnote w:id="-1"/>
+    <w:endnote w:id="0"/>
+  </w:endnotePr>
+  <w:compat>
+    <w:useFELayout/>
+    <w:compatSetting w:name="compatibilityMode" w:uri="http://schemas.microsoft.com/office/word" w:val="14"/>
+    <w:compatSetting w:name="overrideTableStyleFontSizeAndJustification" w:uri="http://schemas.microsoft.com/office/word" w:val="1"/>
+    <w:compatSetting w:name="enableOpenTypeFeatures" w:uri="http://schemas.microsoft.com/office/word" w:val="1"/>
+    <w:compatSetting w:name="doNotFlipMirrorIndents" w:uri="http://schemas.microsoft.com/office/word" w:val="1"/>
+    <w:compatSetting w:name="useWord2013TrackBottomHyphenation" w:uri="http://schemas.microsoft.com/office/word" w:val="1"/>
+  </w:compat>
+  <w:rsids>
+    <w:rsidRoot w:val="00B47730"/>
+    <w:rsid w:val="00016F10"/>
+    <w:rsid w:val="00034616"/>
+    <w:rsid w:val="0006063C"/>
+    <w:rsid w:val="000878C8"/>
+    <w:rsid w:val="000A7FA1"/>
+    <w:rsid w:val="000D7C79"/>
+    <w:rsid w:val="000F2835"/>
+    <w:rsid w:val="00103535"/>
+    <w:rsid w:val="0012596F"/>
+    <w:rsid w:val="0015074B"/>
+    <w:rsid w:val="00194F96"/>
+    <w:rsid w:val="0029639D"/>
+    <w:rsid w:val="002E5B54"/>
+    <w:rsid w:val="00301F0F"/>
+    <w:rsid w:val="00310C46"/>
+    <w:rsid w:val="00315B29"/>
+    <w:rsid w:val="00326F90"/>
+    <w:rsid w:val="00370E62"/>
+    <w:rsid w:val="004875AD"/>
+    <w:rsid w:val="004D5294"/>
+    <w:rsid w:val="0050703A"/>
+    <w:rsid w:val="0052650D"/>
+    <w:rsid w:val="00650FD4"/>
+    <w:rsid w:val="00675E11"/>
+    <w:rsid w:val="006A1F8B"/>
+    <w:rsid w:val="00710C60"/>
+    <w:rsid w:val="007C62A6"/>
+    <w:rsid w:val="007F7FAB"/>
+    <w:rsid w:val="00850F4A"/>
+    <w:rsid w:val="0086704E"/>
+    <w:rsid w:val="0090496E"/>
+    <w:rsid w:val="00944BC8"/>
+    <w:rsid w:val="00A16E70"/>
+    <w:rsid w:val="00A57645"/>
+    <w:rsid w:val="00AA1D8D"/>
+    <w:rsid w:val="00AC6D5B"/>
+    <w:rsid w:val="00AE0707"/>
+    <w:rsid w:val="00AE6708"/>
+    <w:rsid w:val="00B47730"/>
+    <w:rsid w:val="00B61C13"/>
+    <w:rsid w:val="00B67DE1"/>
+    <w:rsid w:val="00BE3BD1"/>
+    <w:rsid w:val="00C371F6"/>
+    <w:rsid w:val="00CB0664"/>
+    <w:rsid w:val="00CB79FE"/>
+    <w:rsid w:val="00CD021D"/>
+    <w:rsid w:val="00CF08B7"/>
+    <w:rsid w:val="00D43947"/>
+    <w:rsid w:val="00D547CB"/>
+    <w:rsid w:val="00DA2167"/>
+    <w:rsid w:val="00DE727F"/>
+    <w:rsid w:val="00EF767D"/>
+    <w:rsid w:val="00F450C9"/>
+    <w:rsid w:val="00FC693F"/>
+    <w:rsid w:val="00FD6A59"/>
+    <w:rsid w:val="4EE489EC"/>
+    <w:rsid w:val="58DDE4B7"/>
+    <w:rsid w:val="60552350"/>
+    <w:rsid w:val="72AB4963"/>
+    <w:rsid w:val="74749B7E"/>
+    <w:rsid w:val="79E4F2A7"/>
+  </w:rsids>
+  <m:mathPr>
+    <m:mathFont m:val="Cambria Math"/>
+    <m:brkBin m:val="before"/>
+    <m:brkBinSub m:val="--"/>
+    <m:smallFrac m:val="0"/>
+    <m:dispDef/>
+    <m:lMargin m:val="0"/>
+    <m:rMargin m:val="0"/>
+    <m:defJc m:val="centerGroup"/>
+    <m:wrapIndent m:val="1440"/>
+    <m:intLim m:val="subSup"/>
+    <m:naryLim m:val="undOvr"/>
+  </m:mathPr>
+  <w:themeFontLang w:val="en-US" w:eastAsia="ja-JP"/>
+  <w:clrSchemeMapping w:bg1="light1" w:t1="dark1" w:bg2="light2" w:t2="dark2" w:accent1="accent1" w:accent2="accent2" w:accent3="accent3" w:accent4="accent4" w:accent5="accent5" w:accent6="accent6" w:hyperlink="hyperlink" w:followedHyperlink="followedHyperlink"/>
+  <w:doNotAutoCompressPictures/>
+  <w:shapeDefaults>
+    <o:shapedefaults v:ext="edit" spidmax="1026"/>
+    <o:shapelayout v:ext="edit">
+      <o:idmap v:ext="edit" data="1"/>
+    </o:shapelayout>
+  </w:shapeDefaults>
+  <w:decimalSymbol w:val="."/>
+  <w:listSeparator w:val=","/>
+  <w14:docId w14:val="24062061"/>
+  <w14:defaultImageDpi w14:val="300"/>
+  <w15:docId w15:val="{0E7307E0-DCE5-4E2C-AA01-66186C1F151E}"/>
+</w:settings>
