@@ -1,0 +1,60 @@
+{
+  "total_duration": 80.612,
+  "scenes": [
+    {
+      "scene_id": "scene1",
+      "title": "Bối cảnh & Thực tiễn",
+      "text": "Quảng Ninh là trung tâm công nghiệp khai thác than và khoáng sản trọng điểm của cả nước, với năm mươi tám kho vật liệu nổ công nghiệp đang hoạt động thường xuyên. Trước khối lượng lưu chuyển đặc biệt lớn, công tác quản lý thủ công trước đây gặp nhiều điểm nghẽn về đối soát, hậu kiểm và tiềm ẩn nguy cơ mất an toàn.",
+      "audio_file": "assets/audio/scene1.mp3",
+      "audio_start": 1.0,
+      "audio_end": 15.928,
+      "scene_start": 0.0,
+      "scene_end": 16.728,
+      "duration": 16.728
+    },
+    {
+      "scene_id": "scene2",
+      "title": "Giải pháp & Kiến trúc 3 Cổng",
+      "text": "Thực hiện Đề án không sáu của Chính phủ, Phòng Cảnh sát Quản lý hành chính về trật tự xã hội, Công an thành phố Quảng Ninh đã tiên phong triển khai Giải pháp nâng cao hiệu quả công tác quản lý vật liệu nổ công nghiệp. Hệ thống kết nối ba cổng dùng chung trên một cơ sở dữ liệu tập trung: Cổng Công an, Cổng Doanh nghiệp và Cổng Quản trị.",
+      "audio_file": "assets/audio/scene2.mp3",
+      "audio_start": 16.728,
+      "audio_end": 32.064,
+      "scene_start": 16.228,
+      "scene_end": 32.864,
+      "duration": 16.635999999999996
+    },
+    {
+      "scene_id": "scene3",
+      "title": "Trình diễn Giao diện & Nghiệp vụ",
+      "text": "Trên Cổng Công an P C không sáu, Lãnh đạo và cán bộ giám sát toàn cảnh thành phố qua Dashboard trực quan theo thời gian thực. Điểm đột phá là tính năng Cặp liên thông, tự động ghép nối và đối soát hai chiều giữa bên bán và bên mua, phê duyệt và cấp số điện tử tức thì. Hệ thống đồng thời hậu kiểm hành trình xe qua bản đồ G P S, quét mã Q R truy vết vòng đời phiếu và hỗ trợ cơ chế ngoại tuyến tại cửa lò hầm mỏ cấm sóng viễn thông.",
+      "audio_file": "assets/audio/scene3.mp3",
+      "audio_start": 32.864,
+      "audio_end": 57.032,
+      "scene_start": 32.364,
+      "scene_end": 57.831999999999994,
+      "duration": 25.467999999999996
+    },
+    {
+      "scene_id": "scene4",
+      "title": "Hiệu quả Toàn diện",
+      "text": "Giải pháp rút ngắn thời gian xác nhận tình trạng kho từ hai ngày xuống tức thì, tự động hóa toàn bộ quy trình xuất nhập tồn, giúp Lãnh đạo chỉ đạo kịp thời trên dữ liệu số và hỗ trợ doanh nghiệp chuyển đổi số minh bạch, tiết kiệm.",
+      "audio_file": "assets/audio/scene4.mp3",
+      "audio_start": 57.831999999999994,
+      "audio_end": 68.536,
+      "scene_start": 57.331999999999994,
+      "scene_end": 69.336,
+      "duration": 12.004000000000005
+    },
+    {
+      "scene_id": "scene5",
+      "title": "Lời kết & Cam kết",
+      "text": "Chuyển đổi số, đổi mới phương thức quản lý. Công an thành phố Quảng Ninh quyết tâm bảo đảm tuyệt đối an ninh, an toàn, vì nhân dân và doanh nghiệp phục vụ.",
+      "audio_file": "assets/audio/scene5.mp3",
+      "audio_start": 69.336,
+      "audio_end": 78.312,
+      "scene_start": 68.836,
+      "scene_end": 79.112,
+      "duration": 10.275999999999996
+    }
+  ]
+}

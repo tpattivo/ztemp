@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Video Giới thiệu Giải pháp Quản lý VLNCN - Phiên bản Cinematic Real Stock Video & Photo</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    background: #030712;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #ffffff;
+    position: relative;
+    user-select: none;
+  }
+
+  /* ================= CINEMATIC GLOBAL MEDIA LAYERS ================= */
+  .media-stage {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    background: #060d17;
+  }
+
+  .stock-video-bg {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    filter: brightness(0.85) contrast(1.15) saturate(1.1);
+  }
+  .stock-video-bg.active {
+    opacity: 1;
+  }
+
+  .stock-photo-bg {
+    position: absolute;
+    top: -5%; left: -5%; width: 110%; height: 110%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    filter: brightness(0.85) contrast(1.15) saturate(1.1);
+    animation: kenBurnsSlow 20s ease-in-out infinite alternate;
+  }
+  .stock-photo-bg.active {
+    opacity: 1;
+  }
+
+  @keyframes kenBurnsSlow {
+    0% { transform: scale(1.0) translate(0, 0); }
+    100% { transform: scale(1.06) translate(-1.5%, -1%); }
+  }
+
+  /* Cinematic Lens Overlays & Color Grading */
+  .cinematic-grade {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 5;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 50%, rgba(11, 37, 69, 0.2) 0%, rgba(3, 7, 18, 0.78) 85%);
+  }
+  .vignette {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 6;
+    pointer-events: none;
+    box-shadow: inset 0 0 180px rgba(0, 0, 0, 0.88);
+  }
+  .scanlines {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    z-index: 7;
+    pointer-events: none;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.12) 50%);
+    background-size: 100% 4px;
+    opacity: 0.35;
+  }
+
+  /* Anamorphic Light Flare */
+  .anamorphic-flare {
+    position: absolute;
+    top: 14%; left: -20%; width: 140%; height: 2px;
+    background: linear-gradient(90deg, transparent 0%, rgba(56, 189, 248, 0.8) 35%, rgba(251, 191, 36, 0.95) 50%, rgba(56, 189, 248, 0.8) 65%, transparent 100%);
+    box-shadow: 0 0 40px 10px rgba(56, 189, 248, 0.55);
+    z-index: 8;
+    pointer-events: none;
+    opacity: 0.7;
+    transform: rotate(-1.2deg);
+  }
+
+  /* TOP CINEMATIC BROADCAST BAR */
+  .broadcast-top-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 64px;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 44px;
+    background: linear-gradient(180deg, rgba(3, 7, 18, 0.95) 0%, rgba(3, 7, 18, 0.5) 80%, transparent 100%);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+  }
+  .bt-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .bt-emblem {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 18px rgba(245, 158, 11, 0.7);
+    border: 2px solid #f59e0b;
+    background: #000;
+  }
+  .bt-emblem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bt-text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .bt-sup {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: #fbbf24;
+    text-transform: uppercase;
+  }
+  .bt-title {
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+  }
+
+  .bt-right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .rec-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(220, 38, 38, 0.25);
+    border: 1px solid rgba(239, 68, 68, 0.6);
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 800;
+    color: #fca5a5;
+    letter-spacing: 0.5px;
+  }
+  .rec-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #ef4444;
+    box-shadow: 0 0 10px #ef4444;
+    animation: blinkRec 1s infinite;
+  }
+  @keyframes blinkRec {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.25; }
+  }
+
+  .telemetry-chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #94a3b8;
+    background: rgba(15, 23, 42, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 4px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .telemetry-chip span.val {
+    color: #38bdf8;
+    font-weight: 700;
+  }
+
+  /* Lucide Vector Icons Utility */
+  .lucide-icon {
+    display: inline-block;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
+
+  /* SUBTITLES BAR */
+  .subtitles-cinematic {
+    position: absolute;
+    bottom: 24px;
+    left: 120px;
+    right: 120px;
+    height: 58px;
+    z-index: 60;
+    background: rgba(3, 7, 18, 0.9);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 36px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.75);
+  }
+  .subtitles-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f1f5f9;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 0.2px;
+  }
+  .subtitles-text span.hl {
+    color: #38bdf8;
+    font-weight: 800;
+    background: rgba(56, 189, 248, 0.18);
+    padding: 2px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    box-shadow: 0 0 14px rgba(56, 189, 248, 0.3);
+  }
+
+  /* ================= SCENE CONTAINERS ================= */
+  .scene-container {
+    position: absolute;
+    top: 74px; bottom: 88px; left: 48px; right: 48px;
+    z-index: 30;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  .scene-container.active {
+    display: block;
+    opacity: 1;
+  }
+
+  /* HUD CORNER RETICLES */
+  .hud-bracket-tl {
+    position: absolute;
+    top: 14px; left: 14px;
+    width: 24px; height: 24px;
+    border-top: 2px solid rgba(56, 189, 248, 0.7);
+    border-left: 2px solid rgba(56, 189, 248, 0.7);
+    pointer-events: none;
+  }
+  .hud-bracket-br {
+    position: absolute;
+    bottom: 14px; right: 14px;
+    width: 24px; height: 24px;
+    border-bottom: 2px solid rgba(56, 189, 248, 0.7);
+    border-right: 2px solid rgba(56, 189, 248, 0.7);
+    pointer-events: none;
+  }
+
+  /* TAG PILL */
+  .tag-pill {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(14, 165, 233, 0.18);
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    padding: 6px 18px;
+    border-radius: 20px;
+    color: #38bdf8;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  }
+
+  /* ================= SCENE 1 STYLES ================= */
+  .s1-layout {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 32px;
+    height: 100%;
+    align-items: center;
+  }
+  .s1-left-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .s1-headline {
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+  }
+  .s1-headline span.gold {
+    color: #fbbf24;
+    text-shadow: 0 0 25px rgba(251, 191, 36, 0.5);
+  }
+  .s1-subtext {
+    font-size: 17px;
+    color: #cbd5e1;
+    line-height: 1.5;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+  }
+
+  .s1-stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 8px;
+  }
+  .glass-card {
+    background: rgba(15, 23, 42, 0.82);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 22px 24px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  }
+  .glass-card.highlight {
+    border-color: rgba(56, 189, 248, 0.7);
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.4), inset 0 0 20px rgba(56, 189, 248, 0.15);
+    transform: translateY(-4px);
+  }
+  .glass-card.highlight-red {
+    border-color: rgba(239, 68, 68, 0.7);
+    box-shadow: 0 0 40px rgba(239, 68, 68, 0.4), inset 0 0 20px rgba(239, 68, 68, 0.15);
+    transform: translateY(-4px);
+  }
+
+  .stat-num-box {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .stat-big-num {
+    font-size: 54px;
+    font-weight: 900;
+    color: #38bdf8;
+    line-height: 1;
+    font-family: 'JetBrains Mono', monospace;
+    text-shadow: 0 0 22px rgba(56, 189, 248, 0.7);
+  }
+  .stat-big-num.amber {
+    color: #f59e0b;
+    text-shadow: 0 0 22px rgba(245, 158, 11, 0.7);
+  }
+  .stat-unit {
+    font-size: 18px;
+    font-weight: 800;
+    color: #94a3b8;
+  }
+  .stat-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #cbd5e1;
+    margin-top: 8px;
+    letter-spacing: 0.2px;
+  }
+
+  /* Right column: Picture-in-picture Live Video & Real Pain Points */
+  .s1-right-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    justify-content: center;
+  }
+  .pip-video-frame {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 380px;
+    border: 2px solid rgba(56, 189, 248, 0.4);
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.75);
+  }
+  .pip-video-frame video {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .pip-overlay-hud {
+    position: absolute;
+    top: 14px; left: 16px; right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+  }
+  .pip-title-badge {
+    background: rgba(3, 7, 18, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #f8fafc;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .pip-radar-tag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: #38bdf8;
+    background: rgba(14, 165, 233, 0.25);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    padding: 3px 8px;
+    border-radius: 4px;
+  }
+
+  .s1-pain-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pain-pill {
+    background: rgba(15, 23, 42, 0.82);
+    backdrop-filter: blur(14px);
+    border: 1px solid rgba(239, 68, 68, 0.35);
+    border-left: 4px solid #ef4444;
+    border-radius: 10px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #f1f5f9;
+  }
+  .pain-pill span.icon {
+    color: #ef4444;
+    font-size: 14px;
+  }
+
+  /* ================= SCENE 2 STYLES (3-GATE ARCHITECTURE) ================= */
+  .s2-header-box {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .s2-headline {
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    margin-top: 6px;
+    text-shadow: 0 4px 25px rgba(0, 0, 0, 0.9);
+  }
+  .s2-headline span.cyan {
+    color: #38bdf8;
+    text-shadow: 0 0 25px rgba(56, 189, 248, 0.65);
+  }
+
+  .s2-gates-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .gate-panel {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(26px);
+    border: 1.5px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  }
+  .gate-panel.focus-gate {
+    transform: translateY(-6px) scale(1.02);
+    border-color: #38bdf8;
+    box-shadow: 0 0 45px rgba(56, 189, 248, 0.45), inset 0 0 20px rgba(56, 189, 248, 0.15);
+  }
+  .gate-panel.focus-gate-gold {
+    transform: translateY(-6px) scale(1.02);
+    border-color: #f59e0b;
+    box-shadow: 0 0 45px rgba(245, 158, 11, 0.45), inset 0 0 20px rgba(245, 158, 11, 0.15);
+  }
+  .gate-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .gate-badge.blue { background: rgba(14, 165, 233, 0.2); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.4); }
+  .gate-badge.gold { background: rgba(245, 158, 11, 0.2); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.4); }
+  .gate-badge.purple { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.4); }
+
+  .gate-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .gate-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .gate-list li {
+    font-size: 13px;
+    color: #cbd5e1;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    line-height: 1.4;
+  }
+  .gate-list li span.chk {
+    color: #38bdf8;
+    font-weight: 900;
+  }
+
+  /* Central Database Core Bar */
+  .s2-core-hub {
+    background: linear-gradient(90deg, rgba(14, 165, 233, 0.18) 0%, rgba(15, 23, 42, 0.95) 50%, rgba(14, 165, 233, 0.18) 100%);
+    backdrop-filter: blur(26px);
+    border: 1.5px solid rgba(56, 189, 248, 0.45);
+    border-radius: 18px;
+    padding: 18px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.3);
+  }
+  .hub-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+  .hub-icon-orb {
+    width: 48px; height: 48px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #38bdf8 20%, #0369a1 80%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.7);
+  }
+  .hub-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .hub-main {
+    font-size: 18px;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  .hub-sub {
+    font-size: 12px;
+    color: #94a3b8;
+  }
+  .hub-tags {
+    display: flex;
+    gap: 12px;
+  }
+  .hub-tag-item {
+    background: rgba(3, 7, 18, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #38bdf8;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* ================= SCENE 3 STYLES (LIVE UI & REAL B-ROLL HYBRID) ================= */
+  .s3-layout {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    gap: 28px;
+    height: 100%;
+    align-items: center;
+  }
+
+  .s3-monitor-frame {
+    position: relative;
+    background: #020617;
+    border-radius: 18px;
+    border: 2px solid rgba(56, 189, 248, 0.45);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.85), 0 0 35px rgba(56, 189, 248, 0.25);
+    overflow: hidden;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  .browser-header {
+    height: 38px;
+    background: #0b1528;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+  }
+  .browser-dots {
+    display: flex;
+    gap: 6px;
+  }
+  .b-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+  }
+  .b-dot.red { background: #ef4444; }
+  .b-dot.yellow { background: #f59e0b; }
+  .b-dot.green { background: #10b981; }
+
+  .browser-url-pill {
+    background: #060e1d;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    padding: 3px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .browser-url-pill span.lock { color: #10b981; }
+
+  .browser-screen-viewport {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    background: #0f172a;
+  }
+  .ui-screen-img {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: contain;
+    object-position: top center;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .ui-screen-img.active {
+    opacity: 1;
+  }
+
+  /* Animated Cursor & Stamp */
+  .virtual-cursor {
+    position: absolute;
+    top: 100px; left: 100px;
+    width: 24px; height: 24px;
+    z-index: 50;
+    pointer-events: none;
+    transition: top 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), left 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .virtual-cursor svg {
+    filter: drop-shadow(0 4px 10px rgba(0,0,0,0.6));
+  }
+  .click-pulse {
+    position: absolute;
+    top: -10px; left: -10px;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 2px solid #38bdf8;
+    background: rgba(56, 189, 248, 0.35);
+    opacity: 0;
+    transform: scale(0.5);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  .click-pulse.clicked {
+    opacity: 1;
+    transform: scale(1.6);
+  }
+
+  .approved-stamp {
+    position: absolute;
+    top: 45%; left: 35%;
+    transform: translate(-50%, -50%) rotate(-8deg) scale(0.8);
+    background: rgba(16, 185, 129, 0.96);
+    border: 3px solid #ffffff;
+    border-radius: 12px;
+    padding: 10px 24px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 10px 35px rgba(16, 185, 129, 0.6);
+    display: none;
+    align-items: center;
+    gap: 10px;
+    z-index: 45;
+    animation: stampDrop 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+  }
+  @keyframes stampDrop {
+    0% { transform: translate(-50%, -50%) rotate(-8deg) scale(2); opacity: 0; }
+    100% { transform: translate(-50%, -50%) rotate(-8deg) scale(1); opacity: 1; }
+  }
+
+  /* GPS Dynamic Pin Overlay on UI Screen */
+  .gps-pin-marker {
+    position: absolute;
+    top: 50%; left: 52%;
+    display: none;
+    align-items: center;
+    gap: 8px;
+    background: rgba(220, 38, 38, 0.9);
+    border: 2px solid #ffffff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #fff;
+    box-shadow: 0 0 20px #ef4444;
+    z-index: 35;
+    animation: bounceMarker 1.2s infinite alternate;
+  }
+  @keyframes bounceMarker {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-8px); }
+  }
+
+  /* Right column: Real-life B-roll video clip and Callout notes */
+  .s3-right-context {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    height: 100%;
+    justify-content: center;
+  }
+  .context-video-card {
+    height: 260px;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    border: 1.5px solid rgba(56, 189, 248, 0.45);
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.7);
+  }
+  .context-video-card video {
+    width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .context-hud-tag {
+    position: absolute;
+    bottom: 12px; left: 14px;
+    background: rgba(3, 7, 18, 0.88);
+    border: 1px solid rgba(56, 189, 248, 0.45);
+    padding: 5px 14px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #38bdf8;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .s3-feature-card {
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 4px solid #38bdf8;
+    border-radius: 16px;
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .s3-feat-pill {
+    align-self: flex-start;
+    font-size: 11px;
+    font-weight: 800;
+    color: #38bdf8;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+  .s3-feat-title {
+    font-size: 20px;
+    font-weight: 800;
+    color: #ffffff;
+  }
+  .s3-feat-desc {
+    font-size: 13px;
+    color: #cbd5e1;
+    line-height: 1.5;
+  }
+
+  /* ================= SCENE 4 STYLES (IMPACT & VALUE) ================= */
+  .s4-headline-bar {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .s4-strike-hero {
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(26px);
+    border: 2px solid rgba(56, 189, 248, 0.45);
+    border-radius: 24px;
+    padding: 28px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 25px 65px rgba(0, 0, 0, 0.7);
+    margin-bottom: 24px;
+  }
+  .strike-box {
+    text-align: center;
+  }
+  .strike-sub {
+    font-size: 13px;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .strike-old {
+    font-size: 44px;
+    font-weight: 900;
+    color: #ef4444;
+    position: relative;
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .strike-line {
+    position: absolute;
+    top: 50%; left: -8px; right: -8px;
+    height: 4px;
+    background: #ef4444;
+    transform: rotate(-10deg);
+    box-shadow: 0 0 14px #ef4444;
+  }
+  .strike-arrow {
+    font-size: 42px;
+    color: #38bdf8;
+    animation: arrowPulse 1.2s infinite;
+  }
+  @keyframes arrowPulse {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(8px); }
+  }
+  .strike-new {
+    font-size: 52px;
+    font-weight: 900;
+    color: #10b981;
+    font-family: 'JetBrains Mono', monospace;
+    text-shadow: 0 0 28px rgba(16, 185, 129, 0.7);
+  }
+
+  .s4-pillars-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 22px;
+  }
+  .pillar-card {
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(22px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
+    padding: 24px;
+    position: relative;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+  }
+  .pillar-card.active-p {
+    transform: translateY(-6px);
+    border-color: #38bdf8;
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+  }
+  .pillar-icon {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    background: rgba(56, 189, 248, 0.18);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #38bdf8;
+    margin-bottom: 14px;
+  }
+  .pillar-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  .pillar-desc {
+    font-size: 13px;
+    color: #cbd5e1;
+    line-height: 1.5;
+  }
+
+  /* ================= SCENE 5 STYLES (EPIC OUTRO) ================= */
+  .s5-center-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    position: relative;
+  }
+  .s5-emblem-halo {
+    position: relative;
+    width: 140px; height: 140px;
+    margin-bottom: 24px;
+  }
+  .halo-ring {
+    position: absolute;
+    top: -15px; left: -15px; right: -15px; bottom: -15px;
+    border-radius: 50%;
+    border: 2px dashed rgba(251, 191, 36, 0.7);
+    animation: rotateRing 15s linear infinite;
+  }
+  @keyframes rotateRing {
+    100% { transform: rotate(360deg); }
+  }
+  .halo-glow {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.5) 0%, transparent 70%);
+    filter: blur(15px);
+  }
+  .s5-emblem-img {
+    width: 140px; height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fbbf24;
+    box-shadow: 0 0 40px rgba(251, 191, 36, 0.8);
+    position: relative;
+    z-index: 5;
+  }
+
+  .s5-title-large {
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+    text-shadow: 0 4px 35px rgba(0, 0, 0, 0.95);
+  }
+  .s5-title-large span.gold {
+    color: #fbbf24;
+    text-shadow: 0 0 35px rgba(251, 191, 36, 0.7);
+  }
+  .s5-subtitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #38bdf8;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 25px rgba(0, 0, 0, 0.95);
+  }
+
+  .s5-contact-card {
+    background: rgba(15, 23, 42, 0.88);
+    backdrop-filter: blur(26px);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 20px;
+    padding: 16px 40px;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.7);
+  }
+  .s5-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #e2e8f0;
+  }
+  .s5-contact-item span.icon {
+    color: #fbbf24;
+  }
+</style>
+</head>
+<body>
+
+<!-- Exact Synchronization Cover: Pure green screen while page buffers; removed on the exact first frame of startPlayback -->
+<div id="syncCover" style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#00ff00;z-index:9999999;"></div>
+
+<!-- MEDIA STAGE: REAL STOCK FOOTAGE & HIGH-RES PHOTOGRAPHY -->
+<div class="media-stage">
+  <!-- Stock Videos -->
+  <video id="vidHalong" class="stock-video-bg" src="../assets/stock/halong_drone.mp4" muted loop playsinline></video>
+  <video id="vidQuarry" class="stock-video-bg" src="../assets/stock/stone_quarry.mp4" muted loop playsinline></video>
+  <video id="vidHighway" class="stock-video-bg" src="../assets/stock/traffic_highway.mp4" muted loop playsinline></video>
+  <video id="vidCoal" class="stock-video-bg" src="../assets/stock/coal_cutting.mp4" muted loop playsinline></video>
+
+  <!-- Stock Photos (Ken Burns Animated Backgrounds) -->
+  <div id="bgMine" class="stock-photo-bg" style="background-image: url('../assets/stock/quang_ninh_mine_1791533720021.jpg');"></div>
+  <div id="bgDepot" class="stock-photo-bg" style="background-image: url('../assets/stock/explosives_depot_1791533744454.jpg');"></div>
+  <div id="bgPolice" class="stock-photo-bg" style="background-image: url('../assets/stock/police_command_center_1791533768376.jpg');"></div>
+  <div id="bgTruck" class="stock-photo-bg" style="background-image: url('../assets/stock/quarry_truck.jpg');"></div>
+  <div id="bgAerial" class="stock-photo-bg" style="background-image: url('../assets/stock/ha_long_aerial.jpg');"></div>
+
+  <!-- Cinematic Grading Filters -->
+  <div class="cinematic-grade"></div>
+  <div class="vignette"></div>
+  <div class="scanlines"></div>
+  <div class="anamorphic-flare"></div>
+</div>
+
+<!-- GLOBAL BROADCAST TOP BAR -->
+<div class="broadcast-top-bar">
+  <div class="bt-left">
+    <div class="bt-emblem">
+      <img src="../assets/stock/vietnam_police.jpg" alt="Vietnam Police Emblem">
+    </div>
+    <div class="bt-text-group">
+      <div class="bt-sup">BỘ CÔNG AN · CÔNG AN THÀNH PHỐ QUẢNG NINH</div>
+      <div class="bt-title">PHÒNG CẢNH SÁT QUẢN LÝ HÀNH CHÍNH VỀ TRẬT TỰ XÃ HỘI (PC06)</div>
+    </div>
+  </div>
+  <div class="bt-right">
+    <div class="rec-indicator">
+      <div class="rec-dot"></div>
+      <span>REC ● SECURE LINK</span>
+    </div>
+    <div class="telemetry-chip">
+      <span>ĐỀ ÁN 06/CP:</span>
+      <span class="val">VLNCN-QN</span>
+    </div>
+    <div class="telemetry-chip">
+      <span>GPS:</span>
+      <span class="val" id="telemetryGps">20°57'N 107°04'E</span>
+    </div>
+  </div>
+</div>
+
+<!-- SUBTITLES BAR -->
+<div class="subtitles-cinematic">
+  <div id="subtitleDisplay" class="subtitles-text">
+    Quảng Ninh là trung tâm công nghiệp khai thác than và khoáng sản trọng điểm của cả nước...
+  </div>
+</div>
+
+<!-- ================= SCENE 1: BỐI CẢNH & THỰC TIỄN (0 - 16.73s) ================= -->
+<div id="scene1" class="scene-container active">
+  <div class="hud-bracket-tl"></div>
+  <div class="hud-bracket-br"></div>
+  
+  <div class="s1-layout">
+    <div class="s1-left-hero">
+      <div class="tag-pill" id="s1Tag">ĐỊA BÀN CHIẾN LƯỢC · QUẢN LÝ TRỌNG ĐIỂM</div>
+      <div class="s1-headline">
+        Quảng Ninh — Địa bàn Trọng điểm <br>
+        <span class="gold">Quản lý Vật liệu nổ Công nghiệp</span>
+      </div>
+      <div class="s1-subtext">
+        Trung tâm khai khoáng lớn nhất cả nước với khối lượng vật liệu nổ lưu chuyển đặc biệt lớn, phục vụ sản xuất công nghiệp và bảo đảm tuyệt đối an ninh trật tự.
+      </div>
+
+      <div class="s1-stats-row">
+        <div id="s1Card1" class="glass-card">
+          <div class="stat-num-box">
+            <div id="s1CountNum" class="stat-big-num">0</div>
+            <div class="stat-unit">KHO</div>
+          </div>
+          <div class="stat-label">Hoạt động thường xuyên trên toàn thành phố</div>
+        </div>
+
+        <div id="s1Card2" class="glass-card">
+          <div class="stat-num-box">
+            <div class="stat-big-num amber">> 100k</div>
+            <div class="stat-unit">TẤN/NĂM</div>
+          </div>
+          <div class="stat-label">Khối lượng lưu chuyển cung ứng hàng năm</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right visual: Picture-in-picture Live Video & Real Pain Points -->
+    <div class="s1-right-visual">
+      <div class="pip-video-frame">
+        <video id="pipCoalVid" src="../assets/stock/coal_cutting.mp4" muted loop playsinline></video>
+        <div class="pip-overlay-hud">
+          <div class="pip-title-badge">
+            <span style="color:#ef4444;">●</span> KHAI THÁC MỎ QUẢNG NINH
+          </div>
+          <div class="pip-radar-tag">RADAR 360° ACTIVE</div>
+        </div>
+      </div>
+
+      <div class="s1-pain-list">
+        <div id="s1Pain1" class="pain-pill">
+          <span class="icon">
+            <svg class="lucide-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </span>
+          <span>Nhiều chủ thể phân tán: Cung ứng, vận chuyển, thủ kho, thợ mìn</span>
+        </div>
+        <div id="s1Pain2" class="pain-pill">
+          <span class="icon">
+            <svg class="lucide-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </span>
+          <span>Đối soát Bán/Mua thủ công qua giấy tờ rời rạc, dễ sai lệch</span>
+        </div>
+        <div id="s1Pain3" class="pain-pill">
+          <span class="icon">
+            <svg class="lucide-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </span>
+          <span>Báo cáo định kỳ chậm trễ, tiềm ẩn nguy cơ mất an toàn kho mỏ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SCENE 2: GIẢI PHÁP & KIẾN TRÚC 3 CỔNG (16.73s - 32.86s) ================= -->
+<div id="scene2" class="scene-container">
+  <div class="hud-bracket-tl"></div>
+  <div class="hud-bracket-br"></div>
+
+  <div class="s2-header-box">
+    <div class="tag-pill">ĐỀ ÁN 06/CP · ĐỘT PHÁ CHUYỂN ĐỔI SỐ</div>
+    <div class="s2-headline">
+      Kiến trúc 3 Cổng trên <span class="cyan">1 Cơ sở Dữ liệu Tập trung</span>
+    </div>
+  </div>
+
+  <div class="s2-gates-grid">
+    <!-- Gate 1: Police PC06 -->
+    <div id="s2Gate1" class="gate-panel">
+      <div class="gate-badge blue">CỔNG 01 · QUẢN LÝ NHÀ NƯỚC</div>
+      <div class="gate-title">
+        <span>Cổng Công an (PC06)</span>
+        <svg class="lucide-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <ul class="gate-list">
+        <li><span class="chk"><svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Giám sát toàn cảnh thành phố thời gian thực</li>
+        <li><span class="chk"><svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Duyệt & cấp số điện tử cặp liên thông 1 chạm</li>
+        <li><span class="chk"><svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Hậu kiểm hành trình xe GPS & quét mã QR</li>
+      </ul>
+    </div>
+
+    <!-- Gate 2: Enterprises -->
+    <div id="s2Gate2" class="gate-panel">
+      <div class="gate-badge gold">CỔNG 02 · DOANH NGHIỆP</div>
+      <div class="gate-title">
+        <span>Cổng Doanh nghiệp</span>
+        <svg class="lucide-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+      </div>
+      <ul class="gate-list">
+        <li><span class="chk"><svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Lập giấy đăng ký tiếp nhận điện tử (VC16)</li>
+        <li><span class="chk"><svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Phiếu xuất - nhập - tồn tức thì không cần giấy</li>
+        <li><span class="chk"><svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Phân quyền thủ kho, lái xe, thợ mìn số hóa</li>
+      </ul>
+    </div>
+
+    <!-- Gate 3: Admin -->
+    <div id="s2Gate3" class="gate-panel">
+      <div class="gate-badge purple">CỔNG 03 · HỆ THỐNG</div>
+      <div class="gate-title">
+        <span>Cổng Quản trị Admin</span>
+        <svg class="lucide-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+      </div>
+      <ul class="gate-list">
+        <li><span class="chk"><svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Chuẩn hóa danh mục VLNCN 2 tầng toàn tỉnh</li>
+        <li><span class="chk"><svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Quản lý biểu mẫu in dùng chung toàn thành phố</li>
+        <li><span class="chk"><svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Nhật ký kiểm toán bất biến (Audit Log) an toàn</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Central Database Hub -->
+  <div id="s2DbHub" class="s2-core-hub">
+    <div class="hub-left">
+      <div class="hub-icon-orb">
+        <svg class="lucide-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+      </div>
+      <div class="hub-titles">
+        <div class="hub-main">Lõi Cơ sở Dữ liệu Tập trung Toàn thành phố</div>
+        <div class="hub-sub">Đồng bộ tức thời giữa Bên Bán — Bên Mua — Vận chuyển — Cơ quan Quản lý PC06</div>
+      </div>
+    </div>
+    <div class="hub-tags">
+      <div class="hub-tag-item">
+        <svg class="lucide-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <span>AN TOÀN BẢO MẬT CẤP ĐỘ 3</span>
+      </div>
+      <div class="hub-tag-item">
+        <svg class="lucide-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        <span>ĐỒNG BỘ REAL-TIME</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SCENE 3: LIVE UI & NGHIỆP VỤ THỰC TẾ (32.86s - 57.83s) ================= -->
+<div id="scene3" class="scene-container">
+  <div class="hud-bracket-tl"></div>
+  <div class="hud-bracket-br"></div>
+
+  <div class="s3-layout">
+    <!-- Left: Virtual Browser Frame with Real UI Screenshots -->
+    <div class="s3-monitor-frame">
+      <div class="browser-header">
+        <div class="browser-dots">
+          <div class="b-dot red"></div>
+          <div class="b-dot yellow"></div>
+          <div class="b-dot green"></div>
+        </div>
+        <div class="browser-url-pill">
+          <svg class="lucide-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span id="s3Url">https://vlncn.quangninh.gov.vn/dashboard</span>
+        </div>
+        <div style="font-size:11px; color:#38bdf8; font-weight:700;">PC06 SECURE PORTAL</div>
+      </div>
+
+      <div class="browser-screen-viewport">
+        <!-- Screenshots -->
+        <img id="imgDash" class="ui-screen-img active" src="../assets/screenshots/01_ca_dashboard.png" alt="Dashboard PC06">
+        <img id="imgCap" class="ui-screen-img" src="../assets/screenshots/02_cap_lien_thong_list.png" alt="Cặp liên thông">
+        <img id="imgGps" class="ui-screen-img" src="../assets/screenshots/05_ban_do_gps_hanh_trinh.png" alt="GPS Hướng đi">
+        <img id="imgKho" class="ui-screen-img" src="../assets/screenshots/06_quan_ly_kho.png" alt="Quản lý kho">
+
+        <!-- Animated Cursor -->
+        <div id="s3Cursor" class="virtual-cursor">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M4 4L10.5 20L13.5 13.5L20 10.5L4 4Z" fill="#38bdf8" stroke="#ffffff" stroke-width="2"/>
+          </svg>
+          <div id="s3Ripple" class="click-pulse"></div>
+        </div>
+
+        <!-- Verified Digital Stamp -->
+        <div id="s3Stamp" class="approved-stamp">
+          <svg class="lucide-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <span>ĐÃ DUYỆT & CẤP SỐ ĐIỆN TỬ</span>
+        </div>
+
+        <!-- Dynamic GPS Pin Marker on Map -->
+        <div id="s3GpsPin" class="gps-pin-marker">
+          <svg class="lucide-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>XE 14C-293.81 (ĐANG DI CHUYỂN)</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Real Field B-roll Video & Explanatory Card -->
+    <div class="s3-right-context">
+      <div class="context-video-card">
+        <video id="s3ContextVid" src="../assets/stock/traffic_highway.mp4" muted loop playsinline></video>
+        <div class="context-hud-tag">
+          <svg class="lucide-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"/><path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"/><circle cx="12" cy="12" r="2"/><path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"/><path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"/></svg>
+          <span id="s3ContextTag">TRUNG TÂM CHỈ HUY CÔNG AN PC06</span>
+        </div>
+      </div>
+
+      <div class="s3-feature-card">
+        <div id="s3FeatPill" class="s3-feat-pill">CỔNG PC06 · DASHBOARD TỔNG QUAN</div>
+        <div id="s3FeatTitle" class="s3-feat-title">Dashboard Trực quan Thời gian thực</div>
+        <div id="s3FeatDesc" class="s3-feat-desc">
+          Bức tranh toàn cảnh 23 Doanh nghiệp, 147 Kho mỏ và 2.043 tấn vật liệu nổ. Hệ thống tự động cảnh báo kho đầy và giấy phép sắp đến hạn.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SCENE 4: HIỆU QUẢ ĐỘT PHÁ & LỢI ÍCH 3 BÊN (57.83s - 69.34s) ================= -->
+<div id="scene4" class="scene-container">
+  <div class="hud-bracket-tl"></div>
+  <div class="hud-bracket-br"></div>
+
+  <div class="s4-headline-bar">
+    <div class="tag-pill">KẾT QUẢ ĐỘT PHÁ · NÂNG CAO HIỆU LỰC QUẢN LÝ</div>
+    <div class="s2-headline">
+      Từ Thủ công Phức tạp sang <span class="cyan">Tự động hóa Tức thì</span>
+    </div>
+  </div>
+
+  <!-- Giant Compare Bar -->
+  <div class="s4-strike-hero">
+    <div class="strike-box">
+      <div class="strike-sub">THỜI GIAN XÁC NHẬN KHO CŨ</div>
+      <div class="strike-old">
+        0.5 - 2 NGÀY
+        <div id="s4StrikeLine" class="strike-line"></div>
+      </div>
+    </div>
+
+    <div class="strike-arrow">
+      <svg class="lucide-icon" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+    </div>
+
+    <div class="strike-box">
+      <div class="strike-sub">HỆ THỐNG MỚI (ĐỀ ÁN 06/CP)</div>
+      <div class="strike-new">TỨC THÌ (&lt; 1 GIÂY)</div>
+    </div>
+  </div>
+
+  <!-- 3 Beneficiary Pillars -->
+  <div class="s4-pillars-grid">
+    <div id="s4Pillar1" class="pillar-card active-p">
+      <div class="pillar-icon">
+        <svg class="lucide-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+      </div>
+      <div class="pillar-title">Lãnh đạo Cơ quan</div>
+      <div class="pillar-desc">
+        Chỉ đạo điều hành tức thời trên dữ liệu số chuẩn xác. Không còn độ trễ chờ tổng hợp báo cáo thủ công.
+      </div>
+    </div>
+
+    <div id="s4Pillar2" class="pillar-card active-p">
+      <div class="pillar-icon">
+        <svg class="lucide-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+      </div>
+      <div class="pillar-title">Cán bộ PC06</div>
+      <div class="pillar-desc">
+        Kiểm soát khép kín toàn bộ vòng đời VLNCN từ kho nguồn tới mỏ nổ. Hậu kiểm minh bạch, không thể can thiệp.
+      </div>
+    </div>
+
+    <div id="s4Pillar3" class="pillar-card active-p">
+      <div class="pillar-icon">
+        <svg class="lucide-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 20a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8l-7 5V8l-7 5V4a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2Z"/><path d="M17 18h1"/><path d="M12 18h1"/><path d="M7 18h1"/></svg>
+      </div>
+      <div class="pillar-title">Doanh nghiệp</div>
+      <div class="pillar-desc">
+        Cắt giảm 80% thủ tục giấy tờ, chủ động tiến độ sản xuất, tiết kiệm hàng trăm giờ làm việc mỗi tháng.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= SCENE 5: LỜI KẾT & CAM KẾT (69.34s - 81.5s) ================= -->
+<div id="scene5" class="scene-container">
+  <div class="hud-bracket-tl"></div>
+  <div class="hud-bracket-br"></div>
+
+  <div class="s5-center-stage">
+    <div class="s5-emblem-halo">
+      <div class="halo-ring"></div>
+      <div class="halo-glow"></div>
+      <img class="s5-emblem-img" src="../assets/stock/vietnam_police.jpg" alt="Vietnam Police Emblem">
+    </div>
+
+    <div class="s5-title-large">
+      CHUYỂN ĐỔI SỐ — ĐỔI MỚI PHƯƠNG THỨC QUẢN LÝ <br>
+      <span class="gold">CÔNG AN THÀNH PHỐ QUẢNG NINH</span>
+    </div>
+
+    <div class="s5-subtitle">
+      QUYẾT TÂM BẢO ĐẢM TUYỆT ĐỐI AN NINH, AN TOÀN — VÌ NHÂN DÂN VÀ DOANH NGHIỆP PHỤC VỤ
+    </div>
+
+    <div class="s5-contact-card">
+      <div class="s5-contact-item">
+        <span class="icon">
+          <svg class="lucide-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="2" x2="22" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+        </span>
+        <span>Phòng Cảnh sát QLHC về TTXH (PC06) - Công an TP Quảng Ninh</span>
+      </div>
+      <div class="s5-contact-item">
+        <span class="icon">
+          <svg class="lucide-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </span>
+        <span style="color:#38bdf8;">https://vlncn.quangninh.gov.vn</span>
+      </div>
+      <div class="s5-contact-item">
+        <span class="icon">
+          <svg class="lucide-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </span>
+        <span>Hotline: 0203.3825.113</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Accurate audio-sync timeline matching master_audio.mp3
+  const TIMELINE = [
+    {
+      id: "scene1",
+      start: 0.0,
+      end: 16.73,
+      subs: [
+        { t: 0.0, text: "Quảng Ninh là trung tâm công nghiệp khai thác than và khoáng sản trọng điểm của cả nước..." },
+        { t: 5.5, text: "...với <span class='hl'>năm mươi tám kho vật liệu nổ công nghiệp</span> đang hoạt động thường xuyên." },
+        { t: 10.5, text: "Trước khối lượng lưu chuyển đặc biệt lớn, công tác quản lý thủ công trước đây gặp nhiều điểm nghẽn về đối soát, hậu kiểm." }
+      ]
+    },
+    {
+      id: "scene2",
+      start: 16.73,
+      end: 32.86,
+      subs: [
+        { t: 16.73, text: "Thực hiện <span class='hl'>Đề án không sáu của Chính phủ</span>, Phòng PC06 Công an thành phố Quảng Ninh..." },
+        { t: 21.8, text: "...đã tiên phong triển khai Giải pháp nâng cao hiệu quả công tác quản lý vật liệu nổ công nghiệp." },
+        { t: 26.5, text: "Hệ thống kết nối <span class='hl'>ba cổng dùng chung</span> trên một cơ sở dữ liệu tập trung: Công an, Doanh nghiệp và Quản trị." }
+      ]
+    },
+    {
+      id: "scene3",
+      start: 32.86,
+      end: 57.83,
+      subs: [
+        { t: 32.86, text: "Trên Cổng Công an PC06, Lãnh đạo và cán bộ giám sát toàn cảnh thành phố qua <span class='hl'>Dashboard trực quan theo thời gian thực</span>." },
+        { t: 39.0, text: "Điểm đột phá là tính năng <span class='hl'>Cặp liên thông</span>: tự động ghép nối và đối soát hai chiều giữa bên bán và bên mua..." },
+        { t: 45.0, text: "...phê duyệt và <span class='hl'>cấp số điện tử tức thì</span>, thay thế hoàn toàn thủ tục giấy tờ." },
+        { t: 50.0, text: "Hệ thống đồng thời <span class='hl'>hậu kiểm hành trình xe qua GPS</span>, quét mã QR truy vết vòng đời phiếu và hỗ trợ cơ chế ngoại tuyến tại hầm mỏ." }
+      ]
+    },
+    {
+      id: "scene4",
+      start: 57.83,
+      end: 69.34,
+      subs: [
+        { t: 57.83, text: "Giải pháp rút ngắn thời gian xác nhận tình trạng kho từ <span class='hl'>hai ngày xuống tức thì</span>..." },
+        { t: 62.0, text: "...tự động hóa toàn bộ quy trình xuất nhập tồn, giúp Lãnh đạo chỉ đạo kịp thời trên dữ liệu số..." },
+        { t: 65.5, text: "...và hỗ trợ doanh nghiệp <span class='hl'>chuyển đổi số minh bạch, tiết kiệm</span>." }
+      ]
+    },
+    {
+      id: "scene5",
+      start: 69.34,
+      end: 81.5,
+      subs: [
+        { t: 69.34, text: "<span class='hl'>Chuyển đổi số — Đổi mới phương thức quản lý</span>." },
+        { t: 73.0, text: "Công an thành phố Quảng Ninh quyết tâm <span class='hl'>bảo đảm tuyệt đối an ninh, an toàn</span>, vì nhân dân và doanh nghiệp phục vụ." }
+      ]
+    }
+  ];
+
+  let currentTime = 0;
+  let isPlaying = false;
+  let lastTimestamp = null;
+
+  // Background Media Elements
+  const vidHalong = document.getElementById('vidHalong');
+  const vidQuarry = document.getElementById('vidQuarry');
+  const vidHighway = document.getElementById('vidHighway');
+  const vidCoal = document.getElementById('vidCoal');
+  const bgMine = document.getElementById('bgMine');
+  const bgDepot = document.getElementById('bgDepot');
+  const bgPolice = document.getElementById('bgPolice');
+  const bgTruck = document.getElementById('bgTruck');
+  const bgAerial = document.getElementById('bgAerial');
+
+  function setBgMedia(el) {
+    [vidHalong, vidQuarry, vidHighway, vidCoal, bgMine, bgDepot, bgPolice, bgTruck, bgAerial].forEach(m => {
+      if (m === el) {
+        m.classList.add('active');
+      } else {
+        m.classList.remove('active');
+      }
+    });
+  }
+
+  function setTime(t) {
+    currentTime = t;
+
+    // 1. Current Scene Management
+    let currentScene = TIMELINE.find(s => t >= s.start && t < s.end) || TIMELINE[TIMELINE.length - 1];
+    document.querySelectorAll('.scene-container').forEach(el => {
+      if (el.id === currentScene.id) {
+        el.classList.add('active');
+      } else {
+        el.classList.remove('active');
+      }
+    });
+
+    // 2. Subtitles
+    let sub = currentScene.subs.slice().reverse().find(s => t >= s.t) || currentScene.subs[0];
+    if (sub) {
+      document.getElementById('subtitleDisplay').innerHTML = sub.text;
+    }
+
+
+    // 4. Background Media Director & Choreography
+    if (t < 5.0) {
+      // Epic Drone of Ha Long
+      setBgMedia(vidHalong);
+    } else if (t < 10.5) {
+      // Massive open-pit coal mine
+      setBgMedia(bgMine);
+    } else if (t < 16.73) {
+      // Fortified explosives depot bunker
+      setBgMedia(bgDepot);
+    } else if (t < 32.86) {
+      // Modern police command operations center
+      setBgMedia(bgPolice);
+    } else if (t < 45.0) {
+      // Police command center background for live UI
+      setBgMedia(bgPolice);
+    } else if (t < 51.0) {
+      // Highway traffic logistics
+      setBgMedia(vidHighway);
+    } else if (t < 57.83) {
+      // Coal cutting mining machine
+      setBgMedia(vidCoal);
+    } else if (t < 69.34) {
+      // Quarry haul truck
+      setBgMedia(bgTruck);
+    } else {
+      // Epic Outro: Ha Long Bay Drone
+      setBgMedia(vidHalong);
+    }
+
+    // 5. Scene-Specific Dynamic Details
+    // --- SCENE 1 (0 - 16.73s) ---
+    if (currentScene.id === 'scene1') {
+      const c1 = document.getElementById('s1Card1');
+      const c2 = document.getElementById('s1Card2');
+      const countEl = document.getElementById('s1CountNum');
+      const p1 = document.getElementById('s1Pain1');
+      const p2 = document.getElementById('s1Pain2');
+      const p3 = document.getElementById('s1Pain3');
+
+      if (t < 5.0) {
+        c1.classList.remove('highlight');
+        c2.classList.remove('highlight');
+        countEl.textContent = "0";
+      } else if (t < 10.5) {
+        c1.classList.add('highlight');
+        c2.classList.remove('highlight');
+        const prog = Math.min(1.0, (t - 5.0) / 1.5);
+        countEl.textContent = Math.floor(prog * 58);
+      } else {
+        countEl.textContent = "58";
+        c1.classList.remove('highlight');
+        c2.classList.add('highlight-red');
+        p1.style.opacity = "1";
+        p2.style.opacity = (t > 12.0) ? "1" : "0.4";
+        p3.style.opacity = (t > 14.0) ? "1" : "0.4";
+      }
+    }
+
+    // --- SCENE 2 (16.73 - 32.86s) ---
+    if (currentScene.id === 'scene2') {
+      const g1 = document.getElementById('s2Gate1');
+      const g2 = document.getElementById('s2Gate2');
+      const g3 = document.getElementById('s2Gate3');
+      const s2t = t - 16.73;
+
+      if (s2t < 5.0) {
+        g1.classList.add('focus-gate');
+        g2.classList.remove('focus-gate-gold');
+        g3.classList.remove('focus-gate');
+      } else if (s2t < 9.5) {
+        g1.classList.remove('focus-gate');
+        g2.classList.add('focus-gate-gold');
+        g3.classList.add('focus-gate');
+      } else {
+        g1.classList.add('focus-gate');
+        g2.classList.add('focus-gate-gold');
+        g3.classList.add('focus-gate');
+      }
+    }
+
+    // --- SCENE 3 (32.86 - 57.83s) ---
+    if (currentScene.id === 'scene3') {
+      const s3t = t - 32.86;
+      const url = document.getElementById('s3Url');
+      const imgDash = document.getElementById('imgDash');
+      const imgCap = document.getElementById('imgCap');
+      const imgGps = document.getElementById('imgGps');
+      const imgKho = document.getElementById('imgKho');
+      const cursor = document.getElementById('s3Cursor');
+      const ripple = document.getElementById('s3Ripple');
+      const stamp = document.getElementById('s3Stamp');
+      const gpsPin = document.getElementById('s3GpsPin');
+      const featPill = document.getElementById('s3FeatPill');
+      const featTitle = document.getElementById('s3FeatTitle');
+      const featDesc = document.getElementById('s3FeatDesc');
+      const ctxVid = document.getElementById('s3ContextVid');
+      const ctxTag = document.getElementById('s3ContextTag');
+
+      if (s3t < 6.5) {
+        // Step 1: Dashboard
+        imgDash.classList.add('active');
+        imgCap.classList.remove('active');
+        imgGps.classList.remove('active');
+        imgKho.classList.remove('active');
+        url.textContent = "https://vlncn.quangninh.gov.vn/dashboard";
+        cursor.style.left = "420px";
+        cursor.style.top = "240px";
+        ripple.classList.remove('clicked');
+        stamp.style.display = "none";
+        gpsPin.style.display = "none";
+
+        featPill.textContent = "CỔNG PC06 · DASHBOARD TỔNG QUAN";
+        featTitle.textContent = "Giám sát Toàn thành phố Real-time";
+        featDesc.textContent = "Bức tranh toàn cảnh 23 Doanh nghiệp, 147 Kho mỏ và 2.043 tấn VLNCN. Tự động cảnh báo kho đầy và giấy phép sắp hết hạn.";
+        ctxVid.src = "../assets/stock/traffic_highway.mp4";
+        ctxTag.textContent = "TRUNG TÂM CHỈ HUY CÔNG AN PC06";
+      } else if (s3t < 13.5) {
+        // Step 2: Cặp liên thông
+        imgDash.classList.remove('active');
+        imgCap.classList.add('active');
+        imgGps.classList.remove('active');
+        imgKho.classList.remove('active');
+        url.textContent = "https://vlncn.quangninh.gov.vn/requests/paired";
+        cursor.style.left = "880px";
+        cursor.style.top = "260px";
+        gpsPin.style.display = "none";
+
+        featPill.textContent = "NGHIỆP VỤ ĐỘT PHÁ · CẶP LIÊN THÔNG";
+        featTitle.textContent = "Đối soát Tự động Bên Bán ⇄ Bên Mua";
+        featDesc.textContent = "Tự động ghép nối 2 cột dữ liệu. Cán bộ Công an chỉ cần 1 thao tác 'Xem & duyệt cả cặp' để cấp số điện tử liên thông.";
+
+        if (s3t > 9.0) {
+          ripple.classList.add('clicked');
+          stamp.style.display = "flex";
+        } else {
+          ripple.classList.remove('clicked');
+          stamp.style.display = "none";
+        }
+        ctxTag.textContent = "ĐỐI SOÁT CHÉO DỮ LIỆU ĐIỆN TỬ";
+      } else if (s3t < 19.5) {
+        // Step 3: GPS
+        stamp.style.display = "none";
+        imgDash.classList.remove('active');
+        imgCap.classList.remove('active');
+        imgGps.classList.add('active');
+        imgKho.classList.remove('active');
+        url.textContent = "https://vlncn.quangninh.gov.vn/tracking/gps";
+        cursor.style.left = "640px";
+        cursor.style.top = "320px";
+        ripple.classList.remove('clicked');
+        gpsPin.style.display = "flex";
+
+        featPill.textContent = "HẬU KIỂM · BẢN ĐỒ SỐ GPS & QR CODE";
+        featTitle.textContent = "Giám sát Lộ trình Xe Chuyên dụng";
+        featDesc.textContent = "Theo dõi hành trình xe thực tế từ kho bán tới mỏ tiêu thụ. Quét mã QR tra cứu toàn bộ timeline vòng đời phiếu vận chuyển.";
+        ctxTag.textContent = "GIÁM SÁT HÀNH TRÌNH XE GPS VÀNG";
+      } else {
+        // Step 4: Quản lý kho & Offline
+        stamp.style.display = "none";
+        gpsPin.style.display = "none";
+        imgDash.classList.remove('active');
+        imgCap.classList.remove('active');
+        imgGps.classList.remove('active');
+        imgKho.classList.add('active');
+        url.textContent = "https://vlncn.quangninh.gov.vn/warehouses";
+        cursor.style.left = "280px";
+        cursor.style.top = "260px";
+
+        featPill.textContent = "AN TOÀN HẦM MỎ · CƠ CHẾ NGOẠI TUYẾN";
+        featTitle.textContent = "Giải pháp In phiếu QR tại Cửa Lò Cấm Sóng";
+        featDesc.textContent = "Giám sát sức chứa % hạn mức an toàn kho. Hỗ trợ in phiếu xuất nhập mã QR ký nhận tại chỗ khi vào cửa lò không có sóng di động.";
+        ctxVid.src = "../assets/stock/coal_cutting.mp4";
+        ctxTag.textContent = "CỬA LÒ HẦM MỎ KHÔNG SÓNG";
+      }
+    }
+
+    // --- SCENE 4 (57.83 - 69.34s) ---
+    if (currentScene.id === 'scene4') {
+      const s4t = t - 57.83;
+      const strikeLine = document.getElementById('s4StrikeLine');
+      const p1 = document.getElementById('s4Pillar1');
+      const p2 = document.getElementById('s4Pillar2');
+      const p3 = document.getElementById('s4Pillar3');
+
+      if (s4t > 1.2) {
+        strikeLine.style.display = "block";
+      } else {
+        strikeLine.style.display = "none";
+      }
+
+      if (s4t < 4.0) {
+        p1.classList.add('active-p');
+        p2.classList.remove('active-p');
+        p3.classList.remove('active-p');
+      } else if (s4t < 7.5) {
+        p1.classList.remove('active-p');
+        p2.classList.add('active-p');
+        p3.classList.remove('active-p');
+      } else {
+        p1.classList.remove('active-p');
+        p2.classList.remove('active-p');
+        p3.classList.add('active-p');
+      }
+    }
+  }
+
+  // Drift-free Animation Loop synchronized with wall-clock time
+  let startRealTime = null;
+
+  function loop(now) {
+    if (isPlaying) {
+      if (!startRealTime) startRealTime = performance.now();
+      currentTime = (performance.now() - startRealTime) / 1000;
+      if (currentTime > 81.5) {
+        currentTime = 81.5;
+        isPlaying = false;
+        console.log("PLAYBACK_FINISHED");
+      }
+      setTime(currentTime);
+    }
+    requestAnimationFrame(loop);
+  }
+
+  window.seekTo = function(t) {
+    const sc = document.getElementById('syncCover');
+    if (sc) sc.style.display = 'none';
+    isPlaying = false;
+    setTime(t);
+  };
+
+  window.startPlayback = function() {
+    const sc = document.getElementById('syncCover');
+    if (sc) sc.remove();
+
+    // Reset and start background videos
+    if (vidHalong) {
+      vidHalong.currentTime = 0;
+      vidHalong.play().catch(() => {});
+    }
+    const pip = document.getElementById('pipCoalVid');
+    if (pip) {
+      pip.currentTime = 0;
+      pip.play().catch(() => {});
+    }
+
+    startRealTime = performance.now();
+    currentTime = 0;
+    isPlaying = true;
+    requestAnimationFrame(loop);
+  };
+
+  // Init at 0
+  setTime(0);
+</script>
+
+</body>
+</html>
