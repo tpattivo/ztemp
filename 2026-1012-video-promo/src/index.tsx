@@ -16,11 +16,11 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
       />
 
-      {/* Version 2: 180s (Inter font, Lucide SVG, Thiết kế trang nhã, Animation nâng cao) */}
+      {/* Version 2: Tightly synchronized (Inter font, Lucide SVG, Thiết kế trang nhã, Animation nâng cao) */}
       <Composition
         id="VideoPromoV2"
         component={VideoPromoV2}
-        durationInFrames={5400}
+        durationInFrames={4260}
         fps={30}
         width={1920}
         height={1080}

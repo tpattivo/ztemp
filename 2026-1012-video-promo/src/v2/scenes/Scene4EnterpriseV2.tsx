@@ -9,7 +9,7 @@ import { THEME_V2 } from '../styles/themeV2';
 export const Scene4EnterpriseV2: React.FC = () => {
   const frame = useCurrentFrame();
 
-  const isSecondHalf = frame >= 600;
+  const isSecondHalf = frame >= 320;
 
   return (
     <AbsoluteFill
@@ -121,8 +121,8 @@ export const Scene4EnterpriseV2: React.FC = () => {
               startY: 250,
               targetX: 620,
               targetY: 340,
-              moveStartFrame: 60,
-              clickFrame: 150,
+              moveStartFrame: 40,
+              clickFrame: 120,
             }}
           />
         ) : (
@@ -135,8 +135,8 @@ export const Scene4EnterpriseV2: React.FC = () => {
               startY: 200,
               targetX: 1150,
               targetY: 280,
-              moveStartFrame: 660,
-              clickFrame: 750,
+              moveStartFrame: 360,
+              clickFrame: 440,
             }}
           />
         )}
@@ -144,7 +144,7 @@ export const Scene4EnterpriseV2: React.FC = () => {
 
       <SubtitleBarV2
         text={
-          frame < 600
+          frame < 320
             ? 'Tại Cổng Doanh nghiệp, mọi thao tác được số hóa toàn trình: Đơn vị lập đăng ký tiếp nhận, đề nghị xuất kho gửi trực tuyến; Phiếu xuất nhập tự động cập nhật sổ tồn theo tỷ lệ sức chứa.'
             : 'Đặc biệt, cơ chế in phiếu kèm mã QR thông minh cho phép ghi nhận an toàn tại cửa lò mất sóng và tự động đồng bộ ngay khi kết nối lại mạng.'
         }

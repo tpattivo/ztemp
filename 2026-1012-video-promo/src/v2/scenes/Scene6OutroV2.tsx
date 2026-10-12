@@ -9,12 +9,12 @@ export const Scene6OutroV2: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const isEnding = frame >= 220;
+  const isEnding = frame >= 260;
 
   const cardsSpring = spring({ frame: frame - 15, fps, config: { damping: 15, stiffness: 90 } });
-  const outroSpring = spring({ frame: frame - 235, fps, config: { damping: 14, stiffness: 85 } });
+  const outroSpring = spring({ frame: frame - 260, fps, config: { damping: 14, stiffness: 85 } });
 
-  const bgZoom = interpolate(frame, [0, 450], [1.0, 1.05], { extrapolateRight: 'clamp' });
+  const bgZoom = interpolate(frame, [0, 600], [1.0, 1.05], { extrapolateRight: 'clamp' });
 
   return (
     <AbsoluteFill
@@ -281,7 +281,13 @@ export const Scene6OutroV2: React.FC = () => {
         </div>
       )}
 
-      <SubtitleBarV2 text="Công an tỉnh Quảng Ninh: Đồng hành cùng doanh nghiệp, tiên phong chuyển đổi số, giữ vững an ninh, trật tự và an toàn xã hội trên địa bàn vùng mỏ anh hùng." />
+      <SubtitleBarV2
+        text={
+          frame < 260
+            ? 'Hệ thống tạo bước chuyển biến căn bản: Giúp Lãnh đạo chỉ đạo trên dữ liệu số, giúp cán bộ rút ngắn thời gian xử lý từ hai ngày xuống chỉ còn vài phút, đồng hành cùng doanh nghiệp phát triển bền vững.'
+            : 'Công an tỉnh Quảng Ninh: Tiên phong chuyển đổi số, vì bình yên và an toàn vùng mỏ.'
+        }
+      />
     </AbsoluteFill>
   );
 };

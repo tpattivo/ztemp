@@ -9,7 +9,7 @@ import { THEME_V2 } from '../styles/themeV2';
 export const Scene5PoliceFeaturesV2: React.FC = () => {
   const frame = useCurrentFrame();
 
-  const isSecondHalf = frame >= 600;
+  const isSecondHalf = frame >= 350;
 
   return (
     <AbsoluteFill
@@ -121,8 +121,8 @@ export const Scene5PoliceFeaturesV2: React.FC = () => {
               startY: 320,
               targetX: 1220,
               targetY: 440,
-              moveStartFrame: 70,
-              clickFrame: 160,
+              moveStartFrame: 40,
+              clickFrame: 130,
             }}
           />
         ) : (
@@ -135,8 +135,8 @@ export const Scene5PoliceFeaturesV2: React.FC = () => {
               startY: 350,
               targetX: 850,
               targetY: 480,
-              moveStartFrame: 670,
-              clickFrame: 760,
+              moveStartFrame: 390,
+              clickFrame: 470,
             }}
           />
         )}
@@ -144,7 +144,7 @@ export const Scene5PoliceFeaturesV2: React.FC = () => {
 
       <SubtitleBarV2
         text={
-          frame < 600
+          frame < 350
             ? 'Cổng Công an PC06 giữ vai trò trung tâm giám sát thông minh: Dashboard cảnh báo sớm kho vượt hạn mức; Cặp liên thông tự động đối chiếu hai chiều bên bán và bên mua, cấp số điện tử tức thì.'
             : 'Vòng đời vật liệu nổ được định danh bất biến qua mã QR; Hành trình xe vận chuyển được hậu kiểm minh bạch qua bản đồ GPS thời gian thực.'
         }

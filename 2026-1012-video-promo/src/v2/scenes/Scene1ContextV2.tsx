@@ -13,7 +13,7 @@ export const Scene1ContextV2: React.FC = () => {
   const isSecondHalf = frame >= 360;
 
   const zoom1 = interpolate(frame, [0, 380], [1.0, 1.08], { extrapolateRight: 'clamp' });
-  const zoom2 = interpolate(frame, [360, 750], [1.0, 1.08], { extrapolateRight: 'clamp' });
+  const zoom2 = interpolate(frame, [360, 720], [1.0, 1.08], { extrapolateRight: 'clamp' });
 
   const photo2Opacity = interpolate(frame, [350, 380], [0, 1], {
     extrapolateLeft: 'clamp',
