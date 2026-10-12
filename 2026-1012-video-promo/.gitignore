@@ -27,6 +27,7 @@ venv/
 output/
 **/.temp_raw/
 *.mp4
+!public/recordings/*.mp4
 *.webm
 *.wav
 *.mp3
