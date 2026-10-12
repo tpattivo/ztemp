@@ -143,15 +143,15 @@ export const Scene6OutroV2_2: React.FC = () => {
           </div>
 
           {/* 3 Large Pillar Columns (Covering 100% of Slide 13 content) */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 18, flex: 1 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20, flex: 1 }}>
             {/* Column 1: Đối với Lãnh đạo */}
             <div
               style={{
                 backgroundColor: '#FFFFFF',
-                borderRadius: 20,
-                padding: '26px 28px',
+                borderRadius: 22,
+                padding: '26px 26px',
                 boxShadow: THEME_V2_2.shadows.card,
-                border: '1.5px solid rgba(185, 28, 28, 0.25)',
+                border: '1.5px solid rgba(185, 28, 28, 0.3)',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
@@ -159,44 +159,56 @@ export const Scene6OutroV2_2: React.FC = () => {
                 overflow: 'hidden',
               }}
             >
-              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, backgroundColor: THEME_V2_2.colors.primary }} />
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 5, backgroundColor: THEME_V2_2.colors.primary }} />
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 16 }}>
                   <div
                     style={{
-                      width: 46,
-                      height: 46,
+                      width: 50,
+                      height: 50,
                       borderRadius: 14,
-                      backgroundColor: 'rgba(185, 28, 28, 0.08)',
+                      backgroundColor: 'rgba(185, 28, 28, 0.1)',
                       color: THEME_V2_2.colors.primary,
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}
                   >
-                    <TrendingUp size={24} strokeWidth={2.4} />
+                    <TrendingUp size={28} strokeWidth={2.4} />
                   </div>
                   <div>
-                    <div style={{ fontSize: 11, fontWeight: 800, color: THEME_V2_2.colors.primary, letterSpacing: '0.04em' }}>
+                    <div style={{ fontSize: 12, fontWeight: 800, color: THEME_V2_2.colors.primary, letterSpacing: '0.05em' }}>
                       ĐỐI TƯỢNG 01
                     </div>
-                    <div style={{ fontSize: 20, fontWeight: 900, color: THEME_V2_2.colors.textPrimary }}>
+                    <div style={{ fontSize: 23, fontWeight: 900, color: THEME_V2_2.colors.textPrimary }}>
                       ĐỐI VỚI LÃNH ĐẠO
                     </div>
                   </div>
                 </div>
 
-                {/* Content bullets from Slide 13 */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 14 }}>
+                {/* Content bullets from Slide 13 - Enlarged typography & styled cards */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 11, marginTop: 14 }}>
                   {[
                     'Bức tranh tồn kho & lưu chuyển VLNCN toàn thành phố gần thời gian thực.',
-                    'Dashboard, báo cáo & cảnh báo phục vụ chỉ đạo, điều hành tức thời.',
+                    'Dashboard, báo cáo & cảnh báo tức thời phục vụ chỉ đạo, điều hành nhanh.',
                     'Phát hiện sớm rủi ro: tồn vượt sức chứa, DN chậm báo cáo, chuyến cần chú ý.',
-                    'Chủ động theo dõi trên dữ liệu thay vì chờ báo cáo giấy truyền thống.',
+                    'Giám sát liên thông chuỗi cung ứng từ bán buôn đến sử dụng tại cơ sở.',
+                    'Chủ động theo dõi trên dữ liệu số thay vì chờ báo cáo giấy truyền thống.',
                   ].map((text, i) => (
-                    <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-                      <CheckCircle2 size={16} color={THEME_V2_2.colors.primary} style={{ flexShrink: 0, marginTop: 3 }} />
-                      <span style={{ fontSize: 13, color: THEME_V2_2.colors.textSecondary, lineHeight: 1.5 }}>{text}</span>
+                    <div
+                      key={i}
+                      style={{
+                        display: 'flex',
+                        gap: 12,
+                        alignItems: 'flex-start',
+                        backgroundColor: '#F8FAFC',
+                        borderRadius: 12,
+                        padding: '10px 14px',
+                        border: '1px solid #E2E8F0',
+                      }}
+                    >
+                      <CheckCircle2 size={19} color={THEME_V2_2.colors.primary} style={{ flexShrink: 0, marginTop: 2 }} />
+                      <span style={{ fontSize: 16, fontWeight: 600, color: '#1E293B', lineHeight: 1.45 }}>{text}</span>
                     </div>
                   ))}
                 </div>
@@ -204,17 +216,22 @@ export const Scene6OutroV2_2: React.FC = () => {
 
               <div
                 style={{
-                  marginTop: 16,
-                  padding: '10px 14px',
-                  backgroundColor: 'rgba(185, 28, 28, 0.06)',
-                  borderRadius: 12,
-                  fontSize: 12,
+                  marginTop: 18,
+                  padding: '13px 18px',
+                  backgroundColor: 'rgba(185, 28, 28, 0.08)',
+                  borderRadius: 14,
+                  fontSize: 14,
                   fontWeight: 800,
                   color: THEME_V2_2.colors.primary,
                   textAlign: 'center',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: 8,
                 }}
               >
-                Chỉ đạo điều hành dựa trên dữ liệu số thời gian thực
+                <TrendingUp size={16} />
+                <span>Chỉ đạo điều hành dựa trên dữ liệu số thời gian thực</span>
               </div>
             </div>
 
@@ -222,10 +239,10 @@ export const Scene6OutroV2_2: React.FC = () => {
             <div
               style={{
                 backgroundColor: '#FFFFFF',
-                borderRadius: 20,
-                padding: '26px 28px',
+                borderRadius: 22,
+                padding: '26px 26px',
                 boxShadow: THEME_V2_2.shadows.card,
-                border: '1.5px solid rgba(2, 132, 199, 0.25)',
+                border: '1.5px solid rgba(2, 132, 199, 0.3)',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
@@ -233,44 +250,56 @@ export const Scene6OutroV2_2: React.FC = () => {
                 overflow: 'hidden',
               }}
             >
-              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, backgroundColor: '#0284C7' }} />
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 5, backgroundColor: '#0284C7' }} />
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 16 }}>
                   <div
                     style={{
-                      width: 46,
-                      height: 46,
+                      width: 50,
+                      height: 50,
                       borderRadius: 14,
-                      backgroundColor: 'rgba(2, 132, 199, 0.08)',
+                      backgroundColor: 'rgba(2, 132, 199, 0.1)',
                       color: '#0284C7',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                     }}
                   >
-                    <UserCheck size={24} strokeWidth={2.4} />
+                    <UserCheck size={28} strokeWidth={2.4} />
                   </div>
                   <div>
-                    <div style={{ fontSize: 11, fontWeight: 800, color: '#0284C7', letterSpacing: '0.04em' }}>
+                    <div style={{ fontSize: 12, fontWeight: 800, color: '#0284C7', letterSpacing: '0.05em' }}>
                       ĐỐI TƯỢNG 02
                     </div>
-                    <div style={{ fontSize: 20, fontWeight: 900, color: THEME_V2_2.colors.textPrimary }}>
+                    <div style={{ fontSize: 23, fontWeight: 900, color: THEME_V2_2.colors.textPrimary }}>
                       ĐỐI VỚI CÁN BỘ SỬ DỤNG
                     </div>
                   </div>
                 </div>
 
-                {/* Content bullets from Slide 13 */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 14 }}>
+                {/* Content bullets from Slide 13 - Enlarged typography & styled cards */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 11, marginTop: 14 }}>
                   {[
-                    'Đối chiếu Bán/Mua tự động qua cặp liên thông hai chiều.',
+                    'Đối chiếu Bán/Mua tự động qua cặp liên thông hai chiều, loại bỏ sai lệch.',
                     'Duyệt & cấp số điện tử ngay trên hệ thống thay ký giấy, chuyển văn thư.',
-                    'Truy vết trách nhiệm nhanh chóng qua mã QR & vòng đời bất biến.',
-                    'Hậu kiểm lộ trình GPS · xuất báo cáo Nhập–Xuất–Tồn bằng vài thao tác.',
+                    'Truy vết trách nhiệm nhanh chóng qua mã QR & vòng đời hồ sơ bất biến.',
+                    'Hậu kiểm lộ trình GPS và xuất báo cáo Nhập–Xuất–Tồn chỉ vài thao tác.',
+                    'Rút ngắn thời gian xử lý thủ tục hành chính từ 2 ngày xuống chỉ vài phút.',
                   ].map((text, i) => (
-                    <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-                      <CheckCircle2 size={16} color="#0284C7" style={{ flexShrink: 0, marginTop: 3 }} />
-                      <span style={{ fontSize: 13, color: THEME_V2_2.colors.textSecondary, lineHeight: 1.5 }}>{text}</span>
+                    <div
+                      key={i}
+                      style={{
+                        display: 'flex',
+                        gap: 12,
+                        alignItems: 'flex-start',
+                        backgroundColor: '#F8FAFC',
+                        borderRadius: 12,
+                        padding: '10px 14px',
+                        border: '1px solid #E2E8F0',
+                      }}
+                    >
+                      <CheckCircle2 size={19} color="#0284C7" style={{ flexShrink: 0, marginTop: 2 }} />
+                      <span style={{ fontSize: 16, fontWeight: 600, color: '#1E293B', lineHeight: 1.45 }}>{text}</span>
                     </div>
                   ))}
                 </div>
@@ -278,28 +307,33 @@ export const Scene6OutroV2_2: React.FC = () => {
 
               <div
                 style={{
-                  marginTop: 16,
-                  padding: '10px 14px',
-                  backgroundColor: 'rgba(2, 132, 199, 0.06)',
-                  borderRadius: 12,
-                  fontSize: 12,
+                  marginTop: 18,
+                  padding: '13px 18px',
+                  backgroundColor: 'rgba(2, 132, 199, 0.08)',
+                  borderRadius: 14,
+                  fontSize: 14,
                   fontWeight: 800,
                   color: '#0284C7',
                   textAlign: 'center',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: 8,
                 }}
               >
-                Rút ngắn thời gian xử lý thủ tục từ 2 ngày xuống vài phút
+                <Zap size={16} />
+                <span>Rút ngắn thời gian xử lý thủ tục từ 2 ngày xuống vài phút</span>
               </div>
             </div>
 
-            {/* Column 3: Đối với Đơn vị (Doanh nghiệp & Toàn hệ thống) */}
+            {/* Column 3: Đối với Doanh nghiệp */}
             <div
               style={{
                 backgroundColor: '#FFFFFF',
-                borderRadius: 20,
-                padding: '26px 28px',
+                borderRadius: 22,
+                padding: '26px 26px',
                 boxShadow: THEME_V2_2.shadows.card,
-                border: '1.5px solid rgba(217, 119, 6, 0.3)',
+                border: '1.5px solid rgba(217, 119, 6, 0.35)',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
@@ -307,13 +341,13 @@ export const Scene6OutroV2_2: React.FC = () => {
                 overflow: 'hidden',
               }}
             >
-              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 4, backgroundColor: THEME_V2_2.colors.accentGold }} />
+              <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 5, backgroundColor: THEME_V2_2.colors.accentGold }} />
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 16 }}>
                   <div
                     style={{
-                      width: 46,
-                      height: 46,
+                      width: 50,
+                      height: 50,
                       borderRadius: 14,
                       backgroundColor: THEME_V2_2.colors.accentGoldLight,
                       color: THEME_V2_2.colors.accentGold,
@@ -322,29 +356,41 @@ export const Scene6OutroV2_2: React.FC = () => {
                       justifyContent: 'center',
                     }}
                   >
-                    <Building2 size={24} strokeWidth={2.4} />
+                    <Building2 size={28} strokeWidth={2.4} />
                   </div>
                   <div>
-                    <div style={{ fontSize: 11, fontWeight: 800, color: THEME_V2_2.colors.accentGold, letterSpacing: '0.04em' }}>
+                    <div style={{ fontSize: 12, fontWeight: 800, color: THEME_V2_2.colors.accentGold, letterSpacing: '0.05em' }}>
                       ĐỐI TƯỢNG 03
                     </div>
-                    <div style={{ fontSize: 20, fontWeight: 900, color: THEME_V2_2.colors.textPrimary }}>
+                    <div style={{ fontSize: 23, fontWeight: 900, color: THEME_V2_2.colors.textPrimary }}>
                       ĐỐI VỚI DOANH NGHIỆP
                     </div>
                   </div>
                 </div>
 
-                {/* Content bullets from Slide 13 */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 10, marginTop: 14 }}>
+                {/* Content bullets from Slide 13 - Enlarged typography & styled cards */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 11, marginTop: 14 }}>
                   {[
                     'Dữ liệu tập trung, chuẩn hóa, có nhật ký bất biến → minh bạch tuyệt đối.',
                     'Phối hợp Công an – Doanh nghiệp thuận lợi, thông suốt và nhanh chóng.',
-                    'Doanh nghiệp chuyển đổi số, giảm thời gian tổng hợp báo cáo định kỳ.',
-                    'Nền tảng quản lý lâu dài, an toàn dữ liệu, có khả năng mở rộng quy mô.',
+                    'Tự động hóa báo cáo định kỳ, giảm thiểu áp lực sổ sách giấy tờ thủ công.',
+                    'Cơ chế QR Offline tại cửa lò ghi nhận an toàn ngay cả khi mất sóng mạng.',
+                    'Nền tảng quản lý số lâu dài, an toàn dữ liệu, sẵn sàng mở rộng quy mô.',
                   ].map((text, i) => (
-                    <div key={i} style={{ display: 'flex', gap: 10, alignItems: 'flex-start' }}>
-                      <CheckCircle2 size={16} color={THEME_V2_2.colors.accentGold} style={{ flexShrink: 0, marginTop: 3 }} />
-                      <span style={{ fontSize: 13, color: THEME_V2_2.colors.textSecondary, lineHeight: 1.5 }}>{text}</span>
+                    <div
+                      key={i}
+                      style={{
+                        display: 'flex',
+                        gap: 12,
+                        alignItems: 'flex-start',
+                        backgroundColor: '#F8FAFC',
+                        borderRadius: 12,
+                        padding: '10px 14px',
+                        border: '1px solid #E2E8F0',
+                      }}
+                    >
+                      <CheckCircle2 size={19} color={THEME_V2_2.colors.accentGold} style={{ flexShrink: 0, marginTop: 2 }} />
+                      <span style={{ fontSize: 16, fontWeight: 600, color: '#1E293B', lineHeight: 1.45 }}>{text}</span>
                     </div>
                   ))}
                 </div>
@@ -352,17 +398,22 @@ export const Scene6OutroV2_2: React.FC = () => {
 
               <div
                 style={{
-                  marginTop: 16,
-                  padding: '10px 14px',
+                  marginTop: 18,
+                  padding: '13px 18px',
                   backgroundColor: 'rgba(217, 119, 6, 0.08)',
-                  borderRadius: 12,
-                  fontSize: 12,
+                  borderRadius: 14,
+                  fontSize: 14,
                   fontWeight: 800,
                   color: THEME_V2_2.colors.accentGold,
                   textAlign: 'center',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: 8,
                 }}
               >
-                Minh bạch hóa dữ liệu, kiến tạo phát triển bền vững
+                <Building2 size={16} />
+                <span>Minh bạch hóa dữ liệu, kiến tạo phát triển bền vững</span>
               </div>
             </div>
           </div>

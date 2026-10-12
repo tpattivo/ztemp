@@ -80,7 +80,7 @@ export const Scene4EnterpriseV2_2: React.FC = () => {
           >
             <Lock size={13} color="#16A34A" />
             <span style={{ fontWeight: 600, color: '#16A34A' }}>https://</span>
-            <span style={{ fontWeight: 600, color: '#0F172A' }}>vlncn.quangninh.gov.vn/portal/enterprise</span>
+            <span style={{ fontWeight: 600, color: '#0F172A' }}>vlncn.quangninh.gov.vn/portal/business</span>
           </div>
 
           {/* Actual Web Recording Badge */}
@@ -100,7 +100,7 @@ export const Scene4EnterpriseV2_2: React.FC = () => {
             }}
           >
             <VideoIcon size={14} />
-            <span>GIAO DIỆN THAO TÁC THỰC TẾ TRÊN HỆ THỐNG</span>
+            <span>CỔNG DOANH NGHIỆP — VIDEO THAO TÁC THỰC TẾ TRÊN HỆ THỐNG</span>
           </div>
         </div>
 
@@ -115,7 +115,7 @@ export const Scene4EnterpriseV2_2: React.FC = () => {
         >
           <Video
             src={staticFile('recordings/video_enterprise_ui.mp4')}
-            playbackRate={0.78}
+            playbackRate={1.08}
             style={{
               width: '100%',
               height: '100%',
