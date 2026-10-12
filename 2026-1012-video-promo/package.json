@@ -5,10 +5,13 @@
   "scripts": {
     "start": "remotion preview src/index.tsx",
     "build": "remotion render src/index.tsx VideoPromo out/video_promo_120s.mp4",
-    "still": "remotion still src/index.tsx VideoPromo out/still.png"
+    "build:v2": "remotion render src/index.tsx VideoPromoV2 out/video_promo_v2_180s.mp4",
+    "still": "remotion still src/index.tsx VideoPromo out/still.png",
+    "still:v2": "remotion still src/index.tsx VideoPromoV2 out/still_v2.png"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.260",
+    "@remotion/google-fonts": "^4.0.534",
     "lucide-react": "^1.16.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
