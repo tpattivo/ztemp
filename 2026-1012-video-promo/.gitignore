@@ -9,6 +9,14 @@ credentials.json
 *.p12
 *.pfx
 
+# Node / Remotion
+node_modules/
+**/node_modules/
+.remotion/
+**/.remotion/
+.cache/
+**/.cache/
+
 # Python
 __pycache__/
 *.py[cod]
