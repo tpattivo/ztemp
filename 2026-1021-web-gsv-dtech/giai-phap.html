@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giải pháp GSV DTech - Số hóa toàn diện phòng khám da liễu</title>
+  <meta name="description" content="Khám phá 6 trụ cột giải pháp chuyên biệt cho phòng khám da liễu: Tiếp đón & lịch hẹn, Khám & kê đơn, Thu phí, Kho dược, CRM và Báo cáo.">
+  <link rel="icon" href="assets/images/gsv_dtech_logo_clean.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .solution-hero {
+      background: var(--color-forest);
+      color: var(--color-white);
+      padding: 70px 0 80px;
+      text-align: center;
+    }
+    .breadcrumb-trail {
+      font-size: 0.8125rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 16px;
+    }
+    .solution-filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+    }
+    .solution-filter-btn {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: var(--color-white);
+      padding: 8px 18px;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+    .solution-filter-btn:hover,
+    .solution-filter-btn.active {
+      background: var(--color-white);
+      color: var(--color-forest);
+      border-color: var(--color-white);
+    }
+    .solutions-cards-wrapper {
+      padding: 80px 0;
+    }
+    .solution-detail-card {
+      background: var(--color-white);
+      border-radius: 24px;
+      border: 1px solid var(--color-border);
+      padding: 48px;
+      margin-bottom: 48px;
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 48px;
+      align-items: center;
+      box-shadow: var(--shadow-sm);
+    }
+    .solution-detail-card:nth-child(even) {
+      grid-template-columns: 1.15fr 1fr;
+    }
+    .solution-detail-card:nth-child(even) .solution-info-col {
+      order: 2;
+    }
+    .solution-detail-card:nth-child(even) .solution-img-col {
+      order: 1;
+    }
+    .sol-number {
+      font-family: var(--font-title);
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #cbd5e1;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+    .sol-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-primary);
+      margin-bottom: 8px;
+    }
+    .solution-info-col h2 {
+      font-size: 2rem;
+      margin-bottom: 14px;
+    }
+    .solution-info-col p {
+      font-size: 1rem;
+      color: var(--color-body);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .solution-checklist-block {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .solution-checklist-block li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.9375rem;
+      color: var(--color-title);
+      font-weight: 500;
+    }
+    .solution-img-col img {
+      border-radius: 16px;
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-lg);
+      transition: transform var(--transition-normal);
+    }
+    .solution-img-col:hover img {
+      transform: scale(1.015);
+    }
+    .cta-banner-strip {
+      background: var(--color-forest);
+      color: var(--color-white);
+      border-radius: 20px;
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      margin-bottom: 64px;
+    }
+    .cta-banner-strip h3 {
+      color: var(--color-white);
+      font-size: 1.625rem;
+      margin-bottom: 8px;
+    }
+    .cta-banner-strip p {
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.9375rem;
+    }
+    @media (max-width: 900px) {
+      .solution-detail-card,
+      .solution-detail-card:nth-child(even) {
+        grid-template-columns: 1fr;
+        padding: 32px 24px;
+      }
+      .solution-detail-card:nth-child(even) .solution-info-col {
+        order: 1;
+      }
+      .solution-detail-card:nth-child(even) .solution-img-col {
+        order: 2;
+      }
+      .cta-banner-strip {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container-wide header-container">
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/gsv_dtech_logo_clean.png" alt="GSV DTech Logo">
+        <div class="header-logo-text">
+          <span class="brand">GSV DTech</span>
+          <span class="slogan">Công nghệ dẫn lối, y tế chuyển mình</span>
+        </div>
+      </a>
+
+      <nav aria-label="Điều hướng chính">
+        <ul class="nav-menu">
+          <li><a href="giai-phap.html" class="nav-link active">Giải pháp</a></li>
+          <li><a href="chi-phi.html" class="nav-link">Chi phí</a></li>
+          <li><a href="index.html#khach-hang" class="nav-link">Khách hàng</a></li>
+          <li><a href="index.html#tin-tuc" class="nav-link">Tin tức & Blog</a></li>
+          <li><a href="index.html#ve-gsv-dtech" class="nav-link">Về GSV DTech</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:02437894110" class="hotline-link">
+          <span class="label">Hotline</span>
+          <span class="number">024 3789 4110</span>
+        </a>
+        <a href="index.html#dang-ky-dung-thu" class="btn btn-primary btn-sm">
+          <span>Dùng thử miễn phí</span>
+          <span class="btn-icon-circle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <span style="font-weight: 800; font-size: 1.25rem;">GSV DTech</span>
+      <button class="drawer-close-btn">&times;</button>
+    </div>
+    <ul class="drawer-nav-list">
+      <li><a href="index.html" class="drawer-nav-link">Trang chủ</a></li>
+      <li><a href="giai-phap.html" class="drawer-nav-link active">Giải pháp</a></li>
+      <li><a href="chi-phi.html" class="drawer-nav-link">Chi phí & Bảng giá</a></li>
+      <li><a href="index.html#khach-hang" class="drawer-nav-link">Khách hàng</a></li>
+      <li><a href="index.html#dang-ky-dung-thu" class="drawer-nav-link">Đăng ký dùng thử</a></li>
+    </ul>
+  </aside>
+
+  <!-- Solution Hero Banner -->
+  <section class="solution-hero">
+    <div class="container">
+      <div class="breadcrumb-trail">Trang chủ / Giải pháp</div>
+      <h1 class="display-2" style="color: var(--color-white); margin-bottom: 16px;">Mọi việc của phòng khám, trong một phần mềm</h1>
+      <p style="font-size: 1.125rem; color: rgba(255, 255, 255, 0.85); max-width: 720px; margin: 0 auto;">
+        Theo chân một ca khám da liễu, từ lúc khách đặt lịch đến khi được nhắc tái khám, để thấy GSV DTech làm gì ở từng bước.
+      </p>
+
+      <!-- Solution Filter Pills -->
+      <div class="solution-filter-bar">
+        <a href="#sol-01" class="solution-filter-btn">1. Tiếp đón & lịch hẹn</a>
+        <a href="#sol-02" class="solution-filter-btn">2. Khám & kê đơn</a>
+        <a href="#sol-03" class="solution-filter-btn">3. Thu phí & bán hàng</a>
+        <a href="#sol-04" class="solution-filter-btn">4. Kho thuốc & vật tư</a>
+        <a href="#sol-05" class="solution-filter-btn">5. Chăm sóc sau điều trị</a>
+        <a href="#sol-06" class="solution-filter-btn">6. Báo cáo & Doanh thu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions Cards List -->
+  <section class="solutions-cards-wrapper">
+    <div class="container">
+
+      <!-- 01: Tiếp đón & lịch hẹn -->
+      <article class="solution-detail-card fade-in-up" id="sol-01">
+        <div class="solution-info-col">
+          <div class="sol-number">01</div>
+          <span class="sol-badge">Tiếp đón nhanh</span>
+          <h2>Tìm hồ sơ khách cũ trong vài giây</h2>
+          <p>
+            Khách quay lại không phải khai báo lại từ đầu. Hồ sơ, lịch sử điều trị và lịch hẹn nằm cùng một nơi, lễ tân chỉ cần gõ tên hoặc số điện thoại.
+          </p>
+          <ul class="solution-checklist-block">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Hồ sơ khách hàng và bệnh nhân dùng chung toàn phần mềm</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Đặt, xem, sửa lịch hẹn nhanh chóng theo bác sĩ và khung giờ</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Phân luồng thông minh: Chờ khám, Đang khám, Đã khám</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Có ở mọi gói từ Lite đến Diamond</span>
+            </li>
+          </ul>
+          <a href="index.html#dang-ky-dung-thu" class="btn btn-primary btn-sm">Dùng thử tính năng này</a>
+        </div>
+        <div class="solution-img-col">
+          <img src="assets/images/ui_customer_modal.png" alt="Màn hình thêm mới hồ sơ bệnh nhân da liễu">
+        </div>
+      </article>
+
+      <!-- 02: Khám & Kê đơn -->
+      <article class="solution-detail-card fade-in-up" id="sol-02">
+        <div class="solution-info-col">
+          <div class="sol-number">02</div>
+          <span class="sol-badge">Khám & Kê đơn</span>
+          <h2>Bệnh án điện tử và đơn thuốc liên thông</h2>
+          <p>
+            Bác sĩ xem lại lịch sử điều trị, ghi bệnh án và kê đơn trên cùng một màn hình, rồi liên thông lên hệ thống Đơn thuốc quốc gia ngay lập tức.
+          </p>
+          <ul class="solution-checklist-block">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Bệnh án điện tử chuyên khoa da liễu chuẩn Bộ Y tế</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Kê đơn thuốc nội bộ, in đơn chuẩn mã vạch trong 5 giây</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Liên thông 1 click lên Cổng Đơn thuốc Quốc gia</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Lưu phác đồ điều trị, ảnh tổn thương da trước và sau</span>
+            </li>
+          </ul>
+          <a href="index.html#dang-ky-dung-thu" class="btn btn-primary btn-sm">Dùng thử tính năng này</a>
+        </div>
+        <div class="solution-img-col">
+          <img src="assets/images/ui_exam_prescription.png" alt="Màn hình khám bệnh và danh sách bệnh án điện tử">
+        </div>
+      </article>
+
+      <!-- 03: Thu phí & Bán hàng -->
+      <article class="solution-detail-card fade-in-up" id="sol-03">
+        <div class="solution-info-col">
+          <div class="sol-number">03</div>
+          <span class="sol-badge">Thu phí & Bán hàng</span>
+          <h2>Thu phí gọn, bán kèm dược mỹ phẩm</h2>
+          <p>
+            Phí khám, thủ thuật và sản phẩm chăm sóc da gom vào một phiếu thu, không phải cộng tay, xuất hóa đơn điện tử một lần.
+          </p>
+          <ul class="solution-checklist-block">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Viết phiếu thu, quản lý danh sách khoản chờ thu</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Phiếu bán hàng lẻ thuốc, mỹ phẩm và gói liệu trình</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Tích hợp hóa đơn điện tử MISA, Tendoo, iHoaDon không phụ phí</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Tự động tính hoa hồng dịch vụ cho kỹ thuật viên & bác sĩ</span>
+            </li>
+          </ul>
+          <a href="index.html#dang-ky-dung-thu" class="btn btn-primary btn-sm">Dùng thử tính năng này</a>
+        </div>
+        <div class="solution-img-col">
+          <img src="assets/images/ui_billing_sales.png" alt="Màn hình phiếu bán hàng và thu phí">
+        </div>
+      </article>
+
+      <!-- 04: Kho thuốc & Vật tư -->
+      <article class="solution-detail-card fade-in-up" id="sol-04">
+        <div class="solution-info-col">
+          <div class="sol-number">04</div>
+          <span class="sol-badge">Kho thuốc & Vật tư</span>
+          <h2>Quản lý kho dược chuẩn GPP, chống thất thoát</h2>
+          <p>
+            Theo dõi chi tiết số lượng tồn kho của từng loại thuốc, serum, kem bôi da liễu. Tự động trừ tồn khi bác sĩ kê đơn hoặc thủ thuật hoàn thành.
+          </p>
+          <ul class="solution-checklist-block">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Danh mục thuốc, vật tư, dược mỹ phẩm và bảng giá bán lẻ</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Phiếu nhập hàng, xuất hàng, dự trù mua hàng thông minh</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Cảnh báo hết hàng, cảnh báo lô thuốc cận date</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Chốt kho và kiểm kê kho nhanh chóng</span>
+            </li>
+          </ul>
+          <a href="index.html#dang-ky-dung-thu" class="btn btn-primary btn-sm">Dùng thử tính năng này</a>
+        </div>
+        <div class="solution-img-col">
+          <img src="assets/images/real_ui_overview.png" alt="Màn hình cảnh báo tồn kho và quản lý vật tư">
+        </div>
+      </article>
+
+      <!-- 05: Chăm sóc sau điều trị -->
+      <article class="solution-detail-card fade-in-up" id="sol-05">
+        <div class="solution-info-col">
+          <div class="sol-number">05</div>
+          <span class="sol-badge">Chăm sóc CRM</span>
+          <h2>Nhắc hẹn tự động, không còn bỏ sót khách hàng</h2>
+          <p>
+            Tự động lọc danh sách khách cần tái khám sau liệu trình mụn, nám, laser để gửi tin nhắn qua Zalo OA, giúp tăng tỷ lệ khách quay lại đáng kể.
+          </p>
+          <ul class="solution-checklist-block">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Tự động gửi tin nhắn Zalo OA & SMS nhắc lịch tái khám</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Phân loại riêng danh sách khách lỡ hẹn để gọi lại</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Gửi tin nhắn chúc mừng sinh nhật kèm voucher ưu đãi</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Ghi nhận phản hồi và xử lý khiếu nại bệnh nhân chu đáo</span>
+            </li>
+          </ul>
+          <a href="index.html#dang-ky-dung-thu" class="btn btn-primary btn-sm">Dùng thử tính năng này</a>
+        </div>
+        <div class="solution-img-col">
+          <img src="assets/images/hero_dashboard_mockup.png" alt="Màn hình nhắc lịch hẹn tái khám Zalo OA">
+        </div>
+      </article>
+
+      <!-- 06: Báo cáo & Doanh thu -->
+      <article class="solution-detail-card fade-in-up" id="sol-06">
+        <div class="solution-info-col">
+          <div class="sol-number">06</div>
+          <span class="sol-badge">Báo cáo & Tài chính</span>
+          <h2>Biết phòng khám đang lãi hay lỗ, mỗi ngày</h2>
+          <p>
+            Chủ phòng khám theo dõi doanh thu, số lượng ca khám, dịch vụ bán chạy và hoa hồng nhân viên mọi lúc trên điện thoại và máy tính.
+          </p>
+          <ul class="solution-checklist-block">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Báo cáo doanh thu, doanh số, dịch vụ và phác đồ điều trị</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Thống kê khách hàng theo số lượng và nguồn giới thiệu</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Báo cáo xuất nhập tồn kho tài chính, chênh lệch thực tế</span>
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Hoa hồng tự động chốt theo dịch vụ đã làm</span>
+            </li>
+          </ul>
+          <a href="index.html#dang-ky-dung-thu" class="btn btn-primary btn-sm">Dùng thử tính năng này</a>
+        </div>
+        <div class="solution-img-col">
+          <img src="assets/images/ui_revenue_chart.png" alt="Màn hình biểu đồ doanh thu theo dịch vụ">
+        </div>
+      </article>
+
+      <!-- CTA Strip Banner -->
+      <div class="cta-banner-strip fade-in-up">
+        <div>
+          <h3>Muốn xem phần mềm chạy theo quy trình phòng khám của bạn?</h3>
+          <p>Dùng thử miễn phí 1 tháng, GSV DTech setup dữ liệu ban đầu cho bạn.</p>
+        </div>
+        <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="index.html#dang-ky-dung-thu" class="btn btn-primary">Dùng thử miễn phí &rarr;</a>
+          <a href="chi-phi.html" class="btn btn-ghost">Xem bảng giá</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container-wide">
+      <div class="footer-bottom-bar" style="border-top: none; padding-top: 0;">
+        <div>&copy; 2026 GSV DTech. Bảo lưu mọi quyền.</div>
+        <div class="footer-ecosystem">
+          <a href="index.html">Trang chủ</a> &bull;
+          <a href="chi-phi.html">Bảng giá</a> &bull;
+          <a href="tel:02437894110">Hotline: 024 3789 4110</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Bar -->
+  <div class="sticky-mobile-bar">
+    <div class="sticky-bar-content">
+      <a href="tel:02437894110" class="mobile-act-btn mobile-act-call">Gọi</a>
+      <a href="https://zalo.me/19004611" target="_blank" rel="noopener noreferrer" class="mobile-act-btn mobile-act-zalo">Zalo</a>
+      <a href="index.html#dang-ky-dung-thu" class="mobile-act-btn mobile-act-trial">Dùng thử</a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

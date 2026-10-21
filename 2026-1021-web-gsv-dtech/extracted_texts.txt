@@ -1,0 +1,32 @@
+A.A[0].t[0].E[0].a.C.A -> WIREFRAME
+A.A[0].t[0].E[1].a.C.A -> GSV DTECH
+A.A[0].t[1].E[1].a.C.A -> Site map
+A.A[0].t[2].E[0].c[1].a.C.A -> Title #162637
+A.A[0].t[2].E[0].c[3].a.C.A -> Body #4b5a66
+A.A[0].t[2].E[2].a.C.A -> Title Font Be Vietnam Pro (Bold)
+A.A[0].t[2].E[3].a.C.A -> Body font Inter hoáº·c Nunito (Regular)
+A.A[0].t[2].E[4].a.C.A -> Font size: 56px  |  Line height: 68px Font size: 46px  |  Line height: 56px Font size: 38px  |  Line height: 46px Font size: 30px  |  Line height: 38px Font size: 24px  |  Line height: 32px Font size: 20px  |  Line height: 28px Font size: 16px  | Line height: 24px Font size: 14px  |  Line height: 22px Font size: 12px  |  Line height: 20px Font size: 10px  |  Line height: 14px
+A.A[0].t[2].E[5].a.C.A -> Button state
+A.A[0].t[2].E[6].a.C.A -> Hover #008F4D
+A.A[0].t[2].E[7].c[1].a.C.A -> Xem chi tiáº¿t
+A.A[0].t[2].E[8].c[1].a.C.A -> Xem chi tiáº¿t
+A.A[0].t[2].E[9].a.C.A -> Default #EB1C24
+A.A[0].t[2].E[10].a.C.A -> Focused #008F4D  |  #EB1C24
+A.A[0].t[2].E[11].a.C.A -> Fade in & slide up
+A.A[0].t[2].E[12].a.C.A -> Animation Effect
+A.A[0].t[2].E[13].a.C.A -> Link to view sample â
+A.A[0].t[2].E[15].a.C.A -> Fonts and Colors
+A.A[0].t[2].E[16].c[1].a.C.A -> Xem chi tiáº¿t
+A.A[0].t[3].E[0].c[2].a.C.A -> DÃ¹ng thá»­ miá»n phÃ­
+A.A[0].t[3].E[0].c[4].a.C.A -> DÃ¹ng thá»­ miá»n phÃ­
+A.A[0].t[3].E[1].a.C.A -> Homepage
+A.A[0].t[3].E[2].a.C.A -> Link to view sample â
+A.A[0].t[11].E[6].a.C.A -> Trang Chi phÃ­
+A.A[0].t[11].E[7].a.C.A -> Link to view sample â
+A.A[0].t[14].E[2].a.C.A -> Trang Giáº£i phÃ¡p
+A.A[0].t[14].E[3].a.C.A -> Link to view sample â
+A.A[0].t[14].E[4].a.C.A -> Trang tá»ng
+A.A[0].t[15].E[5].a.C.A -> CÃ¡c trang con - Tiáº¿p ÄÃ³n & lá»ch háº¹n
+A.A[0].t[17].E[5].a.C.A -> CÃ¡c trang con -  KhÃ¡m & KÃª ÄÆ¡n
+A.A[0].t[19].E[4].a.C.A -> CÃ¡c trang con -  KhÃ¡m & KÃª ÄÆ¡n
+A.A[1].t[0].E[0].a.C.A -> Giao diá»n Mobile

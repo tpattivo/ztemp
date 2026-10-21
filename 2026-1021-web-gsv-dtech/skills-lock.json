@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "greenlight-vibe": {
+      "source": "./temp_repo",
+      "sourceType": "local",
+      "computedHash": "258a7af9fbcc040d9492e51a3ac86827d845b34d9edab3ebe8cce4f00c651026"
+    }
+  }
+}

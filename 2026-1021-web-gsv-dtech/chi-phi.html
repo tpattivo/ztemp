@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bảng giá GSV DTech - Chi phí minh bạch, không phí ẩn</title>
+  <meta name="description" content="Xem chi tiết các gói dịch vụ GSV DTech: Lite (299k), Premium (399k), Diamond (699k). Trải nghiệm 1 tháng miễn phí với dữ liệu thật.">
+  <link rel="icon" href="assets/images/gsv_dtech_logo_clean.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container-wide header-container">
+      <a href="index.html" class="header-logo">
+        <img src="assets/images/gsv_dtech_logo_clean.png" alt="GSV DTech Logo">
+        <div class="header-logo-text">
+          <span class="brand">GSV DTech</span>
+          <span class="slogan">Công nghệ dẫn lối, y tế chuyển mình</span>
+        </div>
+      </a>
+
+      <nav aria-label="Điều hướng chính">
+        <ul class="nav-menu">
+          <li><a href="giai-phap.html" class="nav-link">Giải pháp</a></li>
+          <li><a href="chi-phi.html" class="nav-link active">Chi phí</a></li>
+          <li><a href="index.html#khach-hang" class="nav-link">Khách hàng</a></li>
+          <li><a href="index.html#tin-tuc" class="nav-link">Tin tức & Blog</a></li>
+          <li><a href="index.html#ve-gsv-dtech" class="nav-link">Về GSV DTech</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:02437894110" class="hotline-link">
+          <span class="label">Hotline</span>
+          <span class="number">024 3789 4110</span>
+        </a>
+        <a href="#dang-ky-dung-thu" class="btn btn-primary btn-sm">
+          <span>Dùng thử miễn phí</span>
+          <span class="btn-icon-circle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <span style="font-weight: 800; font-size: 1.25rem;">GSV DTech</span>
+      <button class="drawer-close-btn">&times;</button>
+    </div>
+    <ul class="drawer-nav-list">
+      <li><a href="index.html" class="drawer-nav-link">Trang chủ</a></li>
+      <li><a href="giai-phap.html" class="drawer-nav-link">Giải pháp</a></li>
+      <li><a href="chi-phi.html" class="drawer-nav-link active">Chi phí & Bảng giá</a></li>
+      <li><a href="index.html#khach-hang" class="drawer-nav-link">Khách hàng</a></li>
+      <li><a href="#dang-ky-dung-thu" class="drawer-nav-link">Đăng ký dùng thử</a></li>
+    </ul>
+  </aside>
+
+  <!-- Pricing Hero Banner -->
+  <section class="hero-section" style="padding: 70px 0 80px; text-align: center;">
+    <div class="container">
+      <div style="font-size: 0.8125rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 12px;">Trang chủ / Chi phí</div>
+      <h1 class="display-2" style="color: var(--color-white); margin-bottom: 14px;">Chi phí sử dụng GSV DTech</h1>
+      <p style="font-size: 1.125rem; color: rgba(255, 255, 255, 0.85); max-width: 680px; margin: 0 auto 28px;">
+        Ba gói rõ ràng cho phòng khám từ một bác sĩ đến cả chuỗi. Dùng thử miễn phí 1 tháng trước khi trả tiền.
+      </p>
+
+      <div style="display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; font-size: 0.875rem;">
+        <span style="display: flex; align-items: center; gap: 6px; color: #4ade80;">✓ Không phí ẩn</span>
+        <span style="display: flex; align-items: center; gap: 6px; color: #4ade80;">✓ Setup dữ liệu ban đầu</span>
+        <span style="display: flex; align-items: center; gap: 6px; color: #4ade80;">✓ Hỗ trợ online 1:1, 24/7</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Cards Section -->
+  <section class="pricing-section">
+    <div class="container">
+      <!-- Billing Switch -->
+      <div class="pricing-billing-switch">
+        <div class="switch-pill">
+          <button class="switch-option active" data-billing="monthly">Theo tháng</button>
+          <button class="switch-option" data-billing="annual">
+            Theo năm <span class="discount-badge">(tặng đến 2 tháng)</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Pricing Cards Grid -->
+      <div class="pricing-cards-grid">
+        <!-- Lite -->
+        <div class="price-card fade-in-up">
+          <div class="plan-header">
+            <h3>Lite</h3>
+            <p class="plan-desc">Phòng khám 1 bác sĩ, mới mở</p>
+          </div>
+          <div class="plan-price-wrap">
+            <span class="plan-price">299.000đ</span>
+            <span class="plan-period">/tháng</span>
+          </div>
+          <ul class="plan-features-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>1 người dùng, 1 cơ sở</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Hồ sơ bệnh nhân, danh sách khám</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Kê đơn và Đơn thuốc quốc gia</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Bệnh án điện tử cơ bản</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Phiếu thu, tổng hợp thu phí</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Báo cáo doanh thu, danh mục kho cơ bản</span>
+            </li>
+          </ul>
+          <div class="plan-cta">
+            <a href="#dang-ky-dung-thu" class="btn btn-secondary" style="width: 100%;">Dùng thử miễn phí</a>
+          </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="price-card popular fade-in-up">
+          <div class="popular-badge">Được chọn nhiều nhất</div>
+          <div class="plan-header">
+            <h3>Premium</h3>
+            <p class="plan-desc">Phòng khám nhiều nhân viên, có nhà thuốc</p>
+          </div>
+          <div class="plan-price-wrap">
+            <span class="plan-price">399.000đ</span>
+            <span class="plan-period">/tháng</span>
+          </div>
+          <ul class="plan-features-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Mọi tính năng của Lite, cộng thêm:</strong></span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Không giới hạn người dùng</strong> (bác sĩ, lễ tân, kế toán)</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Lịch hẹn và chăm sóc khách hàng (CRM)</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Kho đầy đủ: nhập, xuất, bán hàng, cảnh báo tồn</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Bệnh án điện tử và báo cáo nâng cao</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Phân quyền nhân viên, hoa hồng tự động</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Hóa đơn điện tử, không phí tích hợp</span>
+            </li>
+          </ul>
+          <div class="plan-cta">
+            <a href="#dang-ky-dung-thu" class="btn btn-primary" style="width: 100%;">
+              <span>Dùng thử miễn phí</span>
+              <span class="btn-icon-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Diamond -->
+        <div class="price-card fade-in-up">
+          <div class="plan-header">
+            <h3>Diamond</h3>
+            <p class="plan-desc">Chuỗi phòng khám, không giới hạn chi nhánh</p>
+          </div>
+          <div class="plan-price-wrap">
+            <span class="plan-price">699.000đ</span>
+            <span class="plan-period">/tháng</span>
+          </div>
+          <ul class="plan-features-list">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Mọi tính năng của Premium, cộng thêm:</strong></span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span><strong>Không giới hạn chi nhánh</strong> / cơ sở</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Báo cáo nâng cao theo từng cơ sở & toàn chuỗi</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>CRM chăm sóc khách hàng đa kênh tự động</span>
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Chấm công nhân viên, quản lý tài chính tập trung</span>
+            </li>
+          </ul>
+          <div class="plan-cta">
+            <a href="#dang-ky-dung-thu" class="btn btn-secondary" style="width: 100%;">Dùng thử miễn phí</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust Checkmarks -->
+      <div style="display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 36px; font-size: 0.875rem; color: var(--color-title);">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="color: var(--color-primary); font-weight: 700;">✓</span> Trải nghiệm miễn phí 1 tháng
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="color: var(--color-primary); font-weight: 700;">✓</span> Setup dữ liệu căn bản
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="color: var(--color-primary); font-weight: 700;">✓</span> Hỗ trợ online 1:1, 24/7
+        </div>
+      </div>
+
+      <!-- Signature AI Callout -->
+      <div class="ai-callout-card fade-in-up">
+        <div class="ai-callout-text">
+          <h4>Signature: Premium + CRM + AI <span class="ai-badge">Sắp ra mắt</span></h4>
+          <p>Gói cao cấp có trợ lý AI cho phòng khám. Đăng ký trước để nhận ưu đãi sớm khi ra mắt.</p>
+        </div>
+        <a href="#dang-ky-dung-thu" class="btn btn-ghost btn-sm" style="flex-shrink: 0;">Đăng ký nhận ưu đãi sớm</a>
+      </div>
+
+      <!-- Detailed Comparison Accordion Table -->
+      <div class="comparison-section fade-in-up">
+        <button class="comparison-toggle-btn">
+          <span>So sánh chi tiết tính năng theo gói</span>
+          <span class="toggle-icon" style="transition: transform var(--transition-normal);">&darr;</span>
+        </button>
+
+        <div class="comparison-table-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th style="width: 40%;">Tính năng</th>
+                <th style="width: 20%; text-align: center;">Lite</th>
+                <th style="width: 20%; text-align: center;" class="col-highlight">Premium</th>
+                <th style="width: 20%; text-align: center;">Diamond</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Quy mô -->
+              <tr class="category-row">
+                <td colspan="4">Quy mô & Người dùng</td>
+              </tr>
+              <tr>
+                <td>Số lượng người dùng</td>
+                <td style="text-align: center;">1 tài khoản</td>
+                <td style="text-align: center;" class="col-highlight">Không giới hạn</td>
+                <td style="text-align: center;">Không giới hạn</td>
+              </tr>
+              <tr>
+                <td>Số lượng cơ sở / chi nhánh</td>
+                <td style="text-align: center;">1 cơ sở</td>
+                <td style="text-align: center;" class="col-highlight">1 cơ sở</td>
+                <td style="text-align: center;">Không giới hạn</td>
+              </tr>
+              <tr>
+                <td>Setup dữ liệu ban đầu (khách, dịch vụ, thuốc)</td>
+                <td style="text-align: center; color: var(--color-primary);">✓</td>
+                <td style="text-align: center; color: var(--color-primary);" class="col-highlight">✓</td>
+                <td style="text-align: center; color: var(--color-primary);">✓</td>
+              </tr>
+
+              <!-- Khám bệnh -->
+              <tr class="category-row">
+                <td colspan="4">Khám bệnh & Bệnh án điện tử</td>
+              </tr>
+              <tr>
+                <td>Hồ sơ bệnh nhân & Lịch sử khám bệnh</td>
+                <td style="text-align: center; color: var(--color-primary);">✓</td>
+                <td style="text-align: center; color: var(--color-primary);" class="col-highlight">✓</td>
+                <td style="text-align: center; color: var(--color-primary);">✓</td>
+              </tr>
+              <tr>
+                <td>Bệnh án điện tử chuyên khoa Da liễu</td>
+                <td style="text-align: center;">Cơ bản</td>
+                <td style="text-align: center;" class="col-highlight">Nâng cao (ảnh da)</td>
+                <td style="text-align: center;">Nâng cao (ảnh da)</td>
+              </tr>
+              <tr>
+                <td>Liên thông Cổng Đơn thuốc Quốc gia</td>
+                <td style="text-align: center; color: var(--color-primary);">✓</td>
+                <td style="text-align: center; color: var(--color-primary);" class="col-highlight">✓</td>
+                <td style="text-align: center; color: var(--color-primary);">✓</td>
+              </tr>
+
+              <!-- Kho & Thu phí -->
+              <tr class="category-row">
+                <td colspan="4">Kho dược & Thu phí</td>
+              </tr>
+              <tr>
+                <td>Quản lý kho thuốc & vật tư GPP</td>
+                <td style="text-align: center;">Cơ bản</td>
+                <td style="text-align: center;" class="col-highlight">Đầy đủ xuất nhập tồn</td>
+                <td style="text-align: center;">Đầy đủ đa chi nhánh</td>
+              </tr>
+              <tr>
+                <td>Hóa đơn điện tử (MISA, Tendoo, iHoaDon)</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center; color: var(--color-primary);" class="col-highlight">Miễn phí tích hợp</td>
+                <td style="text-align: center; color: var(--color-primary);">Miễn phí tích hợp</td>
+              </tr>
+              <tr>
+                <td>Tự động tính hoa hồng dịch vụ</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center; color: var(--color-primary);" class="col-highlight">✓</td>
+                <td style="text-align: center; color: var(--color-primary);">✓</td>
+              </tr>
+
+              <!-- CRM & Báo cáo -->
+              <tr class="category-row">
+                <td colspan="4">CRM & Quản trị</td>
+              </tr>
+              <tr>
+                <td>Nhắc lịch hẹn tái khám Zalo OA / SMS</td>
+                <td style="text-align: center;">-</td>
+                <td style="text-align: center; color: var(--color-primary);" class="col-highlight">✓</td>
+                <td style="text-align: center; color: var(--color-primary);">✓</td>
+              </tr>
+              <tr>
+                <td>Báo cáo doanh thu thời gian thực</td>
+                <td style="text-align: center;">Cơ bản</td>
+                <td style="text-align: center;" class="col-highlight">Chi tiết dịch vụ</td>
+                <td style="text-align: center;">Toàn diện chuỗi cơ sở</td>
+              </tr>
+              <tr>
+                <td>Hỗ trợ kỹ thuật 1:1, 24/7</td>
+                <td style="text-align: center; color: var(--color-primary);">✓</td>
+                <td style="text-align: center; color: var(--color-primary);" class="col-highlight">✓</td>
+                <td style="text-align: center; color: var(--color-primary);">✓ (Ưu tiên cao)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conversion Section -->
+  <section class="conversion-section" id="dang-ky-dung-thu">
+    <div class="container">
+      <div class="conversion-grid">
+        <div class="conversion-left fade-in-up">
+          <h2>Đưa phòng khám của bạn lên một nền tảng ngay tháng này</h2>
+          <p>
+            Để lại thông tin, tư vấn viên GSV DTech sẽ gọi lại để mở tài khoản trải nghiệm và hẹn lịch demo trực tiếp cho bạn.
+          </p>
+
+          <ul class="conversion-check-list">
+            <li><span class="check-icon">✓</span><span>Miễn phí 1 tháng, đầy đủ tính năng</span></li>
+            <li><span class="check-icon">✓</span><span>Setup dữ liệu ban đầu cho bạn</span></li>
+            <li><span class="check-icon">✓</span><span>Demo trực tiếp theo quy trình phòng khám</span></li>
+          </ul>
+
+          <div class="conversion-quick-contacts">
+            <a href="tel:02437894110" class="btn-contact-outline">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>024 3789 4110</span>
+            </a>
+            <a href="https://zalo.me/19004611" target="_blank" rel="noopener noreferrer" class="btn-contact-outline">
+              <span>Chat Zalo</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="form-card fade-in-up">
+          <div class="form-header">
+            <h3>Đăng ký dùng thử miễn phí</h3>
+            <p>Chỉ mất 30 giây để bắt đầu trải nghiệm.</p>
+          </div>
+
+          <form class="lead-register-form">
+            <div class="form-group">
+              <label class="form-label" for="fullname">Họ và tên *</label>
+              <input type="text" id="fullname" class="form-input" placeholder="VD: Bác sĩ Nguyễn Văn A" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="phone">Số điện thoại *</label>
+              <input type="tel" id="phone" class="form-input" placeholder="VD: 0912 345 678" pattern="[0-9]{10,11}" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clinicName">Tên phòng khám / nhà thuốc *</label>
+              <input type="text" id="clinicName" class="form-input" placeholder="VD: Phòng khám Da liễu Sài Gòn" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clinicType">Gói quan tâm</label>
+              <select id="clinicType" class="form-select">
+                <option value="premium" selected>Gói Premium (399.000đ/tháng - Khuyên dùng)</option>
+                <option value="lite">Gói Lite (299.000đ/tháng)</option>
+                <option value="diamond">Gói Diamond (699.000đ/tháng)</option>
+                <option value="ai">Gói Signature AI (Đăng ký sớm)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 8px;">
+              <span>Đăng ký dùng thử</span>
+              <span class="btn-icon-circle">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </span>
+            </button>
+
+            <p class="form-privacy-note">
+              Thông tin của bạn được bảo mật tuyệt đối theo chính sách bảo mật của GSV DTech.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container-wide">
+      <div class="footer-bottom-bar" style="border-top: none; padding-top: 0;">
+        <div>&copy; 2026 GSV DTech. Bảo lưu mọi quyền.</div>
+        <div class="footer-ecosystem">
+          <a href="index.html">Trang chủ</a> &bull;
+          <a href="giai-phap.html">Giải pháp</a> &bull;
+          <a href="tel:02437894110">Hotline: 024 3789 4110</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Bar -->
+  <div class="sticky-mobile-bar">
+    <div class="sticky-bar-content">
+      <a href="tel:02437894110" class="mobile-act-btn mobile-act-call">Gọi</a>
+      <a href="https://zalo.me/19004611" target="_blank" rel="noopener noreferrer" class="mobile-act-btn mobile-act-zalo">Zalo</a>
+      <a href="#dang-ky-dung-thu" class="mobile-act-btn mobile-act-trial">Dùng thử</a>
+    </div>
+  </div>
+
+  <div class="toast-notice" id="toastNotice">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+    <span>Đăng ký thành công! Tư vấn viên GSV DTech sẽ liên hệ lại với bạn trong vòng 15 phút.</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
