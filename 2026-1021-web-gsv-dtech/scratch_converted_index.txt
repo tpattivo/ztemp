@@ -1,0 +1,1578 @@
+<!-- wp:html {"metadata":{"name":"Links Import"}} -->
+<link rel="icon" href="assets/images/gsv_dtech_logo_clean.png" type="image/png">
+<link rel="stylesheet" href="css/style.css">
+<!-- /wp:html -->
+
+<!-- wp:greenshift-blocks/element {"tag":"header","className":"site-header","anchor":"siteHeader","type":"inner"} -->
+<header class="site-header" id="siteHeader"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container-wide header-container","type":"inner"} -->
+<div class="container-wide header-container"><!-- wp:greenshift-blocks/element {"tag":"a","className":"header-logo","dynamicAttributes":[{"name":"aria-label","value":"Trang chủ GSV DTech"}],"href":"index.html","type":"inner"} -->
+<a class="header-logo" href="index.html" aria-label="Trang chủ GSV DTech"><!-- wp:greenshift-blocks/element {"tag":"img","src":"assets/images/gsv_dtech_logo_clean.png","alt":"GSV DTech Logo","type":"no"} -->
+<img src="assets/images/gsv_dtech_logo_clean.png" alt="GSV DTech Logo" loading="lazy"/>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"header-logo-text","type":"inner"} -->
+<div class="header-logo-text"><!-- wp:greenshift-blocks/element {"tag":"span","className":"brand","textContent":"GSV DTech","type":"text"} -->
+<span class="brand">GSV DTech</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"slogan","textContent":"Công nghệ dẫn lối, y tế chuyển mình","type":"text"} -->
+<span class="slogan">Công nghệ dẫn lối, y tế chuyển mình</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"nav","dynamicAttributes":[{"name":"aria-label","value":"Điều hướng chính"}],"type":"inner"} -->
+<nav aria-label="Điều hướng chính"><!-- wp:greenshift-blocks/element {"tag":"ul","className":"nav-menu","type":"inner"} -->
+<ul class="nav-menu"><!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"nav-link","textContent":"Giải pháp","href":"giai-phap.html","type":"text"} -->
+<a class="nav-link" href="giai-phap.html">Giải pháp</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"nav-link","textContent":"Chi phí","href":"chi-phi.html","type":"text"} -->
+<a class="nav-link" href="chi-phi.html">Chi phí</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"nav-link","textContent":"Khách hàng","href":"#khach-hang","type":"text"} -->
+<a class="nav-link" href="#khach-hang">Khách hàng</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"nav-link","textContent":"Tin tức \u0026 Blog","href":"#tin-tuc","type":"text"} -->
+<a class="nav-link" href="#tin-tuc">Tin tức &amp; Blog</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"nav-link","textContent":"Về GSV DTech","href":"#ve-gsv-dtech","type":"text"} -->
+<a class="nav-link" href="#ve-gsv-dtech">Về GSV DTech</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element --></nav>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"header-actions","type":"inner"} -->
+<div class="header-actions"><!-- wp:greenshift-blocks/element {"tag":"a","className":"hotline-link","href":"tel:02437894110","title":"Gọi hotline hỗ trợ","type":"inner"} -->
+<a class="hotline-link" href="tel:02437894110" title="Gọi hotline hỗ trợ"><!-- wp:greenshift-blocks/element {"tag":"span","className":"label","textContent":"Hotline","type":"text"} -->
+<span class="label">Hotline</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"number","textContent":"024 3789 4110","type":"text"} -->
+<span class="number">024 3789 4110</span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-primary btn-sm","href":"#dang-ky-dung-thu","type":"inner"} -->
+<a class="btn btn-primary btn-sm" href="#dang-ky-dung-thu"><!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Dùng thử miễn phí","type":"text"} -->
+<span>Dùng thử miễn phí</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"btn-icon-circle","type":"inner"} -->
+<span class="btn-icon-circle"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cline x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"\u003e\u003c/line\u003e\n              \u003cpolyline points=\"12 5 19 12 12 19\"\u003e\u003c/polyline\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["14px"],"height":["14px"]}} -->
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+<!-- /wp:greenshift-blocks/element --></span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"mobile-menu-btn","dynamicAttributes":[{"name":"aria-label","value":"Mở menu di động"}],"type":"inner"} -->
+<button class="mobile-menu-btn" aria-label="Mở menu di động"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n            \u003cline x1=\"3\" y1=\"12\" x2=\"21\" y2=\"12\"\u003e\u003c/line\u003e\n            \u003cline x1=\"3\" y1=\"6\" x2=\"21\" y2=\"6\"\u003e\u003c/line\u003e\n            \u003cline x1=\"3\" y1=\"18\" x2=\"21\" y2=\"18\"\u003e\u003c/line\u003e\n          \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["26px"],"height":["26px"]}} -->
+<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></header>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"mobile-drawer-overlay","type":"no"} -->
+<div class="mobile-drawer-overlay"></div>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"aside","className":"mobile-drawer","dynamicAttributes":[{"name":"aria-label","value":"Menu di động"}],"type":"inner"} -->
+<aside class="mobile-drawer" aria-label="Menu di động"><!-- wp:greenshift-blocks/element {"tag":"div","className":"drawer-header","type":"inner"} -->
+<div class="drawer-header"><!-- wp:greenshift-blocks/element {"tag":"div","className":"header-logo","type":"inner"} -->
+<div class="header-logo"><!-- wp:greenshift-blocks/element {"tag":"img","dynamicAttributes":[{"name":"style","value":"height: 38px;"}],"src":"assets/images/gsv_dtech_logo_clean.png","alt":"GSV DTech Logo","type":"no"} -->
+<img src="assets/images/gsv_dtech_logo_clean.png" alt="GSV DTech Logo" loading="lazy" style="height: 38px;"/>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"header-logo-text","dynamicAttributes":[{"name":"style","value":"font-weight: 800; color: var(--color-title);"}],"textContent":"GSV DTech","type":"text"} -->
+<span class="header-logo-text" style="font-weight: 800; color: var(--color-title);">GSV DTech</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"drawer-close-btn","dynamicAttributes":[{"name":"aria-label","value":"Đóng menu"}],"textContent":"\u0026times;","type":"text"} -->
+<button class="drawer-close-btn" aria-label="Đóng menu">&times;</button>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"ul","className":"drawer-nav-list","type":"inner"} -->
+<ul class="drawer-nav-list"><!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"drawer-nav-link active","textContent":"Trang chủ","href":"index.html","type":"text"} -->
+<a class="drawer-nav-link active" href="index.html">Trang chủ</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"drawer-nav-link","textContent":"Giải pháp","href":"giai-phap.html","type":"text"} -->
+<a class="drawer-nav-link" href="giai-phap.html">Giải pháp</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"drawer-nav-link","textContent":"Chi phí \u0026 Bảng giá","href":"chi-phi.html","type":"text"} -->
+<a class="drawer-nav-link" href="chi-phi.html">Chi phí &amp; Bảng giá</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"drawer-nav-link","textContent":"Khách hàng","href":"#khach-hang","type":"text"} -->
+<a class="drawer-nav-link" href="#khach-hang">Khách hàng</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"drawer-nav-link","textContent":"Tin tức \u0026 Blog","href":"#tin-tuc","type":"text"} -->
+<a class="drawer-nav-link" href="#tin-tuc">Tin tức &amp; Blog</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","className":"drawer-nav-link","textContent":"Về GSV DTech","href":"#ve-gsv-dtech","type":"text"} -->
+<a class="drawer-nav-link" href="#ve-gsv-dtech">Về GSV DTech</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"margin-top: auto; padding-top: 24px; border-top: 1px solid var(--color-border);"}],"type":"inner"} -->
+<div style="margin-top: auto; padding-top: 24px; border-top: 1px solid var(--color-border);"><!-- wp:greenshift-blocks/element {"tag":"p","dynamicAttributes":[{"name":"style","value":"font-size: 0.8125rem; color: var(--color-muted); margin-bottom: 8px;"}],"textContent":"Hotline tư vấn:","type":"text"} -->
+<p style="font-size: 0.8125rem; color: var(--color-muted); margin-bottom: 8px;">Hotline tư vấn:</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","dynamicAttributes":[{"name":"style","value":"font-size: 1.25rem; font-weight: 800; color: var(--color-title); display: block; margin-bottom: 16px;"}],"textContent":"024 3789 4110","href":"tel:02437894110","type":"text"} -->
+<a href="tel:02437894110" style="font-size: 1.25rem; font-weight: 800; color: var(--color-title); display: block; margin-bottom: 16px;">024 3789 4110</a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-primary","dynamicAttributes":[{"name":"style","value":"width: 100%;"}],"textContent":"Dùng thử miễn phí","href":"#dang-ky-dung-thu","type":"text"} -->
+<a class="btn btn-primary" href="#dang-ky-dung-thu" style="width: 100%;">Dùng thử miễn phí</a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></aside>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"hero-section","anchor":"hero","type":"inner"} -->
+<section class="hero-section" id="hero"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container-wide","type":"inner"} -->
+<div class="container-wide"><!-- wp:greenshift-blocks/element {"tag":"div","className":"hero-grid","type":"inner"} -->
+<div class="hero-grid"><!-- wp:greenshift-blocks/element {"tag":"div","className":"hero-content fade-in-up","type":"inner"} -->
+<div class="hero-content fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"badge-tag","type":"inner"} -->
+<div class="badge-tag"><!-- wp:greenshift-blocks/element {"tag":"span","className":"pill-new","textContent":"Mới","type":"text"} -->
+<span class="pill-new">Mới</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Kê đơn liên thông Đơn thuốc quốc gia ở mọi gói","type":"text"} -->
+<span>Kê đơn liên thông Đơn thuốc quốc gia ở mọi gói</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"h1","className":"hero-title","textContent":"Quản lý phòng khám da liễu gọn trong một nền tảng","type":"text"} -->
+<h1 class="hero-title">Quản lý phòng khám da liễu gọn trong một nền tảng</h1>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"hero-desc","textContent":"GSV DTech giúp phòng khám và nhà thuốc da liễu quản lý hồ sơ bệnh án, lịch hẹn, kê đơn, thu chi và kho thuốc trên một phần mềm dễ dùng, cho cả chủ phòng khám, bác sĩ và lễ tân.","type":"text"} -->
+<p class="hero-desc">GSV DTech giúp phòng khám và nhà thuốc da liễu quản lý hồ sơ bệnh án, lịch hẹn, kê đơn, thu chi và kho thuốc trên một phần mềm dễ dùng, cho cả chủ phòng khám, bác sĩ và lễ tân.</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"hero-cta-group","type":"inner"} -->
+<div class="hero-cta-group"><!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-primary btn-lg","href":"#dang-ky-dung-thu","type":"inner"} -->
+<a class="btn btn-primary btn-lg" href="#dang-ky-dung-thu"><!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Dùng thử miễn phí","type":"text"} -->
+<span>Dùng thử miễn phí</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"btn-icon-circle","type":"inner"} -->
+<span class="btn-icon-circle"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n                  \u003cline x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"\u003e\u003c/line\u003e\n                  \u003cpolyline points=\"12 5 19 12 12 19\"\u003e\u003c/polyline\u003e\n                \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["16px"],"height":["16px"]}} -->
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+<!-- /wp:greenshift-blocks/element --></span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"btn btn-ghost btn-lg open-demo-modal","dynamicAttributes":[{"name":"aria-label","value":"Xem video demo 90 giây"}],"type":"inner"} -->
+<button class="btn btn-ghost btn-lg open-demo-modal" aria-label="Xem video demo 90 giây"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"currentColor\"\u003e\n                \u003cpath d=\"M8 5v14l11-7z\"/\u003e\n              \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["20px"],"height":["20px"]}} -->
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Xem demo 90 giây","type":"text"} -->
+<span>Xem demo 90 giây</span>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"ul","className":"hero-trust-list","type":"inner"} -->
+<ul class="hero-trust-list"><!-- wp:greenshift-blocks/element {"tag":"li","className":"hero-trust-item","type":"inner"} -->
+<li class="hero-trust-item"><!-- wp:greenshift-blocks/element {"tag":"span","className":"check-icon","textContent":"✓","type":"text"} -->
+<span class="check-icon">✓</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Miễn phí 1 tháng trải nghiệm","type":"text"} -->
+<span>Miễn phí 1 tháng trải nghiệm</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","className":"hero-trust-item","type":"inner"} -->
+<li class="hero-trust-item"><!-- wp:greenshift-blocks/element {"tag":"span","className":"check-icon","textContent":"✓","type":"text"} -->
+<span class="check-icon">✓</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Hỗ trợ setup dữ liệu ban đầu","type":"text"} -->
+<span>Hỗ trợ setup dữ liệu ban đầu</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","className":"hero-trust-item","type":"inner"} -->
+<li class="hero-trust-item"><!-- wp:greenshift-blocks/element {"tag":"span","className":"check-icon","textContent":"✓","type":"text"} -->
+<span class="check-icon">✓</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Hỗ trợ 1:1, 24/7 cả buổi tối và cuối tuần","type":"text"} -->
+<span>Hỗ trợ 1:1, 24/7 cả buổi tối và cuối tuần</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"hero-visual fade-in-up","type":"inner"} -->
+<div class="hero-visual fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"img","src":"assets/images/hero_dashboard_mockup.png","alt":"Giao diện phần mềm quản lý phòng khám GSV DTech","type":"no"} -->
+<img src="assets/images/hero_dashboard_mockup.png" alt="Giao diện phần mềm quản lý phòng khám GSV DTech" loading="lazy"/>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"partner-section","dynamicAttributes":[{"name":"aria-label","value":"Đối tác y tế"}],"type":"inner"} -->
+<section class="partner-section" aria-label="Đối tác y tế"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container-wide partner-container","type":"inner"} -->
+<div class="container-wide partner-container"><!-- wp:greenshift-blocks/element {"tag":"div","className":"partner-label","type":"inner"} -->
+<div class="partner-label"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Đồng hành cùng ngành da liễu","type":"text"} -->
+<h4>Đồng hành cùng ngành da liễu</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Các bệnh viện da liễu đối tác của GSV","type":"text"} -->
+<p>Các bệnh viện da liễu đối tác của GSV</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"partner-logos-wrap","type":"inner"} -->
+<div class="partner-logos-wrap"><!-- wp:greenshift-blocks/element {"tag":"img","dynamicAttributes":[{"name":"style","value":"max-height: 70px; width: auto;"}],"src":"assets/images/partner_hospitals_strip.png","alt":"Các bệnh viện da liễu đối tác của GSV: BV Da liễu TW, BV Da liễu Hà Nội, BV Da liễu TP.HCM, BV Da liễu Nam Định, BV Phong TW Quỳnh Lập","type":"no"} -->
+<img src="assets/images/partner_hospitals_strip.png" alt="Các bệnh viện da liễu đối tác của GSV: BV Da liễu TW, BV Da liễu Hà Nội, BV Da liễu TP.HCM, BV Da liễu Nam Định, BV Phong TW Quỳnh Lập" loading="lazy" style="max-height: 70px; width: auto;"/>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"pain-points-section","type":"inner"} -->
+<section class="pain-points-section"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container","type":"inner"} -->
+<div class="container"><!-- wp:greenshift-blocks/element {"tag":"div","className":"pain-grid","type":"inner"} -->
+<div class="pain-grid"><!-- wp:greenshift-blocks/element {"tag":"div","className":"pain-content fade-in-up","type":"inner"} -->
+<div class="pain-content fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"h2","textContent":"Phòng khám vẫn đang chạy bằng sổ tay và tin nhắn","type":"text"} -->
+<h2>Phòng khám vẫn đang chạy bằng sổ tay và tin nhắn</h2>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Hồ sơ giấy, lịch hẹn ghi tay và đơn thuốc viết tay làm bác sĩ mất thời gian, lễ tân dễ sót khách, còn chủ phòng khám không biết chính xác hôm nay thu bao nhiêu.","type":"text"} -->
+<p>Hồ sơ giấy, lịch hẹn ghi tay và đơn thuốc viết tay làm bác sĩ mất thời gian, lễ tân dễ sót khách, còn chủ phòng khám không biết chính xác hôm nay thu bao nhiêu.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-cards-column","type":"inner"} -->
+<div class="stat-cards-column"><!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-item fade-in-up","type":"inner"} -->
+<div class="stat-item fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-number","textContent":"80%","type":"text"} -->
+<div class="stat-number">80%</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-desc","type":"inner"} -->
+<div class="stat-desc"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"cơ sở y tế vẫn quản lý hồ sơ bệnh án bằng giấy","type":"text"} -->
+<h4>cơ sở y tế vẫn quản lý hồ sơ bệnh án bằng giấy</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Tra lại lịch sử điều trị của một bệnh nhân mất nhiều phút.","type":"text"} -->
+<p>Tra lại lịch sử điều trị của một bệnh nhân mất nhiều phút.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-item fade-in-up","type":"inner"} -->
+<div class="stat-item fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-number","textContent":"50%","type":"text"} -->
+<div class="stat-number">50%</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-desc","type":"inner"} -->
+<div class="stat-desc"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"phòng khám vẫn đặt lịch thủ công","type":"text"} -->
+<h4>phòng khám vẫn đặt lịch thủ công</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Khách quên lịch, bỏ liệu trình giữa chừng mà không ai nhắc.","type":"text"} -->
+<p>Khách quên lịch, bỏ liệu trình giữa chừng mà không ai nhắc.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-item fade-in-up","type":"inner"} -->
+<div class="stat-item fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-number","textContent":"1/3","type":"text"} -->
+<div class="stat-number">1/3</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"stat-desc","type":"inner"} -->
+<div class="stat-desc"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"sai sót kê đơn liên quan đến ghi tay và thiếu đồng bộ","type":"text"} -->
+<h4>sai sót kê đơn liên quan đến ghi tay và thiếu đồng bộ</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Đơn thuốc không khớp với kho, khó liên thông lên hệ thống quốc gia.","type":"text"} -->
+<p>Đơn thuốc không khớp với kho, khó liên thông lên hệ thống quốc gia.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"workflow-section","anchor":"quy-trinh","type":"inner"} -->
+<section class="workflow-section" id="quy-trinh"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container","type":"inner"} -->
+<div class="container"><!-- wp:greenshift-blocks/element {"tag":"div","className":"section-header fade-in-up","type":"inner"} -->
+<div class="section-header fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"h2","textContent":"Mọi việc của phòng khám, trong một phần mềm","type":"text"} -->
+<h2>Mọi việc của phòng khám, trong một phần mềm</h2>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Theo chân một ca khám da liễu, từ lúc khách đặt lịch đến khi được nhắc tái khám, để thấy GSV DTech làm gì ở từng bước.","type":"text"} -->
+<p>Theo chân một ca khám da liễu, từ lúc khách đặt lịch đến khi được nhắc tái khám, để thấy GSV DTech làm gì ở từng bước.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"workflow-layout","type":"inner"} -->
+<div class="workflow-layout"><!-- wp:greenshift-blocks/element {"tag":"div","className":"workflow-steps-nav fade-in-up","type":"inner"} -->
+<div class="workflow-steps-nav fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"button","className":"step-nav-btn active","dynamicAttributes":[{"name":"data-step","value":"1"}],"type":"inner"} -->
+<button class="step-nav-btn active" data-step="1"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-num","textContent":"1","type":"text"} -->
+<div class="step-num">1</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-info","type":"inner"} -->
+<div class="step-info"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-title","textContent":"Tiếp đón \u0026 lịch hẹn","type":"text"} -->
+<div class="step-title">Tiếp đón &amp; lịch hẹn</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-sub","textContent":"Hồ sơ khách, đặt lịch khám","type":"text"} -->
+<div class="step-sub">Hồ sơ khách, đặt lịch khám</div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"step-nav-btn","dynamicAttributes":[{"name":"data-step","value":"2"}],"type":"inner"} -->
+<button class="step-nav-btn" data-step="2"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-num","textContent":"2","type":"text"} -->
+<div class="step-num">2</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-info","type":"inner"} -->
+<div class="step-info"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-title","textContent":"Khám \u0026 kê đơn","type":"text"} -->
+<div class="step-title">Khám &amp; kê đơn</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-sub","textContent":"Bệnh án điện tử, đơn thuốc quốc gia","type":"text"} -->
+<div class="step-sub">Bệnh án điện tử, đơn thuốc quốc gia</div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"step-nav-btn","dynamicAttributes":[{"name":"data-step","value":"3"}],"type":"inner"} -->
+<button class="step-nav-btn" data-step="3"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-num","textContent":"3","type":"text"} -->
+<div class="step-num">3</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-info","type":"inner"} -->
+<div class="step-info"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-title","textContent":"Thu phí \u0026 bán hàng","type":"text"} -->
+<div class="step-title">Thu phí &amp; bán hàng</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-sub","textContent":"Phiếu thu, dược mỹ phẩm, hóa đơn","type":"text"} -->
+<div class="step-sub">Phiếu thu, dược mỹ phẩm, hóa đơn</div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"step-nav-btn","dynamicAttributes":[{"name":"data-step","value":"4"}],"type":"inner"} -->
+<button class="step-nav-btn" data-step="4"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-num","textContent":"4","type":"text"} -->
+<div class="step-num">4</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-info","type":"inner"} -->
+<div class="step-info"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-title","textContent":"Kho thuốc \u0026 vật tư","type":"text"} -->
+<div class="step-title">Kho thuốc &amp; vật tư</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-sub","textContent":"Nhập, xuất, cảnh báo hết hàng","type":"text"} -->
+<div class="step-sub">Nhập, xuất, cảnh báo hết hàng</div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"step-nav-btn","dynamicAttributes":[{"name":"data-step","value":"5"}],"type":"inner"} -->
+<button class="step-nav-btn" data-step="5"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-num","textContent":"5","type":"text"} -->
+<div class="step-num">5</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-info","type":"inner"} -->
+<div class="step-info"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-title","textContent":"Chăm sóc sau điều trị","type":"text"} -->
+<div class="step-title">Chăm sóc sau điều trị</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-sub","textContent":"Nhắc hẹn, khách lỡ hẹn, sinh nhật","type":"text"} -->
+<div class="step-sub">Nhắc hẹn, khách lỡ hẹn, sinh nhật</div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"step-nav-btn","dynamicAttributes":[{"name":"data-step","value":"6"}],"type":"inner"} -->
+<button class="step-nav-btn" data-step="6"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-num","textContent":"6","type":"text"} -->
+<div class="step-num">6</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-info","type":"inner"} -->
+<div class="step-info"><!-- wp:greenshift-blocks/element {"tag":"div","className":"step-title","textContent":"Báo cáo","type":"text"} -->
+<div class="step-title">Báo cáo</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"step-sub","textContent":"Doanh thu, dịch vụ, hoa hồng","type":"text"} -->
+<div class="step-sub">Doanh thu, dịch vụ, hoa hồng</div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"workflow-display-card fade-in-up","type":"inner"} -->
+<div class="workflow-display-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"workflow-display-text","type":"inner"} -->
+<div class="workflow-display-text"><!-- wp:greenshift-blocks/element {"tag":"h3","anchor":"workflowDisplayTitle","textContent":"Tìm hồ sơ khách cũ trong vài giây","type":"text"} -->
+<h3 id="workflowDisplayTitle">Tìm hồ sơ khách cũ trong vài giây</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"lead","anchor":"workflowDisplayDesc","textContent":"Khách quay lại không phải khai báo lại từ đầu. Hồ sơ, lịch sử và lịch hẹn nằm cùng một nơi, lễ tân chỉ cần gõ tên hoặc số điện thoại.","type":"text"} -->
+<p class="lead" id="workflowDisplayDesc">Khách quay lại không phải khai báo lại từ đầu. Hồ sơ, lịch sử và lịch hẹn nằm cùng một nơi, lễ tân chỉ cần gõ tên hoặc số điện thoại.</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"ul","className":"workflow-checklist","anchor":"workflowDisplayChecks","type":"inner"} -->
+<ul class="workflow-checklist" id="workflowDisplayChecks"><!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n                  \u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\n                \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Hồ sơ khách hàng và bệnh nhân dùng chung toàn phần mềm","type":"text"} -->
+<span>Hồ sơ khách hàng và bệnh nhân dùng chung toàn phần mềm</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n                  \u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\n                \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Đăng ký lịch khám trực tuyến \u0026 phân luồng thông minh","type":"text"} -->
+<span>Đăng ký lịch khám trực tuyến &amp; phân luồng thông minh</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n                  \u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\n                \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Danh sách chờ theo thời gian thực: Chờ khám, Đang khám, Đã khám","type":"text"} -->
+<span>Danh sách chờ theo thời gian thực: Chờ khám, Đang khám, Đã khám</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n                  \u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\n                \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Setup dữ liệu căn bản do GSV DTech nhập sẵn cho bạn","type":"text"} -->
+<span>Setup dữ liệu căn bản do GSV DTech nhập sẵn cho bạn</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-secondary btn-sm","textContent":"Xem chi tiết giải pháp \u0026rarr;","href":"giai-phap.html","type":"text"} -->
+<a class="btn btn-secondary btn-sm" href="giai-phap.html">Xem chi tiết giải pháp &rarr;</a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"workflow-display-media","type":"inner"} -->
+<div class="workflow-display-media"><!-- wp:greenshift-blocks/element {"tag":"img","anchor":"workflowDisplayImg","src":"assets/images/ui_customer_modal.png","alt":"Giao diện Tiếp đón và Hồ sơ khách hàng","type":"no"} -->
+<img id="workflowDisplayImg" src="assets/images/ui_customer_modal.png" alt="Giao diện Tiếp đón và Hồ sơ khách hàng" loading="lazy"/>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"features-section","type":"inner"} -->
+<section class="features-section"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container","type":"inner"} -->
+<div class="container"><!-- wp:greenshift-blocks/element {"tag":"div","className":"features-grid","type":"inner"} -->
+<div class="features-grid"><!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-card fade-in-up","type":"inner"} -->
+<div class="feature-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-icon-box","type":"inner"} -->
+<div class="feature-icon-box"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cpath d=\"M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71\"\u003e\u003c/path\u003e\n              \u003cpath d=\"M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71\"\u003e\u003c/path\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["24px"],"height":["24px"]}} -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"h3","textContent":"Đơn thuốc quốc gia","type":"text"} -->
+<h3>Đơn thuốc quốc gia</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Kê và liên thông đơn thuốc lên hệ thống quốc gia ở mọi gói, tuân thủ 100% quy định Bộ Y tế mà không cần nhập liệu 2 lần.","type":"text"} -->
+<p>Kê và liên thông đơn thuốc lên hệ thống quốc gia ở mọi gói, tuân thủ 100% quy định Bộ Y tế mà không cần nhập liệu 2 lần.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-card fade-in-up","type":"inner"} -->
+<div class="feature-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-icon-box","type":"inner"} -->
+<div class="feature-icon-box"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cpath d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"\u003e\u003c/path\u003e\n              \u003cpolyline points=\"14 2 14 8 20 8\"\u003e\u003c/polyline\u003e\n              \u003cline x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"\u003e\u003c/line\u003e\n              \u003cline x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"\u003e\u003c/line\u003e\n              \u003cpolyline points=\"10 9 9 9 8 9\"\u003e\u003c/polyline\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["24px"],"height":["24px"]}} -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"h3","textContent":"Hóa đơn điện tử","type":"text"} -->
+<h3>Hóa đơn điện tử</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Kết nối trực tiếp MISA, Tendoo, iHoaDon. Hóa đơn xuất thẳng từ phiếu thu chỉ trong vài giây, GSV DTech không thu phí tích hợp.","type":"text"} -->
+<p>Kết nối trực tiếp MISA, Tendoo, iHoaDon. Hóa đơn xuất thẳng từ phiếu thu chỉ trong vài giây, GSV DTech không thu phí tích hợp.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-card fade-in-up","type":"inner"} -->
+<div class="feature-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-icon-box","type":"inner"} -->
+<div class="feature-icon-box"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cline x1=\"19\" y1=\"5\" x2=\"5\" y2=\"19\"\u003e\u003c/line\u003e\n              \u003ccircle cx=\"6.5\" cy=\"6.5\" r=\"2.5\"\u003e\u003c/circle\u003e\n              \u003ccircle cx=\"17.5\" cy=\"17.5\" r=\"2.5\"\u003e\u003c/circle\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["24px"],"height":["24px"]}} -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="5" x2="5" y2="19"></line>
+              <circle cx="6.5" cy="6.5" r="2.5"></circle>
+              <circle cx="17.5" cy="17.5" r="2.5"></circle>
+            </svg>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"h3","textContent":"Hoa hồng tự động","type":"text"} -->
+<h3>Hoa hồng tự động</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Tính hoa hồng theo dịch vụ, thủ thuật và đơn thuốc cho bác sĩ, kỹ thuật viên, lễ tân và tư vấn minh bạch, không sợ nhầm lẫn.","type":"text"} -->
+<p>Tính hoa hồng theo dịch vụ, thủ thuật và đơn thuốc cho bác sĩ, kỹ thuật viên, lễ tân và tư vấn minh bạch, không sợ nhầm lẫn.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-card fade-in-up","type":"inner"} -->
+<div class="feature-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-icon-box","type":"inner"} -->
+<div class="feature-icon-box"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cpath d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"\u003e\u003c/path\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["24px"],"height":["24px"]}} -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"h3","textContent":"Nhận diện \u0026 phân quyền","type":"text"} -->
+<h3>Nhận diện &amp; phân quyền</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Phân quyền chi tiết cho bác sĩ, lễ tân, thủ kho, kế toán; bảo mật hồ sơ bệnh án và lịch sử doanh thu nội bộ theo từng vai trò.","type":"text"} -->
+<p>Phân quyền chi tiết cho bác sĩ, lễ tân, thủ kho, kế toán; bảo mật hồ sơ bệnh án và lịch sử doanh thu nội bộ theo từng vai trò.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-card fade-in-up","type":"inner"} -->
+<div class="feature-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-icon-box","type":"inner"} -->
+<div class="feature-icon-box"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cpath d=\"M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2\"\u003e\u003c/path\u003e\n              \u003ccircle cx=\"9\" cy=\"7\" r=\"4\"\u003e\u003c/circle\u003e\n              \u003cpath d=\"M23 21v-2a4 4 0 0 0-3-3.87\"\u003e\u003c/path\u003e\n              \u003cpath d=\"M16 3.13a4 4 0 0 1 0 7.75\"\u003e\u003c/path\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["24px"],"height":["24px"]}} -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"h3","textContent":"CRM chăm sóc khách hàng","type":"text"} -->
+<h3>CRM chăm sóc khách hàng</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Tự động gửi tin nhắn nhắc lịch tái khám, chúc mừng sinh nhật qua Zalo OA và SMS Brandname, giữ chân bệnh nhân hiệu quả.","type":"text"} -->
+<p>Tự động gửi tin nhắn nhắc lịch tái khám, chúc mừng sinh nhật qua Zalo OA và SMS Brandname, giữ chân bệnh nhân hiệu quả.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-card fade-in-up","type":"inner"} -->
+<div class="feature-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"feature-icon-box","type":"inner"} -->
+<div class="feature-icon-box"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cpath d=\"M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83\"/\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["24px"],"height":["24px"]}} -->
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+            </svg>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"h3","type":"inner"} -->
+<h3><!-- wp:greenshift-blocks/element {"textContent":"Trợ lý AI da liễu","tag":"span"} -->
+<span>Trợ lý AI da liễu</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"ai-badge","textContent":"Sắp ra mắt","type":"text"} -->
+<span class="ai-badge">Sắp ra mắt</span>
+<!-- /wp:greenshift-blocks/element --></h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Hỗ trợ gợi ý đơn thuốc theo triệu chứng, phác đồ điều trị chuẩn và phân tích đối chiếu hình ảnh tổn thương da liễu chuyên sâu.","type":"text"} -->
+<p>Hỗ trợ gợi ý đơn thuốc theo triệu chứng, phác đồ điều trị chuẩn và phân tích đối chiếu hình ảnh tổn thương da liễu chuyên sâu.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"real-ui-section","anchor":"giao-dien-that","type":"inner"} -->
+<section class="real-ui-section" id="giao-dien-that"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container-wide","type":"inner"} -->
+<div class="container-wide"><!-- wp:greenshift-blocks/element {"tag":"h2","className":"fade-in-up","textContent":"Giao diện thật, đang chạy mỗi ngày","type":"text"} -->
+<h2 class="fade-in-up">Giao diện thật, đang chạy mỗi ngày</h2>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"subtext fade-in-up","textContent":"Ảnh chụp từ hệ thống của GSV DTech Clinic tại Hà Đông và Cầu Giấy. Bấm vào ảnh để xem kích thước đầy đủ.","type":"text"} -->
+<p class="subtext fade-in-up">Ảnh chụp từ hệ thống của GSV DTech Clinic tại Hà Đông và Cầu Giấy. Bấm vào ảnh để xem kích thước đầy đủ.</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"real-ui-tabs fade-in-up","type":"inner"} -->
+<div class="real-ui-tabs fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"button","className":"ui-tab-btn active","dynamicAttributes":[{"name":"data-tab","value":"overview"}],"textContent":"Tổng quan trong ngày","type":"text"} -->
+<button class="ui-tab-btn active" data-tab="overview">Tổng quan trong ngày</button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"ui-tab-btn","dynamicAttributes":[{"name":"data-tab","value":"care"}],"textContent":"Chăm sóc sau điều trị","type":"text"} -->
+<button class="ui-tab-btn" data-tab="care">Chăm sóc sau điều trị</button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"ui-tab-btn","dynamicAttributes":[{"name":"data-tab","value":"revenue"}],"textContent":"Doanh thu","type":"text"} -->
+<button class="ui-tab-btn" data-tab="revenue">Doanh thu</button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"ui-tab-btn","dynamicAttributes":[{"name":"data-tab","value":"customers"}],"textContent":"Thống kê khách hàng","type":"text"} -->
+<button class="ui-tab-btn" data-tab="customers">Thống kê khách hàng</button>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"real-ui-stage fade-in-up","type":"inner"} -->
+<div class="real-ui-stage fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"img","anchor":"realUiImg","src":"assets/images/real_ui_overview.png","alt":"Giao diện phần mềm phòng khám da liễu GSV DTech","type":"no"} -->
+<img id="realUiImg" src="assets/images/real_ui_overview.png" alt="Giao diện phần mềm phòng khám da liễu GSV DTech" loading="lazy"/>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"real-ui-footer-info fade-in-up","type":"inner"} -->
+<div class="real-ui-footer-info fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","type":"inner"} -->
+<div><!-- wp:greenshift-blocks/element {"tag":"h3","anchor":"realUiTitle","textContent":"Mở máy là biết hôm nay cần làm gì","type":"text"} -->
+<h3 id="realUiTitle">Mở máy là biết hôm nay cần làm gì</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","anchor":"realUiDesc","textContent":"Màn hình đầu tiên khi đăng nhập gom mọi việc trong ngày của phòng khám vào một chỗ.","type":"text"} -->
+<p id="realUiDesc">Màn hình đầu tiên khi đăng nhập gom mọi việc trong ngày của phòng khám vào một chỗ.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"real-ui-check-grid","anchor":"realUiChecks","type":"inner"} -->
+<div class="real-ui-check-grid" id="realUiChecks"><!-- wp:greenshift-blocks/element {"tag":"div","className":"real-ui-check-item","type":"inner"} -->
+<div class="real-ui-check-item"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#008F4D\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Lịch hẹn trong ngày theo trạng thái","type":"text"} -->
+<span>Lịch hẹn trong ngày theo trạng thái</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"real-ui-check-item","type":"inner"} -->
+<div class="real-ui-check-item"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#008F4D\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Danh sách khách cần nhắc hẹn","type":"text"} -->
+<span>Danh sách khách cần nhắc hẹn</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"real-ui-check-item","type":"inner"} -->
+<div class="real-ui-check-item"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#008F4D\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Cảnh báo thuốc, mỹ phẩm hết hàng","type":"text"} -->
+<span>Cảnh báo thuốc, mỹ phẩm hết hàng</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"real-ui-check-item","type":"inner"} -->
+<div class="real-ui-check-item"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#008F4D\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n              \u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#008F4D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Tỉ lệ các loại khám trong ngày","type":"text"} -->
+<span>Tỉ lệ các loại khám trong ngày</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"why-section","type":"inner"} -->
+<section class="why-section"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container","type":"inner"} -->
+<div class="container"><!-- wp:greenshift-blocks/element {"tag":"div","className":"why-grid","type":"inner"} -->
+<div class="why-grid"><!-- wp:greenshift-blocks/element {"tag":"div","className":"why-left fade-in-up","type":"inner"} -->
+<div class="why-left fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"h2","textContent":"Vì sao chọn GSV DTech","type":"text"} -->
+<h2>Vì sao chọn GSV DTech</h2>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Giá rõ ràng, có người hướng dẫn từ ngày đầu, và bạn được dùng thật trước khi trả tiền.","type":"text"} -->
+<p>Giá rõ ràng, có người hướng dẫn từ ngày đầu, và bạn được dùng thật trước khi trả tiền.</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-primary","href":"#dang-ky-dung-thu","type":"inner"} -->
+<a class="btn btn-primary" href="#dang-ky-dung-thu"><!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Dùng thử miễn phí","type":"text"} -->
+<span>Dùng thử miễn phí</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"btn-icon-circle","type":"inner"} -->
+<span class="btn-icon-circle"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n                \u003cline x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"\u003e\u003c/line\u003e\n                \u003cpolyline points=\"12 5 19 12 12 19\"\u003e\u003c/polyline\u003e\n              \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["14px"],"height":["14px"]}} -->
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+<!-- /wp:greenshift-blocks/element --></span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"why-benefits-grid","type":"inner"} -->
+<div class="why-benefits-grid"><!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-item fade-in-up","type":"inner"} -->
+<div class="benefit-item fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-icon","textContent":"✓","type":"text"} -->
+<div class="benefit-icon">✓</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-text","type":"inner"} -->
+<div class="benefit-text"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Giá từ 299.000đ/tháng","type":"text"} -->
+<h4>Giá từ 299.000đ/tháng</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Ba gói, giá công khai. Mua theo năm được tặng thêm 1 đến 2 tháng.","type":"text"} -->
+<p>Ba gói, giá công khai. Mua theo năm được tặng thêm 1 đến 2 tháng.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-item fade-in-up","type":"inner"} -->
+<div class="benefit-item fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-icon","textContent":"✓","type":"text"} -->
+<div class="benefit-icon">✓</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-text","type":"inner"} -->
+<div class="benefit-text"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Không giới hạn người dùng","type":"text"} -->
+<h4>Không giới hạn người dùng</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Từ gói Premium, thêm bao nhiêu lễ tân, bác sĩ, kế toán cũng được. Gói Diamond không giới hạn chi nhánh.","type":"text"} -->
+<p>Từ gói Premium, thêm bao nhiêu lễ tân, bác sĩ, kế toán cũng được. Gói Diamond không giới hạn chi nhánh.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-item fade-in-up","type":"inner"} -->
+<div class="benefit-item fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-icon","textContent":"✓","type":"text"} -->
+<div class="benefit-icon">✓</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-text","type":"inner"} -->
+<div class="benefit-text"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Trải nghiệm miễn phí 1 tháng","type":"text"} -->
+<h4>Trải nghiệm miễn phí 1 tháng</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Dùng với dữ liệu thật của phòng khám trước khi đưa ra quyết định mua.","type":"text"} -->
+<p>Dùng với dữ liệu thật của phòng khám trước khi đưa ra quyết định mua.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-item fade-in-up","type":"inner"} -->
+<div class="benefit-item fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-icon","textContent":"✓","type":"text"} -->
+<div class="benefit-icon">✓</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-text","type":"inner"} -->
+<div class="benefit-text"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Setup dữ liệu ban đầu","type":"text"} -->
+<h4>Setup dữ liệu ban đầu</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Đội ngũ GSV DTech nhập sẵn danh sách khách hàng, dịch vụ và nguyên vật liệu cho bạn.","type":"text"} -->
+<p>Đội ngũ GSV DTech nhập sẵn danh sách khách hàng, dịch vụ và nguyên vật liệu cho bạn.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-item fade-in-up","type":"inner"} -->
+<div class="benefit-item fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-icon","textContent":"✓","type":"text"} -->
+<div class="benefit-icon">✓</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-text","type":"inner"} -->
+<div class="benefit-text"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Hỗ trợ online 1:1, 24/7","type":"text"} -->
+<h4>Hỗ trợ online 1:1, 24/7</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Có người trả lời trực tiếp cả khi phòng khám mở cửa buổi tối và cuối tuần.","type":"text"} -->
+<p>Có người trả lời trực tiếp cả khi phòng khám mở cửa buổi tối và cuối tuần.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-item fade-in-up","type":"inner"} -->
+<div class="benefit-item fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-icon","textContent":"✓","type":"text"} -->
+<div class="benefit-icon">✓</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"benefit-text","type":"inner"} -->
+<div class="benefit-text"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Kết nối sẵn hệ thống quốc gia","type":"text"} -->
+<h4>Kết nối sẵn hệ thống quốc gia</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Đơn thuốc quốc gia và hóa đơn điện tử sẵn sàng, không thu phí tích hợp.","type":"text"} -->
+<p>Đơn thuốc quốc gia và hóa đơn điện tử sẵn sàng, không thu phí tích hợp.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"testimonials-section","anchor":"khach-hang","type":"inner"} -->
+<section class="testimonials-section" id="khach-hang"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container","type":"inner"} -->
+<div class="container"><!-- wp:greenshift-blocks/element {"tag":"div","className":"section-header fade-in-up","type":"inner"} -->
+<div class="section-header fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"h2","textContent":"Khách hàng nói gì về GSV DTech","type":"text"} -->
+<h2>Khách hàng nói gì về GSV DTech</h2>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Phần mềm đang vận hành hằng ngày tại chuỗi GSV DTech Clinic và các phòng khám đã trải nghiệm.","type":"text"} -->
+<p>Phần mềm đang vận hành hằng ngày tại chuỗi GSV DTech Clinic và các phòng khám đã trải nghiệm.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"metrics-bar fade-in-up","type":"inner"} -->
+<div class="metrics-bar fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"metric-clinic-label","type":"inner"} -->
+<div class="metric-clinic-label"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"GSV DTech Clinic","type":"text"} -->
+<h4>GSV DTech Clinic</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Hà Đông và Cầu Giấy, số liệu thật trên hệ thống","type":"text"} -->
+<p>Hà Đông và Cầu Giấy, số liệu thật trên hệ thống</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"metric-stat-item","type":"inner"} -->
+<div class="metric-stat-item"><!-- wp:greenshift-blocks/element {"tag":"div","className":"val","textContent":"17.456","type":"text"} -->
+<div class="val">17.456</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"lbl","textContent":"hồ sơ khách hàng đang được quản lý","type":"text"} -->
+<div class="lbl">hồ sơ khách hàng đang được quản lý</div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"metric-stat-item","type":"inner"} -->
+<div class="metric-stat-item"><!-- wp:greenshift-blocks/element {"tag":"div","className":"val","textContent":"75","type":"text"} -->
+<div class="val">75</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"lbl","textContent":"lịch hẹn trong một ngày tại một chi nhánh","type":"text"} -->
+<div class="lbl">lịch hẹn trong một ngày tại một chi nhánh</div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"metric-stat-item","type":"inner"} -->
+<div class="metric-stat-item"><!-- wp:greenshift-blocks/element {"tag":"div","className":"val","textContent":"343","type":"text"} -->
+<div class="val">343</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"lbl","textContent":"phiếu thu được lập trong 7 ngày","type":"text"} -->
+<div class="lbl">phiếu thu được lập trong 7 ngày</div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"testimonials-grid","type":"inner"} -->
+<div class="testimonials-grid"><!-- wp:greenshift-blocks/element {"tag":"div","className":"testimonial-card featured fade-in-up","type":"inner"} -->
+<div class="testimonial-card featured fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"span","className":"badge-quote-tag","textContent":"Nội dung mẫu","type":"text"} -->
+<span class="badge-quote-tag">Nội dung mẫu</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"quote-body","textContent":"“Trước đây cuối ngày phải ngồi cộng sổ thu. Giờ mở báo cáo doanh thu là biết hôm nay thu bao nhiêu, ở chi nhánh nào, dịch vụ nào bán chạy.”","type":"text"} -->
+<p class="quote-body">“Trước đây cuối ngày phải ngồi cộng sổ thu. Giờ mở báo cáo doanh thu là biết hôm nay thu bao nhiêu, ở chi nhánh nào, dịch vụ nào bán chạy.”</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"quote-author","type":"inner"} -->
+<div class="quote-author"><!-- wp:greenshift-blocks/element {"tag":"div","className":"author-avatar","textContent":"BS","type":"text"} -->
+<div class="author-avatar">BS</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"author-info","type":"inner"} -->
+<div class="author-info"><!-- wp:greenshift-blocks/element {"tag":"h5","textContent":"Bác sĩ CKII Nguyễn Văn Hùng","type":"text"} -->
+<h5>Bác sĩ CKII Nguyễn Văn Hùng</h5>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Chủ phòng khám Da liễu Thẩm mỹ Hùng Y","type":"text"} -->
+<p>Chủ phòng khám Da liễu Thẩm mỹ Hùng Y</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"display: flex; flex-direction: column; gap: 20px;"}],"type":"inner"} -->
+<div style="display: flex; flex-direction: column; gap: 20px;"><!-- wp:greenshift-blocks/element {"tag":"div","className":"testimonial-card fade-in-up","type":"inner"} -->
+<div class="testimonial-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"span","className":"badge-quote-tag","textContent":"Nội dung mẫu","type":"text"} -->
+<span class="badge-quote-tag">Nội dung mẫu</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"quote-body","dynamicAttributes":[{"name":"style","value":"font-size: 0.9375rem; font-weight: 500;"}],"textContent":"“Mỗi sáng mở danh sách nhắc hẹn là biết hôm nay cần gọi ai. Khách lỡ hẹn có danh sách riêng nên lễ tân không còn bỏ sót.”","type":"text"} -->
+<p class="quote-body" style="font-size: 0.9375rem; font-weight: 500;">“Mỗi sáng mở danh sách nhắc hẹn là biết hôm nay cần gọi ai. Khách lỡ hẹn có danh sách riêng nên lễ tân không còn bỏ sót.”</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"quote-author","type":"inner"} -->
+<div class="quote-author"><!-- wp:greenshift-blocks/element {"tag":"div","className":"author-avatar","textContent":"LT","type":"text"} -->
+<div class="author-avatar">LT</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"author-info","type":"inner"} -->
+<div class="author-info"><!-- wp:greenshift-blocks/element {"tag":"h5","textContent":"Lê Thanh Thảo","type":"text"} -->
+<h5>Lê Thanh Thảo</h5>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Trưởng bộ phận Lễ tân - Phòng khám GSV Hà Đông","type":"text"} -->
+<p>Trưởng bộ phận Lễ tân - Phòng khám GSV Hà Đông</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"testimonial-card fade-in-up","type":"inner"} -->
+<div class="testimonial-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"span","className":"badge-quote-tag","textContent":"Nội dung mẫu","type":"text"} -->
+<span class="badge-quote-tag">Nội dung mẫu</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"quote-body","dynamicAttributes":[{"name":"style","value":"font-size: 0.9375rem; font-weight: 500;"}],"textContent":"“Kê đơn xong là liên thông luôn lên Đơn thuốc quốc gia, không phải nhập lại lần hai. Lịch sử điều trị của khách mở ra là thấy ngay.”","type":"text"} -->
+<p class="quote-body" style="font-size: 0.9375rem; font-weight: 500;">“Kê đơn xong là liên thông luôn lên Đơn thuốc quốc gia, không phải nhập lại lần hai. Lịch sử điều trị của khách mở ra là thấy ngay.”</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"quote-author","type":"inner"} -->
+<div class="quote-author"><!-- wp:greenshift-blocks/element {"tag":"div","className":"author-avatar","textContent":"BS","type":"text"} -->
+<div class="author-avatar">BS</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"author-info","type":"inner"} -->
+<div class="author-info"><!-- wp:greenshift-blocks/element {"tag":"h5","textContent":"ThS.BS Vũ Bảo Ngọc","type":"text"} -->
+<h5>ThS.BS Vũ Bảo Ngọc</h5>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Bác sĩ điều trị Da liễu","type":"text"} -->
+<p>Bác sĩ điều trị Da liễu</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"pricing-section","anchor":"bang-gia","type":"inner"} -->
+<section class="pricing-section" id="bang-gia"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container","type":"inner"} -->
+<div class="container"><!-- wp:greenshift-blocks/element {"tag":"div","className":"section-header fade-in-up","type":"inner"} -->
+<div class="section-header fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"h2","textContent":"Bảng giá minh bạch, không phí ẩn","type":"text"} -->
+<h2>Bảng giá minh bạch, không phí ẩn</h2>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Chọn gói phù hợp với quy mô phòng khám của bạn. Bạn được dùng thật trước khi trả tiền.","type":"text"} -->
+<p>Chọn gói phù hợp với quy mô phòng khám của bạn. Bạn được dùng thật trước khi trả tiền.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"pricing-billing-switch fade-in-up","type":"inner"} -->
+<div class="pricing-billing-switch fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"switch-pill","type":"inner"} -->
+<div class="switch-pill"><!-- wp:greenshift-blocks/element {"tag":"button","className":"switch-option active","dynamicAttributes":[{"name":"data-billing","value":"monthly"}],"textContent":"Theo tháng","type":"text"} -->
+<button class="switch-option active" data-billing="monthly">Theo tháng</button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"switch-option","dynamicAttributes":[{"name":"data-billing","value":"annual"}],"type":"inner"} -->
+<button class="switch-option" data-billing="annual"><!-- wp:greenshift-blocks/element {"textContent":"Theo năm","tag":"span"} -->
+<span>Theo năm</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"discount-badge","textContent":"(tặng đến 2 tháng)","type":"text"} -->
+<span class="discount-badge">(tặng đến 2 tháng)</span>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"pricing-cards-grid","type":"inner"} -->
+<div class="pricing-cards-grid"><!-- wp:greenshift-blocks/element {"tag":"div","className":"price-card fade-in-up","type":"inner"} -->
+<div class="price-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"plan-header","type":"inner"} -->
+<div class="plan-header"><!-- wp:greenshift-blocks/element {"tag":"h3","textContent":"Lite","type":"text"} -->
+<h3>Lite</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"plan-desc","textContent":"Phòng khám 1 bác sĩ, mới mở","type":"text"} -->
+<p class="plan-desc">Phòng khám 1 bác sĩ, mới mở</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"plan-price-wrap","type":"inner"} -->
+<div class="plan-price-wrap"><!-- wp:greenshift-blocks/element {"tag":"span","className":"plan-price","textContent":"299.000đ","type":"text"} -->
+<span class="plan-price">299.000đ</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"plan-period","textContent":"/tháng","type":"text"} -->
+<span class="plan-period">/tháng</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"ul","className":"plan-features-list","type":"inner"} -->
+<ul class="plan-features-list"><!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"1 người dùng, 1 cơ sở","type":"text"} -->
+<span>1 người dùng, 1 cơ sở</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Hồ sơ bệnh nhân, danh sách khám","type":"text"} -->
+<span>Hồ sơ bệnh nhân, danh sách khám</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Kê đơn và Đơn thuốc quốc gia","type":"text"} -->
+<span>Kê đơn và Đơn thuốc quốc gia</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Bệnh án điện tử cơ bản","type":"text"} -->
+<span>Bệnh án điện tử cơ bản</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Phiếu thu, tổng hợp thu phí","type":"text"} -->
+<span>Phiếu thu, tổng hợp thu phí</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Báo cáo doanh thu, danh mục kho cơ bản","type":"text"} -->
+<span>Báo cáo doanh thu, danh mục kho cơ bản</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"plan-cta","type":"inner"} -->
+<div class="plan-cta"><!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-secondary","dynamicAttributes":[{"name":"style","value":"width: 100%;"}],"textContent":"Dùng thử gói Lite","href":"#dang-ky-dung-thu","type":"text"} -->
+<a class="btn btn-secondary" href="#dang-ky-dung-thu" style="width: 100%;">Dùng thử gói Lite</a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"price-card popular fade-in-up","type":"inner"} -->
+<div class="price-card popular fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"popular-badge","textContent":"Được chọn nhiều nhất","type":"text"} -->
+<div class="popular-badge">Được chọn nhiều nhất</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"plan-header","type":"inner"} -->
+<div class="plan-header"><!-- wp:greenshift-blocks/element {"tag":"h3","textContent":"Premium","type":"text"} -->
+<h3>Premium</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"plan-desc","textContent":"Phòng khám nhiều nhân viên, có nhà thuốc","type":"text"} -->
+<p class="plan-desc">Phòng khám nhiều nhân viên, có nhà thuốc</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"plan-price-wrap","type":"inner"} -->
+<div class="plan-price-wrap"><!-- wp:greenshift-blocks/element {"tag":"span","className":"plan-price","textContent":"399.000đ","type":"text"} -->
+<span class="plan-price">399.000đ</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"plan-period","textContent":"/tháng","type":"text"} -->
+<span class="plan-period">/tháng</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"ul","className":"plan-features-list","type":"inner"} -->
+<ul class="plan-features-list"><!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","type":"inner"} -->
+<span><!-- wp:greenshift-blocks/element {"tag":"strong","textContent":"Mọi tính năng của Lite, cộng thêm:","type":"text"} -->
+<strong>Mọi tính năng của Lite, cộng thêm:</strong>
+<!-- /wp:greenshift-blocks/element --></span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","type":"inner"} -->
+<span><!-- wp:greenshift-blocks/element {"tag":"strong","textContent":"Không giới hạn người dùng","type":"text"} -->
+<strong>Không giới hạn người dùng</strong>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"textContent":"(bác sĩ, lễ tân, kế toán)","tag":"span"} -->
+<span>(bác sĩ, lễ tân, kế toán)</span>
+<!-- /wp:greenshift-blocks/element --></span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Lịch hẹn và chăm sóc khách hàng (CRM)","type":"text"} -->
+<span>Lịch hẹn và chăm sóc khách hàng (CRM)</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Kho đầy đủ: nhập, xuất, bán hàng, cảnh báo tồn","type":"text"} -->
+<span>Kho đầy đủ: nhập, xuất, bán hàng, cảnh báo tồn</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Bệnh án điện tử và báo cáo nâng cao","type":"text"} -->
+<span>Bệnh án điện tử và báo cáo nâng cao</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Phân quyền nhân viên, hoa hồng tự động","type":"text"} -->
+<span>Phân quyền nhân viên, hoa hồng tự động</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Hóa đơn điện tử, không phí tích hợp","type":"text"} -->
+<span>Hóa đơn điện tử, không phí tích hợp</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"plan-cta","type":"inner"} -->
+<div class="plan-cta"><!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-primary","dynamicAttributes":[{"name":"style","value":"width: 100%;"}],"href":"#dang-ky-dung-thu","type":"inner"} -->
+<a class="btn btn-primary" href="#dang-ky-dung-thu" style="width: 100%;"><!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Dùng thử miễn phí","type":"text"} -->
+<span>Dùng thử miễn phí</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"btn-icon-circle","type":"inner"} -->
+<span class="btn-icon-circle"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"12 5 19 12 12 19\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["14px"],"height":["14px"]}} -->
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="12 5 19 12 12 19"></polyline></svg>
+<!-- /wp:greenshift-blocks/element --></span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"price-card fade-in-up","type":"inner"} -->
+<div class="price-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"plan-header","type":"inner"} -->
+<div class="plan-header"><!-- wp:greenshift-blocks/element {"tag":"h3","textContent":"Diamond","type":"text"} -->
+<h3>Diamond</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"plan-desc","textContent":"Chuỗi phòng khám, không giới hạn chi nhánh","type":"text"} -->
+<p class="plan-desc">Chuỗi phòng khám, không giới hạn chi nhánh</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"plan-price-wrap","type":"inner"} -->
+<div class="plan-price-wrap"><!-- wp:greenshift-blocks/element {"tag":"span","className":"plan-price","textContent":"699.000đ","type":"text"} -->
+<span class="plan-price">699.000đ</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"plan-period","textContent":"/tháng","type":"text"} -->
+<span class="plan-period">/tháng</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"ul","className":"plan-features-list","type":"inner"} -->
+<ul class="plan-features-list"><!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","type":"inner"} -->
+<span><!-- wp:greenshift-blocks/element {"tag":"strong","textContent":"Mọi tính năng của Premium, cộng thêm:","type":"text"} -->
+<strong>Mọi tính năng của Premium, cộng thêm:</strong>
+<!-- /wp:greenshift-blocks/element --></span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","type":"inner"} -->
+<span><!-- wp:greenshift-blocks/element {"tag":"strong","textContent":"Không giới hạn chi nhánh","type":"text"} -->
+<strong>Không giới hạn chi nhánh</strong>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"textContent":"/ cơ sở","tag":"span"} -->
+<span>/ cơ sở</span>
+<!-- /wp:greenshift-blocks/element --></span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Báo cáo nâng cao theo từng cơ sở \u0026 toàn chuỗi","type":"text"} -->
+<span>Báo cáo nâng cao theo từng cơ sở &amp; toàn chuỗi</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"CRM chăm sóc khách hàng đa kênh tự động","type":"text"} -->
+<span>CRM chăm sóc khách hàng đa kênh tự động</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Chấm công nhân viên, quản lý tài chính tập trung","type":"text"} -->
+<span>Chấm công nhân viên, quản lý tài chính tập trung</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"plan-cta","type":"inner"} -->
+<div class="plan-cta"><!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-secondary","dynamicAttributes":[{"name":"style","value":"width: 100%;"}],"textContent":"Dùng thử gói Diamond","href":"#dang-ky-dung-thu","type":"text"} -->
+<a class="btn btn-secondary" href="#dang-ky-dung-thu" style="width: 100%;">Dùng thử gói Diamond</a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 36px; font-size: 0.875rem; color: var(--color-title);"}],"type":"inner"} -->
+<div style="display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; margin-top: 36px; font-size: 0.875rem; color: var(--color-title);"><!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"display: flex; align-items: center; gap: 8px;"}],"type":"inner"} -->
+<div style="display: flex; align-items: center; gap: 8px;"><!-- wp:greenshift-blocks/element {"tag":"span","dynamicAttributes":[{"name":"style","value":"color: var(--color-primary); font-weight: 700;"}],"textContent":"✓","type":"text"} -->
+<span style="color: var(--color-primary); font-weight: 700;">✓</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"textContent":"Trải nghiệm miễn phí 1 tháng","tag":"span"} -->
+<span>Trải nghiệm miễn phí 1 tháng</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"display: flex; align-items: center; gap: 8px;"}],"type":"inner"} -->
+<div style="display: flex; align-items: center; gap: 8px;"><!-- wp:greenshift-blocks/element {"tag":"span","dynamicAttributes":[{"name":"style","value":"color: var(--color-primary); font-weight: 700;"}],"textContent":"✓","type":"text"} -->
+<span style="color: var(--color-primary); font-weight: 700;">✓</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"textContent":"Setup dữ liệu căn bản","tag":"span"} -->
+<span>Setup dữ liệu căn bản</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"display: flex; align-items: center; gap: 8px;"}],"type":"inner"} -->
+<div style="display: flex; align-items: center; gap: 8px;"><!-- wp:greenshift-blocks/element {"tag":"span","dynamicAttributes":[{"name":"style","value":"color: var(--color-primary); font-weight: 700;"}],"textContent":"✓","type":"text"} -->
+<span style="color: var(--color-primary); font-weight: 700;">✓</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"textContent":"Hỗ trợ online 1:1, 24/7","tag":"span"} -->
+<span>Hỗ trợ online 1:1, 24/7</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"ai-callout-card fade-in-up","type":"inner"} -->
+<div class="ai-callout-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"ai-callout-text","type":"inner"} -->
+<div class="ai-callout-text"><!-- wp:greenshift-blocks/element {"tag":"h4","type":"inner"} -->
+<h4><!-- wp:greenshift-blocks/element {"textContent":"Signature: Premium + CRM + AI","tag":"span"} -->
+<span>Signature: Premium + CRM + AI</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"ai-badge","textContent":"Sắp ra mắt","type":"text"} -->
+<span class="ai-badge">Sắp ra mắt</span>
+<!-- /wp:greenshift-blocks/element --></h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Gói cao cấp có trợ lý AI hỗ trợ chẩn đoán và phác đồ cho phòng khám da liễu. Đăng ký trước để nhận ưu đãi sớm khi ra mắt.","type":"text"} -->
+<p>Gói cao cấp có trợ lý AI hỗ trợ chẩn đoán và phác đồ cho phòng khám da liễu. Đăng ký trước để nhận ưu đãi sớm khi ra mắt.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-ghost btn-sm","dynamicAttributes":[{"name":"style","value":"flex-shrink: 0;"}],"textContent":"Đăng ký nhận ưu đãi sớm","href":"#dang-ky-dung-thu","type":"text"} -->
+<a class="btn btn-ghost btn-sm" href="#dang-ky-dung-thu" style="flex-shrink: 0;">Đăng ký nhận ưu đãi sớm</a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"text-align: center; margin-top: 36px;"}],"type":"inner"} -->
+<div style="text-align: center; margin-top: 36px;"><!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-secondary","textContent":"Xem bảng so sánh tính năng chi tiết \u0026rarr;","href":"chi-phi.html","type":"text"} -->
+<a class="btn btn-secondary" href="chi-phi.html">Xem bảng so sánh tính năng chi tiết &rarr;</a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"section","className":"conversion-section","anchor":"dang-ky-dung-thu","type":"inner"} -->
+<section class="conversion-section" id="dang-ky-dung-thu"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container","type":"inner"} -->
+<div class="container"><!-- wp:greenshift-blocks/element {"tag":"div","className":"conversion-grid","type":"inner"} -->
+<div class="conversion-grid"><!-- wp:greenshift-blocks/element {"tag":"div","className":"conversion-left fade-in-up","type":"inner"} -->
+<div class="conversion-left fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"h2","textContent":"Đưa phòng khám của bạn lên một nền tảng ngay tháng này","type":"text"} -->
+<h2>Đưa phòng khám của bạn lên một nền tảng ngay tháng này</h2>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Để lại thông tin, tư vấn viên GSV DTech sẽ gọi lại để mở tài khoản trải nghiệm và hẹn lịch demo trực tiếp cho bạn.","type":"text"} -->
+<p>Để lại thông tin, tư vấn viên GSV DTech sẽ gọi lại để mở tài khoản trải nghiệm và hẹn lịch demo trực tiếp cho bạn.</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"ul","className":"conversion-check-list","type":"inner"} -->
+<ul class="conversion-check-list"><!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"span","className":"check-icon","textContent":"✓","type":"text"} -->
+<span class="check-icon">✓</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Miễn phí 1 tháng, đầy đủ tính năng","type":"text"} -->
+<span>Miễn phí 1 tháng, đầy đủ tính năng</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"span","className":"check-icon","textContent":"✓","type":"text"} -->
+<span class="check-icon">✓</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Setup dữ liệu ban đầu cho bạn (khách hàng, dịch vụ, thuốc)","type":"text"} -->
+<span>Setup dữ liệu ban đầu cho bạn (khách hàng, dịch vụ, thuốc)</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"span","className":"check-icon","textContent":"✓","type":"text"} -->
+<span class="check-icon">✓</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Demo trực tiếp theo đúng quy trình phòng khám của bạn","type":"text"} -->
+<span>Demo trực tiếp theo đúng quy trình phòng khám của bạn</span>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"conversion-quick-contacts","type":"inner"} -->
+<div class="conversion-quick-contacts"><!-- wp:greenshift-blocks/element {"tag":"a","className":"btn-contact-outline","href":"tel:02437894110","type":"inner"} -->
+<a class="btn-contact-outline" href="tel:02437894110"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n                \u003cpath d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"\u003e\u003c/path\u003e\n              \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"024 3789 4110","type":"text"} -->
+<span>024 3789 4110</span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"btn-contact-outline","href":"https://zalo.me/19004611","linkNewWindow":true,"type":"inner"} -->
+<a class="btn-contact-outline" href="https://zalo.me/19004611" target="_blank" rel="noopener"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n                \u003cpath d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"\u003e\u003c/path\u003e\n              \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Chat Zalo","type":"text"} -->
+<span>Chat Zalo</span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"form-card fade-in-up","type":"inner"} -->
+<div class="form-card fade-in-up"><!-- wp:greenshift-blocks/element {"tag":"div","className":"form-header","type":"inner"} -->
+<div class="form-header"><!-- wp:greenshift-blocks/element {"tag":"h3","textContent":"Đăng ký dùng thử miễn phí","type":"text"} -->
+<h3>Đăng ký dùng thử miễn phí</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Chỉ mất 30 giây để bắt đầu trải nghiệm.","type":"text"} -->
+<p>Chỉ mất 30 giây để bắt đầu trải nghiệm.</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"form","className":"lead-register-form","formAttributes":{"method":"get","action":""},"type":"inner"} -->
+<form class="lead-register-form" method="get" action=""><!-- wp:greenshift-blocks/element {"tag":"div","className":"form-group","type":"inner"} -->
+<div class="form-group"><!-- wp:greenshift-blocks/element {"tag":"label","className":"form-label","textContent":"Họ và tên *","type":"text"} -->
+<label class="form-label">Họ và tên *</label>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"input","className":"form-input","anchor":"fullname","formAttributes":{"type":"text","placeholder":"VD: Bác sĩ Nguyễn Văn A","required":true},"type":"form"} -->
+<input class="form-input" id="fullname" type="text" placeholder="VD: Bác sĩ Nguyễn Văn A" required/>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"form-group","type":"inner"} -->
+<div class="form-group"><!-- wp:greenshift-blocks/element {"tag":"label","className":"form-label","textContent":"Số điện thoại *","type":"text"} -->
+<label class="form-label">Số điện thoại *</label>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"input","className":"form-input","anchor":"phone","formAttributes":{"type":"tel","placeholder":"VD: 0912 345 678","required":true},"type":"form"} -->
+<input class="form-input" id="phone" type="tel" placeholder="VD: 0912 345 678" required/>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"form-group","type":"inner"} -->
+<div class="form-group"><!-- wp:greenshift-blocks/element {"tag":"label","className":"form-label","textContent":"Tên phòng khám / nhà thuốc *","type":"text"} -->
+<label class="form-label">Tên phòng khám / nhà thuốc *</label>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"input","className":"form-input","anchor":"clinicName","formAttributes":{"type":"text","placeholder":"VD: Phòng khám Da liễu Sài Gòn","required":true},"type":"form"} -->
+<input class="form-input" id="clinicName" type="text" placeholder="VD: Phòng khám Da liễu Sài Gòn" required/>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"form-group","type":"inner"} -->
+<div class="form-group"><!-- wp:greenshift-blocks/element {"tag":"label","className":"form-label","textContent":"Loại hình","type":"text"} -->
+<label class="form-label">Loại hình</label>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"select","className":"form-select","anchor":"clinicType","type":"form"} -->
+<select class="form-select" id="clinicType"><!-- wp:greenshift-blocks/element {"tag":"option","textContent":"Phòng khám da liễu","type":"text"} -->
+<option>Phòng khám da liễu</option>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"option","textContent":"Nhà thuốc da liễu","type":"text"} -->
+<option>Nhà thuốc da liễu</option>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"option","textContent":"Chuỗi phòng khám","type":"text"} -->
+<option>Chuỗi phòng khám</option>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"option","textContent":"Spa / Thẩm mỹ da liễu","type":"text"} -->
+<option>Spa / Thẩm mỹ da liễu</option>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"option","textContent":"Loại hình khác","type":"text"} -->
+<option>Loại hình khác</option>
+<!-- /wp:greenshift-blocks/element --></select>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"button","className":"btn btn-primary btn-lg","dynamicAttributes":[{"name":"style","value":"width: 100%; margin-top: 8px;"}],"formAttributes":{"type":"submit"},"type":"inner"} -->
+<button class="btn btn-primary btn-lg" type="submit" style="width: 100%; margin-top: 8px;"><!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Đăng ký dùng thử","type":"text"} -->
+<span>Đăng ký dùng thử</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","className":"btn-icon-circle","type":"inner"} -->
+<span class="btn-icon-circle"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\"\u003e\n                  \u003cline x1=\"5\" y1=\"12\" x2=\"19\" y2=\"12\"\u003e\u003c/line\u003e\n                  \u003cpolyline points=\"12 5 19 12 12 19\"\u003e\u003c/polyline\u003e\n                \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["14px"],"height":["14px"]}} -->
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+<!-- /wp:greenshift-blocks/element --></span>
+<!-- /wp:greenshift-blocks/element --></button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","className":"form-privacy-note","textContent":"Thông tin của bạn được bảo mật tuyệt đối theo chính sách bảo mật của GSV DTech.","type":"text"} -->
+<p class="form-privacy-note">Thông tin của bạn được bảo mật tuyệt đối theo chính sách bảo mật của GSV DTech.</p>
+<!-- /wp:greenshift-blocks/element --></form>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></section>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"footer","className":"site-footer","anchor":"ve-gsv-dtech","type":"inner"} -->
+<footer class="site-footer" id="ve-gsv-dtech"><!-- wp:greenshift-blocks/element {"tag":"div","className":"container-wide","type":"inner"} -->
+<div class="container-wide"><!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-grid","type":"inner"} -->
+<div class="footer-grid"><!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-brand-col","type":"inner"} -->
+<div class="footer-brand-col"><!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-logo","type":"inner"} -->
+<div class="footer-logo"><!-- wp:greenshift-blocks/element {"tag":"img","dynamicAttributes":[{"name":"style","value":"filter: brightness(0) invert(1);"}],"src":"assets/images/gsv_dtech_logo_clean.png","alt":"GSV DTech Logo","type":"no"} -->
+<img src="assets/images/gsv_dtech_logo_clean.png" alt="GSV DTech Logo" loading="lazy" style="filter: brightness(0) invert(1);"/>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","type":"inner"} -->
+<p><!-- wp:greenshift-blocks/element {"textContent":"Công ty Cổ phần Công nghệ GSV DTech.","tag":"span"} -->
+<span>Công ty Cổ phần Công nghệ GSV DTech.</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","type":"html","textContent":"\u003cbr /\u003e"} -->
+<span><br /></span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"textContent":"Công nghệ dẫn lối, y tế chuyển mình.","tag":"span"} -->
+<span>Công nghệ dẫn lối, y tế chuyển mình.</span>
+<!-- /wp:greenshift-blocks/element --></p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-social-links","type":"inner"} -->
+<div class="footer-social-links"><!-- wp:greenshift-blocks/element {"tag":"a","className":"social-circle-btn","dynamicAttributes":[{"name":"aria-label","value":"Facebook"}],"href":"https://facebook.com","linkNewWindow":true,"type":"inner"} -->
+<a class="social-circle-btn" href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"currentColor\"\u003e\n                \u003cpath d=\"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z\"\u003e\u003c/path\u003e\n              \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"social-circle-btn","dynamicAttributes":[{"name":"aria-label","value":"Zalo"},{"name":"style","value":"font-weight: 800; font-size: 0.6875rem;"}],"textContent":"Zalo","href":"https://zalo.me","linkNewWindow":true,"type":"text"} -->
+<a class="social-circle-btn" href="https://zalo.me" target="_blank" rel="noopener" aria-label="Zalo" style="font-weight: 800; font-size: 0.6875rem;">Zalo</a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-col","type":"inner"} -->
+<div class="footer-col"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Sản phẩm","type":"text"} -->
+<h4>Sản phẩm</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"ul","className":"footer-links-list","type":"inner"} -->
+<ul class="footer-links-list"><!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","textContent":"GSV DTech, quản lý phòng khám","href":"giai-phap.html","type":"text"} -->
+<a href="giai-phap.html">GSV DTech, quản lý phòng khám</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","textContent":"GSV FA, quản lý nhà thuốc","href":"giai-phap.html","type":"text"} -->
+<a href="giai-phap.html">GSV FA, quản lý nhà thuốc</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","textContent":"GSV AI trợ lý da liễu","href":"giai-phap.html","type":"text"} -->
+<a href="giai-phap.html">GSV AI trợ lý da liễu</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","textContent":"Bảng giá dịch vụ","href":"chi-phi.html","type":"text"} -->
+<a href="chi-phi.html">Bảng giá dịch vụ</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-col","anchor":"tin-tuc","type":"inner"} -->
+<div class="footer-col" id="tin-tuc"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Liên kết","type":"text"} -->
+<h4>Liên kết</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"ul","className":"footer-links-list","type":"inner"} -->
+<ul class="footer-links-list"><!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","textContent":"Tin tức \u0026 Blog y tế","href":"#","type":"text"} -->
+<a href="#">Tin tức &amp; Blog y tế</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","textContent":"Về GSV DTech","href":"#","type":"text"} -->
+<a href="#">Về GSV DTech</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","textContent":"Liên hệ \u0026 Tuyển dụng","href":"#","type":"text"} -->
+<a href="#">Liên hệ &amp; Tuyển dụng</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","textContent":"Chính sách bảo mật","href":"#","type":"text"} -->
+<a href="#">Chính sách bảo mật</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"li","type":"inner"} -->
+<li><!-- wp:greenshift-blocks/element {"tag":"a","textContent":"Điều khoản sử dụng","href":"#","type":"text"} -->
+<a href="#">Điều khoản sử dụng</a>
+<!-- /wp:greenshift-blocks/element --></li>
+<!-- /wp:greenshift-blocks/element --></ul>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-col","type":"inner"} -->
+<div class="footer-col"><!-- wp:greenshift-blocks/element {"tag":"h4","textContent":"Liên hệ","type":"text"} -->
+<h4>Liên hệ</h4>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-contact-item","type":"inner"} -->
+<div class="footer-contact-item"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\u003e\n              \u003cpath d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"\u003e\u003c/path\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","type":"inner"} -->
+<div><!-- wp:greenshift-blocks/element {"tag":"p","dynamicAttributes":[{"name":"style","value":"color: var(--color-white); font-weight: 700;"}],"textContent":"024 3789 4110 / 1900 4611","type":"text"} -->
+<p style="color: var(--color-white); font-weight: 700;">024 3789 4110 / 1900 4611</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","dynamicAttributes":[{"name":"style","value":"font-size: 0.75rem;"}],"textContent":"Hỗ trợ 24/7","type":"text"} -->
+<p style="font-size: 0.75rem;">Hỗ trợ 24/7</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-contact-item","type":"inner"} -->
+<div class="footer-contact-item"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\u003e\n              \u003cpath d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"\u003e\u003c/path\u003e\n              \u003cpolyline points=\"22,6 12,13 2,6\"\u003e\u003c/polyline\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"contact@gsvdtech.vn","type":"text"} -->
+<p>contact@gsvdtech.vn</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-contact-item","type":"inner"} -->
+<div class="footer-contact-item"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"\u003e\n              \u003cpath d=\"M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z\"\u003e\u003c/path\u003e\n              \u003ccircle cx=\"12\" cy=\"10\" r=\"3\"\u003e\u003c/circle\u003e\n            \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["18px"],"height":["18px"]}} -->
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","textContent":"Ô 30, LK 17, N017, Khu đất dịch vụ La Khê, P. Hà Đông, TP. Hà Nội","type":"text"} -->
+<p>Ô 30, LK 17, N017, Khu đất dịch vụ La Khê, P. Hà Đông, TP. Hà Nội</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-bottom-bar","type":"inner"} -->
+<div class="footer-bottom-bar"><!-- wp:greenshift-blocks/element {"tag":"div","textContent":"\u0026copy; 2026 GSV DTech. Bảo lưu mọi quyền.","type":"text"} -->
+<div>&copy; 2026 GSV DTech. Bảo lưu mọi quyền.</div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"footer-ecosystem","type":"inner"} -->
+<div class="footer-ecosystem"><!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Hệ sinh thái GSV:","type":"text"} -->
+<span>Hệ sinh thái GSV:</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","textContent":"gsvvietnam.com","href":"https://gsvvietnam.com","linkNewWindow":true,"type":"text"} -->
+<a href="https://gsvvietnam.com" target="_blank" rel="noopener">gsvvietnam.com</a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"\u0026bull;","type":"text"} -->
+<span>&bull;</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","textContent":"dalieuthammygsv.com","href":"https://dalieuthammygsv.com","linkNewWindow":true,"type":"text"} -->
+<a href="https://dalieuthammygsv.com" target="_blank" rel="noopener">dalieuthammygsv.com</a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"\u0026bull;","type":"text"} -->
+<span>&bull;</span>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","textContent":"gsvpharmacy.vn","href":"https://gsvpharmacy.vn","linkNewWindow":true,"type":"text"} -->
+<a href="https://gsvpharmacy.vn" target="_blank" rel="noopener">gsvpharmacy.vn</a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></footer>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"floating-support-btn","dynamicAttributes":[{"name":"aria-label","value":"Hỗ trợ nhanh"}],"type":"inner"} -->
+<div class="floating-support-btn" aria-label="Hỗ trợ nhanh"><!-- wp:greenshift-blocks/element {"tag":"a","className":"float-action float-zalo","textContent":"Zalo","href":"https://zalo.me/19004611","linkNewWindow":true,"title":"Chat Zalo","type":"text"} -->
+<a class="float-action float-zalo" href="https://zalo.me/19004611" target="_blank" rel="noopener" title="Chat Zalo">Zalo</a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"float-action float-phone","href":"tel:02437894110","title":"Gọi hotline","type":"inner"} -->
+<a class="float-action float-phone" href="tel:02437894110" title="Gọi hotline"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"\u003e\n        \u003cpath d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"\u003e\u003c/path\u003e\n      \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["22px"],"height":["22px"]}} -->
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"sticky-mobile-bar","dynamicAttributes":[{"name":"aria-label","value":"Thao tác nhanh trên di động"}],"type":"inner"} -->
+<div class="sticky-mobile-bar" aria-label="Thao tác nhanh trên di động"><!-- wp:greenshift-blocks/element {"tag":"div","className":"sticky-bar-content","type":"inner"} -->
+<div class="sticky-bar-content"><!-- wp:greenshift-blocks/element {"tag":"a","className":"mobile-act-btn mobile-act-call","href":"tel:02437894110","type":"inner"} -->
+<a class="mobile-act-btn mobile-act-call" href="tel:02437894110"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\"\u003e\n          \u003cpath d=\"M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z\"\u003e\u003c/path\u003e\n        \u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["16px"],"height":["16px"]}} -->
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+        </svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Gọi","type":"text"} -->
+<span>Gọi</span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"mobile-act-btn mobile-act-zalo","href":"https://zalo.me/19004611","linkNewWindow":true,"type":"inner"} -->
+<a class="mobile-act-btn mobile-act-zalo" href="https://zalo.me/19004611" target="_blank" rel="noopener"><!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Zalo","type":"text"} -->
+<span>Zalo</span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"a","className":"mobile-act-btn mobile-act-trial","href":"#dang-ky-dung-thu","type":"inner"} -->
+<a class="mobile-act-btn mobile-act-trial" href="#dang-ky-dung-thu"><!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Dùng thử","type":"text"} -->
+<span>Dùng thử</span>
+<!-- /wp:greenshift-blocks/element --></a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"modal-overlay","anchor":"demoModal","dynamicAttributes":[{"name":"aria-modal","value":"true"},{"name":"aria-label","value":"Video Demo 90 giây"}],"type":"inner"} -->
+<div class="modal-overlay" id="demoModal" aria-modal="true" aria-label="Video Demo 90 giây"><!-- wp:greenshift-blocks/element {"tag":"div","className":"modal-container","type":"inner"} -->
+<div class="modal-container"><!-- wp:greenshift-blocks/element {"tag":"button","className":"modal-close-btn","dynamicAttributes":[{"name":"aria-label","value":"Đóng"}],"textContent":"\u0026times;","type":"text"} -->
+<button class="modal-close-btn" aria-label="Đóng">&times;</button>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"modal-body","type":"inner"} -->
+<div class="modal-body"><!-- wp:greenshift-blocks/element {"tag":"h3","dynamicAttributes":[{"name":"style","value":"font-size: 1.5rem; margin-bottom: 8px;"}],"textContent":"Trải nghiệm tổng quan GSV DTech trong 90 giây","type":"text"} -->
+<h3 style="font-size: 1.5rem; margin-bottom: 8px;">Trải nghiệm tổng quan GSV DTech trong 90 giây</h3>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","dynamicAttributes":[{"name":"style","value":"color: var(--color-muted); font-size: 0.875rem; margin-bottom: 20px;"}],"textContent":"Xem nhanh luồng từ đón khách, khám bệnh, kê đơn thuốc quốc gia đến xuất hóa đơn và báo cáo doanh thu.","type":"text"} -->
+<p style="color: var(--color-muted); font-size: 0.875rem; margin-bottom: 20px;">Xem nhanh luồng từ đón khách, khám bệnh, kê đơn thuốc quốc gia đến xuất hóa đơn và báo cáo doanh thu.</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"background: #000; border-radius: 12px; overflow: hidden; position: relative; padding-top: 56.25%;"}],"type":"inner"} -->
+<div style="background: #000; border-radius: 12px; overflow: hidden; position: relative; padding-top: 56.25%;"><!-- wp:greenshift-blocks/element {"tag":"img","dynamicAttributes":[{"name":"style","value":"position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.9;"}],"src":"assets/images/real_ui_overview.png","alt":"Demo screen","type":"no"} -->
+<img src="assets/images/real_ui_overview.png" alt="Demo screen" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.9;"/>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.45); color: #fff;"}],"type":"inner"} -->
+<div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.45); color: #fff;"><!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"width: 68px; height: 68px; border-radius: 50%; background: var(--color-accent-red); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; box-shadow: 0 0 24px rgba(235, 28, 36, 0.6); cursor: pointer;"}],"type":"inner"} -->
+<div style="width: 68px; height: 68px; border-radius: 50%; background: var(--color-accent-red); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; box-shadow: 0 0 24px rgba(235, 28, 36, 0.6); cursor: pointer;"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"#fff\"\u003e\u003cpath d=\"M8 5v14l11-7z\"/\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["28px"],"height":["28px"]}} -->
+<svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M8 5v14l11-7z"/></svg>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","dynamicAttributes":[{"name":"style","value":"font-weight: 700; font-size: 1.125rem;"}],"textContent":"Hệ thống đang chạy trực tiếp trên cơ sở dữ liệu thật","type":"text"} -->
+<p style="font-weight: 700; font-size: 1.125rem;">Hệ thống đang chạy trực tiếp trên cơ sở dữ liệu thật</p>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"p","dynamicAttributes":[{"name":"style","value":"font-size: 0.8125rem; color: rgba(255, 255, 255, 0.8); margin-top: 4px;"}],"textContent":"Liên hệ để nhận tài khoản trải nghiệm 1:1 miễn phí","type":"text"} -->
+<p style="font-size: 0.8125rem; color: rgba(255, 255, 255, 0.8); margin-top: 4px;">Liên hệ để nhận tài khoản trải nghiệm 1:1 miễn phí</p>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"div","dynamicAttributes":[{"name":"style","value":"margin-top: 24px; text-align: center;"}],"type":"inner"} -->
+<div style="margin-top: 24px; text-align: center;"><!-- wp:greenshift-blocks/element {"tag":"a","className":"btn btn-primary modal-close-btn-cta","dynamicAttributes":[{"name":"onclick","value":"document.getElementById('demoModal').classList.remove('active');"}],"textContent":"Đăng ký mở tài khoản dùng thử \u0026rarr;","href":"#dang-ky-dung-thu","type":"text"} -->
+<a class="btn btn-primary modal-close-btn-cta" href="#dang-ky-dung-thu" onclick="document.getElementById('demoModal').classList.remove('active');">Đăng ký mở tài khoản dùng thử &rarr;</a>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
+
+<!-- wp:greenshift-blocks/element {"tag":"div","className":"toast-notice","anchor":"toastNotice","type":"inner"} -->
+<div class="toast-notice" id="toastNotice"><!-- wp:greenshift-blocks/element {"tag":"svg","icon":{"icon":{"svgRaw":"\u003csvg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#4ade80\" stroke-width=\"2.5\"\u003e\u003cpolyline points=\"20 6 9 17 4 12\"\u003e\u003c/polyline\u003e\u003c/svg\u003e","image":""},"type":"svg"},"styleAttributes":{"width":["20px"],"height":["20px"]}} -->
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4ade80" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+<!-- /wp:greenshift-blocks/element -->
+<!-- wp:greenshift-blocks/element {"tag":"span","textContent":"Đăng ký thành công! Tư vấn viên GSV DTech sẽ liên hệ lại với bạn trong vòng 15 phút.","type":"text"} -->
+<span>Đăng ký thành công! Tư vấn viên GSV DTech sẽ liên hệ lại với bạn trong vòng 15 phút.</span>
+<!-- /wp:greenshift-blocks/element --></div>
+<!-- /wp:greenshift-blocks/element -->
