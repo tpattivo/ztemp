@@ -324,6 +324,41 @@
       "sourceType": "github",
       "skillPath": "skills/youtube-intro-outro/SKILL.md",
       "computedHash": "a1073731f49cefca86c5de89e4d2dd3241b8e94306b6fdca132fbec830c7de1a"
+    },
+    "awwwards-hero": {
+      "source": "Yu-369/VibeCurb",
+      "sourceType": "github",
+      "skillPath": "skills/awwwards-hero/SKILL.md"
+    },
+    "awwwards-motion": {
+      "source": "Yu-369/VibeCurb",
+      "sourceType": "github",
+      "skillPath": "skills/awwwards-motion/SKILL.md"
+    },
+    "awwwards-sections": {
+      "source": "Yu-369/VibeCurb",
+      "sourceType": "github",
+      "skillPath": "skills/awwwards-sections/SKILL.md"
+    },
+    "brandkit-gen": {
+      "source": "Yu-369/VibeCurb",
+      "sourceType": "github",
+      "skillPath": "skills/brandkit-gen/SKILL.md"
+    },
+    "imagegen-frontend": {
+      "source": "Yu-369/VibeCurb",
+      "sourceType": "github",
+      "skillPath": "skills/imagegen-frontend/SKILL.md"
+    },
+    "pixel-perfect": {
+      "source": "Yu-369/VibeCurb",
+      "sourceType": "github",
+      "skillPath": "skills/pixel-perfect/SKILL.md"
+    },
+    "visual-redesign": {
+      "source": "Yu-369/VibeCurb",
+      "sourceType": "github",
+      "skillPath": "skills/visual-redesign/SKILL.md"
     }
   }
 }

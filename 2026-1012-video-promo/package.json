@@ -6,8 +6,12 @@
     "start": "remotion preview src/index.tsx",
     "build": "remotion render src/index.tsx VideoPromo out/video_promo_120s.mp4",
     "build:v2": "remotion render src/index.tsx VideoPromoV2 out/video_promo_v2_180s.mp4",
+    "build:v2_2": "remotion render src/index.tsx VideoPromoV22 out/video_promo_v2_2.mp4",
+    "build:v2_3": "remotion render src/index.tsx VideoPromoV23 out/video_promo_v2_3.mp4",
     "still": "remotion still src/index.tsx VideoPromo out/still.png",
-    "still:v2": "remotion still src/index.tsx VideoPromoV2 out/still_v2.png"
+    "still:v2": "remotion still src/index.tsx VideoPromoV2 out/still_v2.png",
+    "still:v2_2": "remotion still src/index.tsx VideoPromoV22 out/still_v2_2.png",
+    "still:v2_3": "remotion still src/index.tsx VideoPromoV23 out/still_v2_3.png"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.260",
